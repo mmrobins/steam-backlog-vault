@@ -567,6 +567,14 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
   text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.clickable-hltb:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  background: rgba(139, 92, 246, 0.05);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.15);
+  transform: translateY(-1px);
 }
 
 .hltb-item {

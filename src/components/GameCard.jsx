@@ -157,20 +157,28 @@ export default function GameCard({ game }) {
 
         {/* HowLongToBeat Breakdown / Progress Indicator */}
         {isHltbCached ? (
-          <div className="hltb-section">
-            <div className="hltb-item">
-              <span className="hltb-label" title="Main Story">🎯 Main</span>
-              <span className="hltb-value">{hltb?.main ? `${hltb.main}h` : '—'}</span>
+          <a
+            href={hltb?.hltbId ? `https://howlongtobeat.com/game/${hltb.hltbId}` : `https://howlongtobeat.com/?q=${encodeURIComponent(name)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hltb-link-wrapper"
+            style={{ textDecoration: 'none', display: 'block' }}
+          >
+            <div className="hltb-section clickable-hltb" title="Click to view HowLongToBeat details">
+              <div className="hltb-item">
+                <span className="hltb-label" title="Main Story">🎯 Main</span>
+                <span className="hltb-value">{hltb?.main ? `${hltb.main}h` : '—'}</span>
+              </div>
+              <div className="hltb-item">
+                <span className="hltb-label" title="Main + Extra Content">🗡️ Extra</span>
+                <span className="hltb-value">{hltb?.mainExtra ? `${hltb.mainExtra}h` : '—'}</span>
+              </div>
+              <div className="hltb-item">
+                <span className="hltb-label" title="100% Completionist">🏆 100%</span>
+                <span className="hltb-value">{hltb?.completionist ? `${hltb.completionist}h` : '—'}</span>
+              </div>
             </div>
-            <div className="hltb-item">
-              <span className="hltb-label" title="Main + Extra Content">🗡️ Extra</span>
-              <span className="hltb-value">{hltb?.mainExtra ? `${hltb.mainExtra}h` : '—'}</span>
-            </div>
-            <div className="hltb-item">
-              <span className="hltb-label" title="100% Completionist">🏆 100%</span>
-              <span className="hltb-value">{hltb?.completionist ? `${hltb.completionist}h` : '—'}</span>
-            </div>
-          </div>
+          </a>
         ) : (
           <div className="hltb-section syncing" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '39px', color: 'var(--text-muted)', fontSize: '0.78rem', gap: '0.4rem' }}>
             <span className="pulse-dot hltb-dot"></span> Syncing completion times...
