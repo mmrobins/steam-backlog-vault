@@ -65,13 +65,25 @@ async function getGameTimeToBeat(title) {
 
   try {
     const searchTerms = cleaned.split(/\s+/).filter(Boolean);
-    const response = await axios.post(
-      'https://howlongtobeat.com/api/search',
-      {
+    
+    // Step 1: Get dynamic token and honeypot keys
+    const initRes = await axios.get('https://howlongtobeat.com/api/bleed/init?t=' + Date.now(), {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'Referer': 'https://howlongtobeat.com/'
+      },
+      timeout: 4000
+    });
+    
+    if (initRes.data && initRes.data.token) {
+      const { token, hpKey, hpVal } = initRes.data;
+      
+      // Step 2: Construct payload with honeypot key
+      const payload = {
         searchType: 'games',
         searchTerms: searchTerms,
         searchPage: 1,
-        size: 10,
+        size: 5,
         searchOptions: {
           games: {
             userId: 0,
@@ -85,38 +97,52 @@ async function getGameTimeToBeat(title) {
           },
           users: { sortCategory: 'postcount' },
           lists: { sortCategory: 'follows' }
-        }
-      },
-      {
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-          'Referer': 'https://howlongtobeat.com/',
-          'Content-Type': 'application/json',
-          'Origin': 'https://howlongtobeat.com'
         },
-        timeout: 5000
-      }
-    );
-
-    if (response.data && response.data.data && response.data.data.length > 0) {
-      // Find best matching game
-      const game = response.data.data.find(
-        g => g.game_name.toLowerCase() === title.toLowerCase() || g.game_name.toLowerCase() === cleaned.toLowerCase()
-      ) || response.data.data[0];
-
-      const hltbData = {
-        main: game.comp_main ? Math.round((game.comp_main / 3600) * 10) / 10 : null,
-        mainExtra: game.comp_plus ? Math.round((game.comp_plus / 3600) * 10) / 10 : null,
-        completionist: game.comp_100 ? Math.round((game.comp_100 / 3600) * 10) / 10 : null,
-        hltbId: game.game_id
+        useCache: true
       };
+      
+      // Inject honeypot key
+      payload[hpKey] = hpVal;
+      
+      // Step 3: Search using /api/bleed endpoint
+      const response = await axios.post(
+        'https://howlongtobeat.com/api/bleed',
+        payload,
+        {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+            'Referer': 'https://howlongtobeat.com/',
+            'Origin': 'https://howlongtobeat.com',
+            'Content-Type': 'application/json',
+            'x-auth-token': token,
+            'x-hp-key': hpKey,
+            'x-hp-val': hpVal
+          },
+          timeout: 4000
+        }
+      );
+      
+      if (response.data && response.data.data && response.data.data.length > 0) {
+        const game = response.data.data.find(
+          g => g.game_name.toLowerCase() === title.toLowerCase() || g.game_name.toLowerCase() === cleaned.toLowerCase()
+        ) || response.data.data[0];
 
-      cache.set(cacheKey, hltbData);
-      return hltbData;
+        const hltbData = {
+          main: game.comp_main ? Math.round((game.comp_main / 3600) * 10) / 10 : null,
+          mainExtra: game.comp_plus ? Math.round((game.comp_plus / 3600) * 10) / 10 : null,
+          completionist: game.comp_100 ? Math.round((game.comp_100 / 3600) * 10) / 10 : null,
+          hltbId: game.game_id
+        };
+
+        cache.set(cacheKey, hltbData);
+        return hltbData;
+      }
     }
   } catch (err) {
-    // If search failed, try scraper HTML search or return fallback
-    console.warn(`[HLTB] Warning searching "${title}":`, err.message);
+    // Suppress console warnings for WAF blocks (like 404/403) and log quietly
+    if (err.response?.status !== 404 && err.response?.status !== 403) {
+      console.log(`[HLTB info] HLTB lookups currently unavailable for "${title}" (${err.message})`);
+    }
   }
 
   // Default fallback if unknown
