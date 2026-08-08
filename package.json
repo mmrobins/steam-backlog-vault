@@ -1,0 +1,41 @@
+{
+  "name": "steam-unplayed-backlog",
+  "version": "1.0.0",
+  "description": "Discover your best unplayed Steam games sorted by review score and time to beat.",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "vite",
+    "build": "vite build",
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "steam",
+    "backlog",
+    "howlongtobeat",
+    "games",
+    "openid"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.19.0",
+    "canvas-confetti": "^1.9.4",
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "lucide-react": "^1.30.0",
+    "node-cache": "^5.1.2",
+    "openid": "^2.0.17",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.5",
+    "concurrently": "^10.0.4",
+    "nodemon": "^3.1.14",
+    "vite": "^8.2.1"
+  }
+}
