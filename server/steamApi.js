@@ -3,17 +3,35 @@ const axios = require('axios');
 // Helper: wait ms milliseconds
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// Global cooldown flag when Steam Store WAF rate limits our IP (429)
+let rateLimitCooldownUntil = 0;
+
+function isRateLimited() {
+  return Date.now() < rateLimitCooldownUntil;
+}
+
 // Fetch with retry on 429/403 rate-limit responses
-async function fetchWithRetry(url, options = {}, retries = 3, baseDelayMs = 1500) {
+async function fetchWithRetry(url, options = {}, retries = 2, baseDelayMs = 1000) {
+  if (isRateLimited()) {
+    throw new Error('RATE_LIMIT_COOLDOWN_ACTIVE');
+  }
+
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       const res = await axios.get(url, options);
       return res;
     } catch (err) {
       const status = err?.response?.status;
-      if ((status === 429 || status === 403) && attempt < retries) {
-        const delay = baseDelayMs * Math.pow(2, attempt); // exponential backoff
-        console.warn(`[Steam Store] Rate limited (${status}) for ${url}. Retrying in ${delay}ms (attempt ${attempt + 1}/${retries})...`);
+      if (status === 429) {
+        // Activate global 1-minute cooldown immediately
+        rateLimitCooldownUntil = Date.now() + 60000;
+        console.warn(`[Steam Store] 429 Rate Limit hit. Initiating 60-second cooldown for all new API requests.`);
+        throw err;
+      }
+      
+      if (status === 403 && attempt < retries) {
+        const delay = baseDelayMs * Math.pow(2, attempt);
+        console.warn(`[Steam Store] Rate limited (403) for ${url}. Retrying in ${delay}ms...`);
         await sleep(delay);
       } else {
         throw err;
@@ -345,6 +363,10 @@ async function getSteamAppReviewScore(appid) {
   const cached = cache.get(cacheKey);
   if (cached !== undefined) return cached;
 
+  if (isRateLimited()) {
+    return { reviewScore: null, reviewDesc: "Rate Limited", totalReviews: 0 };
+  }
+
   try {
     const url = `https://store.steampowered.com/appreviews/${appid}?json=1&language=all`;
     const res = await fetchWithRetry(url, { timeout: 6000 });
@@ -366,7 +388,7 @@ async function getSteamAppReviewScore(appid) {
   } catch (err) {
     const status = err?.response?.status;
     if (status === 429 || status === 403) {
-      console.warn(`[Steam Store API] Rate limited on app ${appid} (${status}) — all retries exhausted, using fallback.`);
+      console.warn(`[Steam Store API] Rate limited on app ${appid} (${status || 'Cooldown'}) — using fallback.`);
     } else {
       console.warn(`[Steam Store API] Failed review fetch for app ${appid}:`, err.message);
     }
@@ -384,6 +406,18 @@ async function getSteamAppDetails(appid) {
   const cacheKey = `steam_details_${appid}`;
   const cached = cache.get(cacheKey);
   if (cached !== undefined) return cached;
+
+  if (isRateLimited()) {
+    return {
+      header_image: `https://cdn.akamai.steamstatic.com/steam/apps/${appid}/header.jpg`,
+      metacritic: null,
+      genres: [],
+      release_date: null,
+      short_description: '',
+      developer: null,
+      publisher: null
+    };
+  }
 
   try {
     const url = `https://store.steampowered.com/api/appdetails?appids=${appid}&cc=us&l=en`;
@@ -405,7 +439,7 @@ async function getSteamAppDetails(appid) {
   } catch (err) {
     const status = err?.response?.status;
     if (status === 429 || status === 403) {
-      console.warn(`[Steam AppDetails API] Rate limited on app ${appid} (${status}) — all retries exhausted, using fallback.`);
+      console.warn(`[Steam AppDetails API] Rate limited on app ${appid} (${status || 'Cooldown'}) — using fallback.`);
     } else {
       console.warn(`[Steam AppDetails API] Failed details fetch for app ${appid}:`, err.message);
     }
@@ -428,7 +462,7 @@ async function getSteamAppDetails(appid) {
  * Batch-fetch review scores AND app details for a list of games,
  * with concurrency capped to avoid Steam Store rate limits.
  */
-async function batchFetchStoreData(games, concurrency = 4) {
+async function batchFetchStoreData(games, concurrency = 2) {
   const results = {};
   for (let i = 0; i < games.length; i += concurrency) {
     const chunk = games.slice(i, i + concurrency);
@@ -441,9 +475,9 @@ async function batchFetchStoreData(games, concurrency = 4) {
         results[game.appid] = { reviews, details };
       })
     );
-    // Small pause between chunks to be polite to Steam's API
+    // Pauses between chunks to avoid WAF rate-limiting
     if (i + concurrency < games.length) {
-      await sleep(300);
+      await sleep(450);
     }
   }
   return results;
