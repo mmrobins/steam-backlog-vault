@@ -56,6 +56,7 @@ export default function GameCard({ game }) {
     reviewScore,
     reviewDesc,
     totalReviews,
+    totalReviewsEnglish,
     metacritic,
     metacriticUrl,
     hltb,
@@ -73,6 +74,7 @@ export default function GameCard({ game }) {
   const isHighRating = reviewScore && reviewScore >= 85;
   const playedTime = formatPlaytime(playtime_forever);
   const reviewCountStr = formatReviewCount(totalReviews);
+  const reviewCountEnglishStr = formatReviewCount(totalReviewsEnglish);
 
   const resolvedHltbId = hltb?.hltbId || POPULAR_HLTB_IDS[name.toLowerCase().trim()];
   const hltbLink = resolvedHltbId
@@ -179,8 +181,8 @@ export default function GameCard({ game }) {
           {isSteamCached ? (
             <>
               {reviewDesc && reviewDesc !== 'No Reviews' && (
-                <span className="card-meta-item" title={`${totalReviews.toLocaleString()} total reviews`}>
-                  <ThumbsUp size={12} style={{ marginRight: '4px' }} /> {reviewDesc} {reviewCountStr && `(${reviewCountStr})`}
+                <span className="card-meta-item" title={`${totalReviewsEnglish ? `${totalReviewsEnglish.toLocaleString()} English reviews / ` : ''}${totalReviews.toLocaleString()} global reviews`}>
+                  <ThumbsUp size={12} style={{ marginRight: '4px' }} /> {reviewDesc} {totalReviewsEnglish ? `(${reviewCountEnglishStr} EN / ${reviewCountStr} global)` : `(${reviewCountStr} global)`}
                 </span>
               )}
               {release_date && (

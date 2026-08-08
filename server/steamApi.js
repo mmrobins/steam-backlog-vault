@@ -364,22 +364,31 @@ async function getSteamAppReviewScore(appid) {
   if (cached !== undefined) return cached;
 
   if (isRateLimited()) {
-    return { reviewScore: null, reviewDesc: "Rate Limited", totalReviews: 0 };
+    return { reviewScore: null, reviewDesc: "Rate Limited", totalReviews: 0, totalReviewsEnglish: 0 };
   }
 
   try {
-    const url = `https://store.steampowered.com/appreviews/${appid}?json=1&language=all`;
-    const res = await fetchWithRetry(url, { timeout: 6000 });
-    if (res.data?.query_summary) {
-      const summary = res.data.query_summary;
+    const urlAll = `https://store.steampowered.com/appreviews/${appid}?json=1&language=all`;
+    const urlEnglish = `https://store.steampowered.com/appreviews/${appid}?json=1&language=english`;
+    
+    const [resAll, resEnglish] = await Promise.all([
+      fetchWithRetry(urlAll, { timeout: 6000 }),
+      fetchWithRetry(urlEnglish, { timeout: 6000 }).catch(() => null)
+    ]);
+
+    if (resAll?.data?.query_summary) {
+      const summary = resAll.data.query_summary;
       const total = summary.total_reviews || 0;
       const positive = summary.total_positive || 0;
       const scorePct = total > 0 ? Math.round((positive / total) * 100) : null;
+      
+      const totalEnglish = resEnglish?.data?.query_summary?.total_reviews || 0;
 
       const reviewData = {
         reviewScore: scorePct,
         reviewDesc: summary.review_score_desc || (scorePct >= 90 ? "Overwhelmingly Positive" : scorePct >= 80 ? "Very Positive" : scorePct >= 70 ? "Positive" : "Mixed"),
-        totalReviews: total
+        totalReviews: total,
+        totalReviewsEnglish: totalEnglish
       };
 
       cache.set(cacheKey, reviewData);
@@ -394,7 +403,7 @@ async function getSteamAppReviewScore(appid) {
     }
   }
 
-  const fallback = { reviewScore: null, reviewDesc: "No Reviews", totalReviews: 0 };
+  const fallback = { reviewScore: null, reviewDesc: "No Reviews", totalReviews: 0, totalReviewsEnglish: 0 };
   return fallback;
 }
 

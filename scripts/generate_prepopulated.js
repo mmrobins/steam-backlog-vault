@@ -123,26 +123,36 @@ async function fetchHltbTime(title) {
   return { main: null, mainExtra: null, completionist: null };
 }
 
-// Fetch Steam Review details
+// Fetch Steam Review details (both global and English-only)
 async function fetchSteamReviews(appid) {
   try {
-    const url = `https://store.steampowered.com/appreviews/${appid}?json=1&language=all`;
-    const res = await axios.get(url, { timeout: 4000 });
-    if (res.data?.query_summary) {
-      const summary = res.data.query_summary;
+    const urlAll = `https://store.steampowered.com/appreviews/${appid}?json=1&language=all`;
+    const urlEnglish = `https://store.steampowered.com/appreviews/${appid}?json=1&language=english`;
+    
+    const [resAll, resEnglish] = await Promise.all([
+      axios.get(urlAll, { timeout: 4000 }),
+      axios.get(urlEnglish, { timeout: 4000 }).catch(() => null)
+    ]);
+    
+    if (resAll.data?.query_summary) {
+      const summary = resAll.data.query_summary;
       const total = summary.total_reviews || 0;
       const positive = summary.total_positive || 0;
       const scorePct = total > 0 ? Math.round((positive / total) * 100) : null;
+      
+      const totalEnglish = resEnglish?.data?.query_summary?.total_reviews || 0;
+      
       return {
         reviewScore: scorePct,
         reviewDesc: summary.review_score_desc || 'No Reviews',
-        totalReviews: total
+        totalReviews: total,
+        totalReviewsEnglish: totalEnglish
       };
     }
   } catch (e) {
     // Ignore error
   }
-  return { reviewScore: null, reviewDesc: 'No Reviews', totalReviews: 0 };
+  return { reviewScore: null, reviewDesc: 'No Reviews', totalReviews: 0, totalReviewsEnglish: 0 };
 }
 
 // Fetch Steam details
@@ -215,6 +225,7 @@ async function run() {
           reviewScore: reviews.reviewScore,
           reviewDesc: reviews.reviewDesc,
           totalReviews: reviews.totalReviews,
+          totalReviewsEnglish: reviews.totalReviewsEnglish,
           metacritic: details.metacritic,
           header_image: details.header_image,
           genres: details.genres,
