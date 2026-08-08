@@ -93,6 +93,14 @@ app.get('/api/backlog/:steamid', async (req, res) => {
         });
       }
 
+      // Load prepopulated games from file
+      let prepopulatedGames = {};
+      try {
+        prepopulatedGames = require('./prepopulated_games.json');
+      } catch (e) {
+        console.warn('[Backlog] prepopulated_games.json not found or invalid');
+      }
+
       const ownedGames = await getOwnedGames(steamid, apiKey);
       
       // Filter by playtime (default: unplayed = 0 minutes)
@@ -102,6 +110,30 @@ app.get('/api/backlog/:steamid', async (req, res) => {
       const cache = require('./cache');
       
       gamesList = unplayed.map((game) => {
+        // Check prepopulated file store first
+        const prepopulated = prepopulatedGames[game.appid];
+        if (prepopulated) {
+          return {
+            appid: game.appid,
+            name: game.name,
+            playtime_forever: game.playtime_forever || 0,
+            img_icon_url: game.img_icon_url,
+            isSteamCached: true,
+            isHltbCached: true,
+            reviewScore: prepopulated.reviewScore ?? null,
+            reviewDesc: prepopulated.reviewDesc ?? 'No Reviews',
+            totalReviews: prepopulated.totalReviews ?? 0,
+            metacritic: prepopulated.metacritic ?? null,
+            header_image: prepopulated.header_image ?? `https://cdn.akamai.steamstatic.com/steam/apps/${game.appid}/header.jpg`,
+            genres: prepopulated.genres ?? [],
+            release_date: prepopulated.release_date ?? null,
+            short_description: prepopulated.short_description ?? '',
+            developer: prepopulated.developer ?? null,
+            publisher: prepopulated.publisher ?? null,
+            hltb: prepopulated.hltb || { main: null, mainExtra: null, completionist: null }
+          };
+        }
+
         const cachedDetails = cache.get(`steam_details_${game.appid}`);
         const cachedReviews = cache.get(`steam_review_${game.appid}`);
         const cachedHltb = cache.get(`hltb_${game.name.toLowerCase().trim()}`);
@@ -152,6 +184,30 @@ app.post('/api/enrich/steam', async (req, res) => {
     const { appid } = req.body;
     if (!appid) return res.status(400).json({ error: 'AppID is required' });
 
+    // Check prepopulated first
+    try {
+      const prepopulatedGames = require('./prepopulated_games.json');
+      const prepopulated = prepopulatedGames[appid];
+      if (prepopulated) {
+        return res.json({
+          appid,
+          success: true,
+          reviewScore: prepopulated.reviewScore,
+          reviewDesc: prepopulated.reviewDesc,
+          totalReviews: prepopulated.totalReviews,
+          metacritic: prepopulated.metacritic,
+          header_image: prepopulated.header_image,
+          genres: prepopulated.genres,
+          release_date: prepopulated.release_date,
+          short_description: prepopulated.short_description,
+          developer: prepopulated.developer,
+          publisher: prepopulated.publisher
+        });
+      }
+    } catch (e) {
+      // Ignore prepopulated check errors
+    }
+
     const [reviews, details] = await Promise.all([
       getSteamAppReviewScore(appid),
       getSteamAppDetails(appid)
@@ -186,6 +242,21 @@ app.post('/api/enrich/hltb', async (req, res) => {
     const { appid, name } = req.body;
     if (!appid || !name) {
       return res.status(400).json({ error: 'AppID and Name are required' });
+    }
+
+    // Check prepopulated first
+    try {
+      const prepopulatedGames = require('./prepopulated_games.json');
+      const prepopulated = prepopulatedGames[appid];
+      if (prepopulated && prepopulated.hltb) {
+        return res.json({
+          appid,
+          success: true,
+          hltb: prepopulated.hltb
+        });
+      }
+    } catch (e) {
+      // Ignore prepopulated check errors
     }
 
     const hltb = await getGameTimeToBeat(name);
