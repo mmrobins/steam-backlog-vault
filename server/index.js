@@ -157,8 +157,12 @@ app.post('/api/enrich/steam', async (req, res) => {
       getSteamAppDetails(appid)
     ]);
 
+    // If both returned fallback/rate-limited placeholder values (i.e. developer and reviews are null/zero)
+    const success = (details.developer !== null || details.publisher !== null) && reviews.reviewDesc !== 'Rate Limited';
+
     return res.json({
       appid,
+      success,
       reviewScore: reviews.reviewScore,
       reviewDesc: reviews.reviewDesc,
       totalReviews: reviews.totalReviews,
@@ -172,7 +176,7 @@ app.post('/api/enrich/steam', async (req, res) => {
     });
   } catch (err) {
     console.error(`[API /enrich/steam error] AppID ${req.body?.appid}:`, err.message);
-    return res.status(500).json({ error: err.message });
+    return res.status(500).json({ error: err.message, success: false });
   }
 });
 
@@ -186,13 +190,21 @@ app.post('/api/enrich/hltb', async (req, res) => {
 
     const hltb = await getGameTimeToBeat(name);
 
+    // If hltb results are empty and it was NOT cached (i.e. it failed due to WAF block or error)
+    const cache = require('./cache');
+    const isCached = cache.get(`hltb_${name.toLowerCase().trim()}`) !== undefined;
+    
+    // It's a success if it's cached (even if null times) or if hltb has valid data
+    const success = isCached || hltb.main !== null || hltb.mainExtra !== null;
+
     return res.json({
       appid,
+      success,
       hltb
     });
   } catch (err) {
     console.error(`[API /enrich/hltb error] AppID ${req.body?.appid}:`, err.message);
-    return res.status(500).json({ error: err.message });
+    return res.status(500).json({ error: err.message, success: false });
   }
 });
 

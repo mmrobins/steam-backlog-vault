@@ -48,9 +48,13 @@ export default function App() {
 
   // Background Syncing State
   const [steamSyncTotal, setSteamSyncTotal] = useState(0);
-  const [steamSyncCurrent, setSteamSyncCurrent] = useState(0);
+  const [steamSuccessCount, setSteamSuccessCount] = useState(0);
+  const [steamFailedCount, setSteamFailedCount] = useState(0);
+
   const [hltbSyncTotal, setHltbSyncTotal] = useState(0);
-  const [hltbSyncCurrent, setHltbSyncCurrent] = useState(0);
+  const [hltbSuccessCount, setHltbSuccessCount] = useState(0);
+  const [hltbFailedCount, setHltbFailedCount] = useState(0);
+  
   const [isSyncing, setIsSyncing] = useState(false);
 
   // Fetch backlog when steamid, apiKey, or playtimeThreshold changes
@@ -61,10 +65,14 @@ export default function App() {
     setLoading(true);
     setErrorInfo(null);
     setIsSyncing(false);
+    
     setSteamSyncTotal(0);
-    setSteamSyncCurrent(0);
+    setSteamSuccessCount(0);
+    setSteamFailedCount(0);
+    
     setHltbSyncTotal(0);
-    setHltbSyncCurrent(0);
+    setHltbSuccessCount(0);
+    setHltbFailedCount(0);
 
     async function loadData() {
       try {
@@ -110,9 +118,12 @@ export default function App() {
     }
 
     async function triggerSync(steamQueue, hltbQueue) {
-      // Run Steam and HLTB queues in parallel, but rate limit each internally
+      let steamSuccesses = 0;
+      let steamFailures = 0;
+      let hltbSuccesses = 0;
+      let hltbFailures = 0;
+
       const steamPromise = (async () => {
-        let current = 0;
         for (const game of steamQueue) {
           if (!isMounted) break;
           try {
@@ -125,19 +136,29 @@ export default function App() {
             const data = await res.json();
             
             if (isMounted) {
-              setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isSteamCached: true } : g));
-              current++;
-              setSteamSyncCurrent(current);
+              if (data.success) {
+                setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isSteamCached: true } : g));
+                steamSuccesses++;
+                setSteamSuccessCount(steamSuccesses);
+              } else {
+                // Rate limited fallback: do not mark cached as true so we can retry later
+                setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isSteamCached: false } : g));
+                steamFailures++;
+                setSteamFailedCount(steamFailures);
+              }
             }
           } catch (e) {
             console.warn(`[Steam Sync] Failed app ${game.appid}:`, e.message);
+            if (isMounted) {
+              steamFailures++;
+              setSteamFailedCount(steamFailures);
+            }
           }
-          await sleep(650); // Be polite to Steam WAF WAF
+          await sleep(650);
         }
       })();
 
       const hltbPromise = (async () => {
-        let current = 0;
         for (const game of hltbQueue) {
           if (!isMounted) break;
           try {
@@ -150,14 +171,24 @@ export default function App() {
             const data = await res.json();
             
             if (isMounted) {
-              setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isHltbCached: true } : g));
-              current++;
-              setHltbSyncCurrent(current);
+              if (data.success) {
+                setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isHltbCached: true } : g));
+                hltbSuccesses++;
+                setHltbSuccessCount(hltbSuccesses);
+              } else {
+                setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isHltbCached: false } : g));
+                hltbFailures++;
+                setHltbFailedCount(hltbFailures);
+              }
             }
           } catch (e) {
             console.warn(`[HLTB Sync] Failed app ${game.appid}:`, e.message);
+            if (isMounted) {
+              hltbFailures++;
+              setHltbFailedCount(hltbFailures);
+            }
           }
-          await sleep(500); // Be polite to HLTB WAF
+          await sleep(500);
         }
       })();
 
@@ -259,20 +290,28 @@ export default function App() {
           {steamSyncTotal > 0 && (
             <div>
               <div className="sync-status">
-                <span>🎮 Syncing Steam ratings & details... {steamSyncCurrent} / {steamSyncTotal} games ({Math.round(steamSyncCurrent / steamSyncTotal * 100)}%)</span>
+                <span>
+                  🎮 Steam Details: Synced {steamSuccessCount} · 
+                  {steamFailedCount > 0 && <span style={{ color: 'var(--accent-amber)', marginLeft: '4px' }}> Failed {steamFailedCount}</span>}
+                  {` / ${steamSyncTotal} (${Math.round((steamSuccessCount + steamFailedCount) / steamSyncTotal * 100)}%)`}
+                </span>
               </div>
               <div className="sync-progress-track">
-                <div className="sync-progress-fill" style={{ width: `${(steamSyncCurrent / steamSyncTotal * 100)}%` }}></div>
+                <div className="sync-progress-fill" style={{ width: `${((steamSuccessCount + steamFailedCount) / steamSyncTotal * 100)}%` }}></div>
               </div>
             </div>
           )}
           {hltbSyncTotal > 0 && (
             <div>
               <div className="sync-status" style={{ color: 'var(--accent-purple)' }}>
-                <span>⏱️ Syncing HowLongToBeat playtimes... {hltbSyncCurrent} / {hltbSyncTotal} games ({Math.round(hltbSyncCurrent / hltbSyncTotal * 100)}%)</span>
+                <span>
+                  ⏱️ Playtimes: Synced {hltbSuccessCount} · 
+                  {hltbFailedCount > 0 && <span style={{ color: 'var(--accent-rose)', marginLeft: '4px' }}> Failed {hltbFailedCount}</span>}
+                  {` / ${hltbSyncTotal} (${Math.round((hltbSuccessCount + hltbFailedCount) / hltbSyncTotal * 100)}%)`}
+                </span>
               </div>
               <div className="sync-progress-track">
-                <div className="sync-progress-fill" style={{ width: `${(hltbSyncCurrent / hltbSyncTotal * 100)}%`, background: 'linear-gradient(90deg, var(--accent-purple) 0%, var(--accent-rose) 100%)', boxShadow: '0 0 10px rgba(139, 92, 246, 0.5)' }}></div>
+                <div className="sync-progress-fill" style={{ width: `${((hltbSuccessCount + hltbFailedCount) / hltbSyncTotal * 100)}%`, background: 'linear-gradient(90deg, var(--accent-purple) 0%, var(--accent-rose) 100%)', boxShadow: '0 0 10px rgba(139, 92, 246, 0.5)' }}></div>
               </div>
             </div>
           )}
