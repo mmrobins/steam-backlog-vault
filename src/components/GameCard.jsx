@@ -1,5 +1,4 @@
-import React from 'react';
-import { Star, ExternalLink, Play, Clock } from 'lucide-react';
+import { Star, ExternalLink, Play, Clock, ThumbsUp } from 'lucide-react';
 
 function formatPlaytime(minutes) {
   if (!minutes || minutes === 0) return null;
@@ -159,14 +158,11 @@ export default function GameCard({ game }) {
             <div className={`score-badge ${isHighRating ? 'high' : 'medium'}`} title={reviewDesc}>
               <Star size={13} fill={isHighRating ? '#34d399' : '#fbbf24'} />
               <span>{reviewScore}%</span>
-              {reviewCountStr && (
-                <span className="review-count">({reviewCountStr})</span>
-              )}
             </div>
           )
         ) : (
-          <div className="score-badge syncing" title="Syncing Steam reviews...">
-            <span className="pulse-dot"></span> Steam rating...
+          <div className="score-badge syncing" style={{ background: 'rgba(9, 13, 22, 0.85)' }}>
+            <span className="pulse-dot score-dot"></span>
           </div>
         )}
       </div>
@@ -178,10 +174,15 @@ export default function GameCard({ game }) {
           </a>
         </h3>
 
-        {/* Meta row: release date + dev/pub */}
+        {/* Meta row: release date + dev/pub + review details */}
         <div className="card-meta-row">
           {isSteamCached ? (
             <>
+              {reviewDesc && reviewDesc !== 'No Reviews' && (
+                <span className="card-meta-item" title={`${totalReviews.toLocaleString()} total reviews`}>
+                  <ThumbsUp size={12} style={{ marginRight: '4px' }} /> {reviewDesc} {reviewCountStr && `(${reviewCountStr})`}
+                </span>
+              )}
               {release_date && (
                 <span className="card-meta-item">📅 {release_date}</span>
               )}
