@@ -2715,5 +2715,575 @@
       "mainExtra": 20.4,
       "completionist": 28
     }
+  },
+  "55100": {
+    "reviewScore": 66,
+    "reviewDesc": "Mixed",
+    "totalReviews": 4132,
+    "metacritic": 70,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/55100/header.jpg?t=1709649918",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 14, 2011",
+    "short_description": "The Rock Map Pack is Now Available! Join the Resistance, stand united and fight for freedom against an overwhelming military force.",
+    "developer": "Kaos Studios, Digital Extremes",
+    "publisher": "Deep Silver",
+    "hltb": {
+      "main": 4.2,
+      "mainExtra": 5.5,
+      "completionist": 9.5
+    }
+  },
+  "55110": {
+    "reviewScore": 71,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 2600,
+    "metacritic": 74,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/55110/header.jpg?t=1591105530",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jun 6, 2011",
+    "short_description": "Red Faction: Armageddon Path to War includes 4 new missions, 2 unlockable items and 10 new achievements!",
+    "developer": "Volition",
+    "publisher": "Deep Silver ",
+    "hltb": {
+      "main": 8,
+      "mainExtra": 10.4,
+      "completionist": 19.8
+    }
+  },
+  "55150": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 18288,
+    "metacritic": 74,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/55150/header.jpg?t=1773791506",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Sep 5, 2011",
+    "short_description": "In Warhammer 40,000 Space Marine you are Captain Titus, a Space Marine of the Ultramarines chapter and a seasoned veteran of countless battles.",
+    "developer": "Relic Entertainment",
+    "publisher": "Relic Entertainment",
+    "hltb": {
+      "main": 7.6,
+      "mainExtra": 9.3,
+      "completionist": 22.5
+    }
+  },
+  "55230": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 48796,
+    "metacritic": 84,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/55230/header.jpg?t=1764671029",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 14, 2011",
+    "short_description": "Get ready for the most out-landish gameplay scenarios ever seen as the Third Street Saints take on the Syndicate!",
+    "developer": "Volition",
+    "publisher": "Deep Silver",
+    "hltb": {
+      "main": 15.4,
+      "mainExtra": 27.5,
+      "completionist": 45.9
+    }
+  },
+  "56437": {
+    "reviewScore": 89,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 7880,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/56437/header.jpg?t=1726774591",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "",
+    "short_description": "Command any of the six unique factions in the next standalone expansion of the critically acclaimed Dawn of War real-time strategy franchise. Choose to build a massive army or lead a small squad of elite heroes into battle and experience a single player campaign customized to your favorite race.",
+    "developer": "Relic Entertainment, Feral Interactive (Mac/Linux)",
+    "publisher": "SEGA, Feral Interactive (Mac/Linux)",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "57300": {
+    "reviewScore": 95,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 20264,
+    "metacritic": 85,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/57300/header.jpg?t=1751032707",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "release_date": "Sep 8, 2010",
+    "short_description": "Amnesia: The Dark Descent, a first person survival horror. A game about immersion, discovery and living through a nightmare. An experience that will chill you to the core.",
+    "developer": "Frictional Games",
+    "publisher": "Frictional Games",
+    "hltb": {
+      "main": 8,
+      "mainExtra": 9.1,
+      "completionist": 11.7
+    }
+  },
+  "57690": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 8193,
+    "metacritic": 78,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/57690/header.jpg?t=1755702264",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Sep 1, 2011",
+    "short_description": "The world is changing and Tropico is moving with the times - geographical powers rise and fall and the world market is dominated by new players with new demands and offers - and you, as El Presidente, face a whole new set of challenges.",
+    "developer": "Haemimont Games",
+    "publisher": "Kalypso Media Digital",
+    "hltb": {
+      "main": 40.5,
+      "mainExtra": 62.2,
+      "completionist": 106.7
+    }
+  },
+  "63380": {
+    "reviewScore": 88,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 6243,
+    "metacritic": 66,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/63380/header.jpg?t=1601483610",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "",
+    "short_description": "In the dark days of the end of World War Two amidst the ruins of Berlin, one bullet can change history…",
+    "developer": "Rebellion",
+    "publisher": "Rebellion",
+    "hltb": {
+      "main": 7.1,
+      "mainExtra": 12.2,
+      "completionist": 29
+    }
+  },
+  "65790": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 2377,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/65790/1d9756ea883a0f4a7af31d400bc0b29f2b3f75c9/header.jpg?t=1784902817",
+    "genres": [
+      "Action",
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Aug 8, 2011",
+    "short_description": "The genre-defining military sim that began as Operation Flashpoint (2001), now a modernized, 64-bit, cross-platform build for Windows and Linux, with its engine released as open source. Over 2 million copies sold. The Cold War battlefield of Everon and Nogova, remastered for today's hardware.",
+    "developer": "Bohemia Interactive, Josef Šimánek (retro)",
+    "publisher": "Bohemia Interactive",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "65800": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 12113,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/65800/header.jpg?t=1784130901",
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG",
+      "Strategy"
+    ],
+    "release_date": "Oct 18, 2011",
+    "short_description": "Create a hero from one of four classes to save Etheria in this 4-player coop Tower Defense Action-RPG. Includes Steam exclusive Portal gun &amp; TF2 familiars!",
+    "developer": "Chromatic Games",
+    "publisher": "Chromatic Games",
+    "hltb": {
+      "main": 14.5,
+      "mainExtra": 61.7,
+      "completionist": 459.3
+    }
+  },
+  "65930": {
+    "reviewScore": 68,
+    "reviewDesc": "Mixed",
+    "totalReviews": 4837,
+    "metacritic": 66,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/65930/header.jpg?t=1587584277",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Aug 19, 2013",
+    "short_description": "The year is 1962 and the Cold War has the nation gripped by fear.  A top-secret government unit called The Bureau begins investigating a series of mysterious attacks by an enemy more powerful than communism.",
+    "developer": "2K Marin",
+    "publisher": "2K",
+    "hltb": {
+      "main": 10.6,
+      "mainExtra": 14.4,
+      "completionist": 17.7
+    }
+  },
+  "65980": {
+    "reviewScore": 61,
+    "reviewDesc": "Mixed",
+    "totalReviews": 14006,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/65980/header.jpg?t=1724341352",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Oct 23, 2014",
+    "short_description": "Sid Meier’s Civilization: Beyond Earth is a new science-fiction-themed entry into the award winning Civilization series. As part of an expedition sent to find a home beyond Earth, lead your people into a new frontier, explore and colonize an alien planet and create a new civilization in space.",
+    "developer": "Firaxis Games, Aspyr (Mac), Aspyr (Linux)",
+    "publisher": "2K, Aspyr (Mac), Aspyr (Linux)",
+    "hltb": {
+      "main": 17,
+      "mainExtra": 49.1,
+      "completionist": 78.5
+    }
+  },
+  "67370": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 8118,
+    "metacritic": 77,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/67370/header.jpg?t=1728674715",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Feb 9, 2012",
+    "short_description": "An intense first person shooter that delivers a twisted and gripping narrative of tragedy, modern crime drama, and supernatural horror.",
+    "developer": "Digital Extremes",
+    "publisher": "2K",
+    "hltb": {
+      "main": 6,
+      "mainExtra": 8.2,
+      "completionist": 15.2
+    }
+  },
+  "72850": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 180953,
+    "metacritic": 94,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/72850/header.jpg?t=1721923139",
+    "genres": [
+      "RPG"
+    ],
+    "release_date": "Nov 10, 2011",
+    "short_description": "EPIC FANTASY REBORN The next chapter in the highly anticipated Elder Scrolls saga arrives from the makers of the 2006 and 2008 Games of the Year, Bethesda Game Studios. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.",
+    "developer": "Bethesda Game Studios",
+    "publisher": "Bethesda Softworks",
+    "hltb": {
+      "main": 34.8,
+      "mainExtra": 109.7,
+      "completionist": 237.3
+    }
+  },
+  "96000": {
+    "reviewScore": 88,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 3797,
+    "metacritic": 63,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/96000/header.jpg?t=1631292999",
+    "genres": [
+      "Adventure",
+      "Casual",
+      "Indie"
+    ],
+    "release_date": "Apr 22, 2011",
+    "short_description": "Life on Tiny Planet was calm and carefree until a great disaster occurred - Tiny Planet was hit by a meteor! The world fell apart and now its future depends only on you! Use your imagination and creativity: in order to restore Tiny Planet and help its inhabitants you will have to fix a variety of machines and mechanisms as well as solve...",
+    "developer": "Colibri Games",
+    "publisher": "Colibri Games",
+    "hltb": {
+      "main": 3.5,
+      "mainExtra": 3.6,
+      "completionist": 3.8
+    }
+  },
+  "96100": {
+    "reviewScore": 86,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 6775,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/96100/header.jpg?t=1562661240",
+    "genres": [
+      "Action",
+      "Casual",
+      "Indie"
+    ],
+    "release_date": "Mar 18, 2016",
+    "short_description": "Defy Gravity is an action platformer that is a mix between classic platforming and gravity based puzzle solving.",
+    "developer": "Paul Fisch",
+    "publisher": "Fish Factory Games",
+    "hltb": {
+      "main": 1.9,
+      "mainExtra": 2.7,
+      "completionist": 3.7
+    }
+  },
+  "99900": {
+    "reviewScore": 83,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 181,
+    "metacritic": 64,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/99900/header.jpg?t=1762905100",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Indie",
+      "Massively Multiplayer",
+      "RPG",
+      "Free To Play"
+    ],
+    "release_date": "Jun 14, 2011",
+    "short_description": "Join the ranks of the Spiral Knights. Stranded on an alien world, you must explore the ever-changing Clockworks beneath its surface.",
+    "developer": "Grey Havens",
+    "publisher": "Grey Havens",
+    "hltb": {
+      "main": 48.5,
+      "mainExtra": 116.3,
+      "completionist": 453.3
+    }
+  },
+  "102500": {
+    "reviewScore": 88,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 11904,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/102500/header.jpg?t=1628191773",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "release_date": "",
+    "short_description": "The minds of New York Times bestselling author R.A. Salvatore, Spawn creator Todd McFarlane, and Elder Scrolls IV: Oblivion lead designer Ken Rolston have combined to create Kingdoms of Amalur: Reckoning, a new role-playing game set in a world worth saving.",
+    "developer": "Big Huge Games, 38 Studios",
+    "publisher": "38 Studios, Electronic Arts",
+    "hltb": {
+      "main": 31.3,
+      "mainExtra": 58.1,
+      "completionist": 104.6
+    }
+  },
+  "102600": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 6644,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/102600/header.jpg?t=1743444267",
+    "genres": [
+      "Action",
+      "Indie",
+      "Strategy"
+    ],
+    "release_date": "Oct 11, 2011",
+    "short_description": "Slice them, burn them, skewer them, and launch them - no matter how you get it done, orcs must die in this fantasy action-strategy game from Robot Entertainment.",
+    "developer": "Robot Entertainment",
+    "publisher": "Robot Entertainment",
+    "hltb": {
+      "main": 8.3,
+      "mainExtra": 13.3,
+      "completionist": 27.1
+    }
+  },
+  "105450": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 27577,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105450/header.jpg?t=1728423545",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Jan 5, 2012",
+    "short_description": "Microsoft Studios brings you three epic Age of Empires III games in one monumental collection for the first time.",
+    "developer": "Ensemble Studios",
+    "publisher": "Xbox Game Studios",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "105600": {
+    "reviewScore": 98,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 1229765,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1769844435",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "release_date": "May 16, 2011",
+    "short_description": "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. Four Pack also available!",
+    "developer": "Re-Logic",
+    "publisher": "Re-Logic",
+    "hltb": {
+      "main": 47,
+      "mainExtra": 95.5,
+      "completionist": 188
+    }
+  },
+  "107100": {
+    "reviewScore": 95,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 28184,
+    "metacritic": 86,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/107100/header.jpg?t=1729113932",
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "release_date": "Aug 16, 2011",
+    "short_description": "Discover the secrets of the Calamity, a surreal catastrophe that shattered the world to pieces.",
+    "developer": "Supergiant Games",
+    "publisher": "Supergiant Games",
+    "hltb": {
+      "main": 6.2,
+      "mainExtra": 9.3,
+      "completionist": 20.5
+    }
+  },
+  "107410": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 228089,
+    "metacritic": 74,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/107410/header.jpg?t=1781616621",
+    "genres": [
+      "Action",
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Sep 12, 2013",
+    "short_description": "Experience true combat gameplay in a massive military sandbox. Deploy with a wide variety of single- and multiplayer content, a massive arsenal of modern weapons and vehicles, and limitless opportunities for content creation. Authentic, diverse, open - Arma 3 sends you to war.",
+    "developer": "Bohemia Interactive",
+    "publisher": "Bohemia Interactive",
+    "hltb": {
+      "main": 19.5,
+      "mainExtra": 42.4,
+      "completionist": 120.5
+    }
+  },
+  "108600": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 355251,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1785771763",
+    "genres": [
+      "Indie",
+      "RPG",
+      "Simulation",
+      "Early Access"
+    ],
+    "release_date": "Nov 8, 2013",
+    "short_description": "Project Zomboid is the ultimate in zombie survival. Alone or in MP: you loot, build, craft, fight, farm and fish in a struggle to survive. A hardcore RPG skillset, a vast map, massively customisable sandbox and a cute tutorial raccoon await the unwary. So how will you die? All it takes is a bite..",
+    "developer": "The Indie Stone",
+    "publisher": "The Indie Stone",
+    "hltb": {
+      "main": 59,
+      "mainExtra": 166.7,
+      "completionist": 433.1
+    }
+  },
+  "108710": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 44826,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108710/9c1728f937c2a7e632b447b02e442f6a5d88515c/header.jpg?t=1769717716",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Feb 16, 2012",
+    "short_description": "A Dark Presence stalks the small town of Bright Falls, pushing Alan Wake to the brink of sanity in his fight to unravel the mystery and save his love.",
+    "developer": "Remedy Entertainment",
+    "publisher": "Remedy Entertainment",
+    "hltb": {
+      "main": 11.2,
+      "mainExtra": 14.4,
+      "completionist": 27.4
+    }
+  },
+  "108800": {
+    "reviewScore": 86,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 9329,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108800/header.jpg?t=1777495315",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 22, 2011",
+    "short_description": "Aliens are decimating New York City, only you have the technology to survive. Be The Weapon.",
+    "developer": "Crytek Studios",
+    "publisher": "Electronic Arts",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "109600": {
+    "reviewScore": 77,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 295,
+    "metacritic": 74,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/109600/b45ba04297b16c13373f491bcd6bda81e6cda1d6/header.jpg?t=1781552751",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG",
+      "Free To Play"
+    ],
+    "release_date": "Dec 5, 2013",
+    "short_description": "Neverwinter is a free, action MMORPG based on the acclaimed Dungeons &amp; Dragons fantasy roleplaying game. Epic stories, action combat and classic roleplaying await those heroes courageous enough to enter the fantastic world of Neverwinter!",
+    "developer": "Cryptic Studios",
+    "publisher": "Arc Games",
+    "hltb": {
+      "main": 49.9,
+      "mainExtra": 105.7,
+      "completionist": 318.9
+    }
+  },
+  "110800": {
+    "reviewScore": 86,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 30950,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/110800/header.jpg?t=1781132798",
+    "genres": [
+      "Adventure",
+      "Strategy"
+    ],
+    "release_date": "Nov 8, 2011",
+    "short_description": "In his fight to climb the ranks and do what's right, LAPD detective Cole Phelps must unravel the truth behind a string of arson attacks, conspiracies, and brutal murders, battling the L.A. underworld and even members of his own department.",
+    "developer": "Team Bondi, Rockstar Leeds",
+    "publisher": "Rockstar Games",
+    "hltb": {
+      "main": 22.2,
+      "mainExtra": 29,
+      "completionist": 42.4
+    }
   }
 }

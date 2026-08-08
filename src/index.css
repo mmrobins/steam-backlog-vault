@@ -506,8 +506,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .meta-score-link {
-  display: inline-block;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
   z-index: 10;
+  cursor: pointer;
+  display: block;
+}
+
+.meta-score-link .meta-score {
+  position: static;
 }
 
 .meta-score-link:hover .meta-score {
