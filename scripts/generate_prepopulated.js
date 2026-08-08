@@ -46,12 +46,20 @@ async function fetchHltbTime(title) {
         size: 3,
         searchOptions: {
           games: {
-            userId: 0, platform: '', sortCategory: 'popular', rangeCategory: 'main',
-            rangeTime: { min: null, max: null }, gameplay: { perspective: '', flow: '', genre: '' },
-            rangeYear: { min: null, max: null }, modifier: ''
+            userId: 0,
+            platform: '',
+            sortCategory: 'popular',
+            rangeCategory: 'main',
+            rangeTime: { min: 0, max: 0 },
+            gameplay: { perspective: '', flow: '', genre: '', difficulty: '' },
+            rangeYear: { min: 0, max: 0 },
+            modifier: ''
           },
           users: { sortCategory: 'postcount' },
-          lists: { sortCategory: 'follows' }
+          lists: { sortCategory: 'follows' },
+          filter: '',
+          sort: 0,
+          randomizer: 0
         },
         useCache: true
       };
