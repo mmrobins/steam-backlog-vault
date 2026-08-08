@@ -177,31 +177,74 @@ const DEMO_GAMES = [
  * Fetch player summary profile (Name, Avatar) from Steam Web API
  */
 async function getPlayerSummary(steamid, apiKey) {
-  const key = apiKey || process.env.STEAM_API_KEY;
-  if (!key || !steamid) return null;
+  if (!steamid) return null;
 
   const cacheKey = `steam_user_${steamid}`;
   const cached = cache.get(cacheKey);
   if (cached) return cached;
 
-  try {
-    const url = `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${key}&steamids=${steamid}`;
-    const res = await axios.get(url, { timeout: 5000 });
-    if (res.data?.response?.players?.length > 0) {
-      const player = res.data.response.players[0];
-      const summary = {
-        steamid: player.steamid,
-        personaname: player.personaname,
-        avatarfull: player.avatarfull || player.avatarmedium || player.avatar,
-        profileurl: player.profileurl
-      };
-      cache.set(cacheKey, summary, 86400); // 24h
-      return summary;
+  const key = apiKey || process.env.STEAM_API_KEY;
+
+  if (key) {
+    try {
+      const url = `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${key}&steamids=${steamid}`;
+      const res = await axios.get(url, { timeout: 5000 });
+      if (res.data?.response?.players?.length > 0) {
+        const player = res.data.response.players[0];
+        const summary = {
+          steamid: player.steamid,
+          personaname: player.personaname,
+          avatarfull: player.avatarfull || player.avatarmedium || player.avatar,
+          profileurl: player.profileurl
+        };
+        cache.set(cacheKey, summary, 86400); // 24h
+        return summary;
+      }
+    } catch (err) {
+      console.warn(`[Steam API] Error getting summary for ${steamid}:`, err.message);
     }
-  } catch (err) {
-    console.warn(`[Steam API] Error getting summary for ${steamid}:`, err.message);
   }
-  return null;
+
+  // HTML Scraping Fallback if no API key set
+  try {
+    const profileUrl = `https://steamcommunity.com/profiles/${steamid}`;
+    const res = await axios.get(profileUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      },
+      maxRedirects: 5,
+      timeout: 5000
+    });
+    const html = res.data;
+    const nameMatch = html.match(/g_rgProfileData\s*=\s*({.*?});/);
+    let personaname = `Steam User (${steamid.slice(-6)})`;
+    if (nameMatch) {
+      try {
+        const parsed = JSON.parse(nameMatch[1]);
+        if (parsed.personaname) personaname = parsed.personaname;
+      } catch (e) {}
+    }
+    const avatarMatch = html.match(/<link rel="image_src" href="([^"]+)">/) || html.match(/<meta property="og:image" content="([^"]+)">/);
+    const avatarfull = avatarMatch ? avatarMatch[1] : 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg';
+
+    const summary = {
+      steamid,
+      personaname,
+      avatarfull,
+      profileurl: profileUrl
+    };
+    cache.set(cacheKey, summary, 86400);
+    return summary;
+  } catch (scrapeErr) {
+    console.warn(`[Steam Profile Scrape] Could not scrape summary for ${steamid}:`, scrapeErr.message);
+  }
+
+  return {
+    steamid,
+    personaname: `Steam User (${steamid.slice(-6)})`,
+    avatarfull: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg',
+    profileurl: `https://steamcommunity.com/profiles/${steamid}`
+  };
 }
 
 /**

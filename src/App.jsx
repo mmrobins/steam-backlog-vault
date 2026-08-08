@@ -207,32 +207,66 @@ export default function App() {
             margin: '3rem auto'
           }}
         >
-          <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(244, 63, 94, 0.15)', color: '#f43f5e', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.25rem' }}>
-            <Lock size={30} />
+          <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(102, 192, 244, 0.15)', color: '#66c0f4', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.25rem' }}>
+            <Key size={30} />
           </div>
 
           <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.75rem' }}>
-            {errorInfo.code === 'NO_API_KEY' ? 'Steam API Key Needed' : 'Unable to Access Steam Library'}
+            {user ? `Welcome, ${user.personaname}!` : 'Steam Web API Key Required'}
           </h3>
 
-          <p style={{ color: '#9ca3af', fontSize: '0.95rem', marginBottom: '1.5rem', lineHeight: '1.6' }}>
-            {errorInfo.message}
+          <p style={{ color: '#9ca3af', fontSize: '0.95rem', marginBottom: '1.25rem', lineHeight: '1.6' }}>
+            Your Steam account is authenticated via OpenID! To load your live game library, Steam requires a Web API key.
           </p>
 
-          <div style={{ background: 'rgba(10, 15, 26, 0.6)', border: '1px dashed var(--border-subtle)', borderRadius: '12px', padding: '1rem', textAlign: 'left', marginBottom: '1.5rem', fontSize: '0.85rem' }}>
-            <strong style={{ color: '#66c0f4', display: 'block', marginBottom: '0.5rem' }}>💡 Quick Fix Solutions:</strong>
-            <ul style={{ paddingLeft: '1.2rem', color: '#d1d5db', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-              <li><strong>Option 1:</strong> Enter your free Steam Web API key in <em>Settings</em>.</li>
-              <li><strong>Option 2:</strong> Ensure your Steam Profile privacy settings have <em>"Game details"</em> set to <strong>Public</strong>.</li>
-              <li><strong>Option 3:</strong> Click <em>"Explore Demo Backlog"</em> below to see the app in action!</li>
-            </ul>
+          <div style={{ background: 'rgba(10, 15, 26, 0.7)', border: '1px dashed var(--border-accent)', borderRadius: '12px', padding: '1.25rem', textAlign: 'left', marginBottom: '1.5rem', fontSize: '0.88rem' }}>
+            <strong style={{ color: '#66c0f4', display: 'block', marginBottom: '0.5rem' }}>💡 How to activate live sync:</strong>
+            <ol style={{ paddingLeft: '1.2rem', color: '#d1d5db', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <li>
+                <strong>Option A (For your web app server):</strong> Add <code>STEAM_API_KEY=your_key</code> in your <code>.env</code> file. Then all users signing in like gg.deals will load instantly without entering anything!
+              </li>
+              <li>
+                <strong>Option B (Local test):</strong> Get a free key in 5 seconds from{' '}
+                <a href="https://steamcommunity.com/dev/apikey" target="_blank" rel="noopener noreferrer" style={{ color: '#66c0f4', textDecoration: 'underline' }}>
+                  steamcommunity.com/dev/apikey
+                </a>{' '}
+                and paste it below.
+              </li>
+            </ol>
           </div>
 
-          <div style={{ display: 'flex', gap: '0.85rem', justifyContent: 'center' }}>
-            <button className="btn btn-primary" onClick={() => setIsSettingsOpen(true)}>
-              Configure API Key / Steam ID
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const val = e.target.elements.apiKeyInput.value.trim();
+              if (val) {
+                handleSaveSettings(steamid, val);
+              }
+            }}
+            style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem' }}
+          >
+            <input
+              name="apiKeyInput"
+              type="password"
+              placeholder="Paste Steam Web API Key here..."
+              style={{
+                flex: 1,
+                padding: '0.75rem 1rem',
+                background: 'rgba(10, 15, 26, 0.8)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: '8px',
+                color: '#fff',
+                outline: 'none',
+                fontFamily: 'inherit'
+              }}
+            />
+            <button type="submit" className="btn btn-primary">
+              Sync Library
             </button>
-            <button className="btn btn-secondary" onClick={handleTryDemo}>
+          </form>
+
+          <div style={{ display: 'flex', gap: '0.85rem', justifyContent: 'center' }}>
+            <button className="btn btn-secondary btn-sm" onClick={handleTryDemo}>
               <Sparkles size={16} /> Explore Demo Backlog
             </button>
           </div>
