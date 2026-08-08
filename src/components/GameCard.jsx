@@ -15,6 +15,29 @@ function formatReviewCount(n) {
   return n.toString();
 }
 
+const POPULAR_HLTB_IDS = {
+  "portal 2": 7208,
+  "portal": 7207,
+  "the witcher 3: wild hunt": 10270,
+  "hollow knight": 26286,
+  "hades": 59746,
+  "elden ring": 68151,
+  "god of war": 38050,
+  "celeste": 42818,
+  "stardew valley": 24009,
+  "terraria": 9853,
+  "subnautica": 23023,
+  "cyberpunk 2077": 46397,
+  "red dead redemption 2": 27100,
+  "mass effect legendary edition": 90647,
+  "bioshock infinite": 1068,
+  "doom": 2708,
+  "outer wilds": 57523,
+  "disco elysium": 57335,
+  "half-life 2": 4078,
+  "sekiro: shadows die twice": 57425
+};
+
 export default function GameCard({ game }) {
   const {
     appid,
@@ -40,6 +63,11 @@ export default function GameCard({ game }) {
   const isHighRating = reviewScore && reviewScore >= 85;
   const playedTime = formatPlaytime(playtime_forever);
   const reviewCountStr = formatReviewCount(totalReviews);
+
+  const resolvedHltbId = hltb?.hltbId || POPULAR_HLTB_IDS[name.toLowerCase().trim()];
+  const hltbLink = resolvedHltbId
+    ? `https://howlongtobeat.com/game/${resolvedHltbId}`
+    : `https://howlongtobeat.com/?q=${encodeURIComponent(name)}`;
 
   const devPubLine = developer && publisher && developer !== publisher
     ? `${developer} / ${publisher}`
@@ -158,7 +186,7 @@ export default function GameCard({ game }) {
         {/* HowLongToBeat Breakdown / Progress Indicator */}
         {isHltbCached ? (
           <a
-            href={hltb?.hltbId ? `https://howlongtobeat.com/game/${hltb.hltbId}` : `https://howlongtobeat.com/?q=${encodeURIComponent(name)}`}
+            href={hltbLink}
             target="_blank"
             rel="noopener noreferrer"
             className="hltb-link-wrapper"
