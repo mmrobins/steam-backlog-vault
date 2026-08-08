@@ -85,7 +85,39 @@ export default function App() {
         // Fetch backlog games list (returns cached items and basic uncached items instantly)
         const data = await fetchBacklogGames(steamid, apiKey, isDemo, playtimeThreshold);
         if (isMounted) {
-          const loadedGames = data.games || [];
+          const loadedGames = (data.games || []).map(game => {
+            // Check browser localStorage first for details
+            let isSteamCached = game.isSteamCached;
+            let isHltbCached = game.isHltbCached;
+            
+            let extraSteam = {};
+            let extraHltb = {};
+
+            try {
+              const localSteam = localStorage.getItem(`steam_details_${game.appid}`);
+              if (localSteam) {
+                extraSteam = JSON.parse(localSteam);
+                isSteamCached = true;
+              }
+              
+              const localHltb = localStorage.getItem(`hltb_details_${game.appid}`);
+              if (localHltb) {
+                extraHltb = JSON.parse(localHltb);
+                isHltbCached = true;
+              }
+            } catch (e) {
+              console.warn('Failed to load from browser localStorage cache:', e);
+            }
+
+            return {
+              ...game,
+              ...extraSteam,
+              ...extraHltb,
+              isSteamCached,
+              isHltbCached
+            };
+          });
+
           setGames(loadedGames);
           setLoading(false);
 
@@ -137,6 +169,13 @@ export default function App() {
             
             if (isMounted) {
               if (data.success) {
+                // Save to browser localStorage cache
+                try {
+                  localStorage.setItem(`steam_details_${game.appid}`, JSON.stringify(data));
+                } catch (e) {
+                  console.warn('localStorage storage limit reached', e);
+                }
+
                 setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isSteamCached: true } : g));
                 steamSuccesses++;
                 setSteamSuccessCount(steamSuccesses);
@@ -172,6 +211,13 @@ export default function App() {
             
             if (isMounted) {
               if (data.success) {
+                // Save to browser localStorage cache
+                try {
+                  localStorage.setItem(`hltb_details_${game.appid}`, JSON.stringify(data));
+                } catch (e) {
+                  console.warn('localStorage storage limit reached', e);
+                }
+
                 setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isHltbCached: true } : g));
                 hltbSuccesses++;
                 setHltbSuccessCount(hltbSuccesses);
