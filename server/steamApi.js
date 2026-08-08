@@ -1,4 +1,26 @@
 const axios = require('axios');
+
+// Helper: wait ms milliseconds
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// Fetch with retry on 429/403 rate-limit responses
+async function fetchWithRetry(url, options = {}, retries = 3, baseDelayMs = 1500) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const res = await axios.get(url, options);
+      return res;
+    } catch (err) {
+      const status = err?.response?.status;
+      if ((status === 429 || status === 403) && attempt < retries) {
+        const delay = baseDelayMs * Math.pow(2, attempt); // exponential backoff
+        console.warn(`[Steam Store] Rate limited (${status}) for ${url}. Retrying in ${delay}ms (attempt ${attempt + 1}/${retries})...`);
+        await sleep(delay);
+      } else {
+        throw err;
+      }
+    }
+  }
+}
 const cache = require('./cache');
 
 // Demo backlog games with full data for instant testing & offline/fallback mode
@@ -301,7 +323,7 @@ async function getSteamAppReviewScore(appid) {
 
   try {
     const url = `https://store.steampowered.com/appreviews/${appid}?json=1&language=all`;
-    const res = await axios.get(url, { timeout: 4000 });
+    const res = await fetchWithRetry(url, { timeout: 6000 });
     if (res.data?.query_summary) {
       const summary = res.data.query_summary;
       const total = summary.total_reviews || 0;
@@ -318,7 +340,10 @@ async function getSteamAppReviewScore(appid) {
       return reviewData;
     }
   } catch (err) {
-    console.warn(`[Steam Store API] Failed review fetch for app ${appid}:`, err.message);
+    // Only log if it's NOT a rate-limit (those are handled by fetchWithRetry)
+    if (err?.response?.status !== 403 && err?.response?.status !== 429) {
+      console.warn(`[Steam Store API] Failed review fetch for app ${appid}:`, err.message);
+    }
   }
 
   const fallback = { reviewScore: null, reviewDesc: "No Reviews", totalReviews: 0 };
@@ -336,7 +361,7 @@ async function getSteamAppDetails(appid) {
 
   try {
     const url = `https://store.steampowered.com/api/appdetails?appids=${appid}&cc=us&l=en`;
-    const res = await axios.get(url, { timeout: 4000 });
+    const res = await fetchWithRetry(url, { timeout: 6000 });
     if (res.data && res.data[appid] && res.data[appid].success) {
       const data = res.data[appid].data;
       const details = {
@@ -350,7 +375,9 @@ async function getSteamAppDetails(appid) {
       return details;
     }
   } catch (err) {
-    console.warn(`[Steam AppDetails API] Failed details fetch for app ${appid}:`, err.message);
+    if (err?.response?.status !== 403 && err?.response?.status !== 429) {
+      console.warn(`[Steam AppDetails API] Failed details fetch for app ${appid}:`, err.message);
+    }
   }
 
   const fallback = {
@@ -364,11 +391,37 @@ async function getSteamAppDetails(appid) {
   return fallback;
 }
 
+/**
+ * Batch-fetch review scores AND app details for a list of games,
+ * with concurrency capped to avoid Steam Store rate limits.
+ */
+async function batchFetchStoreData(games, concurrency = 4) {
+  const results = {};
+  for (let i = 0; i < games.length; i += concurrency) {
+    const chunk = games.slice(i, i + concurrency);
+    await Promise.all(
+      chunk.map(async (game) => {
+        const [reviews, details] = await Promise.all([
+          getSteamAppReviewScore(game.appid),
+          getSteamAppDetails(game.appid)
+        ]);
+        results[game.appid] = { reviews, details };
+      })
+    );
+    // Small pause between chunks to be polite to Steam's API
+    if (i + concurrency < games.length) {
+      await sleep(300);
+    }
+  }
+  return results;
+}
+
 module.exports = {
   getPlayerSummary,
   resolveVanityUrl,
   getOwnedGames,
   getSteamAppReviewScore,
   getSteamAppDetails,
+  batchFetchStoreData,
   DEMO_GAMES
 };

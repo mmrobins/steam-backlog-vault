@@ -9,6 +9,7 @@ const {
   getOwnedGames,
   getSteamAppReviewScore,
   getSteamAppDetails,
+  batchFetchStoreData,
   DEMO_GAMES
 } = require('./steamApi');
 const { batchGetTimeToBeat, getGameTimeToBeat } = require('./hltbApi');
@@ -97,34 +98,32 @@ app.get('/api/backlog/:steamid', async (req, res) => {
       // Filter by playtime (default: unplayed = 0 minutes)
       const unplayed = ownedGames.filter(g => (g.playtime_forever || 0) <= maxPlaytime);
 
-      // Enhance unplayed games with reviews, details & HLTB
-      // Batch processing to avoid hitting rate limits too fast
-      const hltbMap = await batchGetTimeToBeat(unplayed, 6);
+      console.log(`[Backlog] Fetching enrichment for ${unplayed.length} unplayed games...`);
 
-      gamesList = await Promise.all(
-        unplayed.map(async (game) => {
-          const [reviews, details] = await Promise.all([
-            getSteamAppReviewScore(game.appid),
-            getSteamAppDetails(game.appid)
-          ]);
+      // Fetch HLTB and Steam Store data with concurrency limits to avoid 403 rate limits
+      const [hltbMap, storeData] = await Promise.all([
+        batchGetTimeToBeat(unplayed, 6),
+        batchFetchStoreData(unplayed, 4)   // max 4 concurrent Steam Store requests
+      ]);
 
-          return {
-            appid: game.appid,
-            name: game.name,
-            playtime_forever: game.playtime_forever || 0,
-            img_icon_url: game.img_icon_url,
-            reviewScore: reviews.reviewScore,
-            reviewDesc: reviews.reviewDesc,
-            totalReviews: reviews.totalReviews,
-            metacritic: details.metacritic,
-            header_image: details.header_image,
-            genres: details.genres,
-            release_date: details.release_date,
-            short_description: details.short_description,
-            hltb: hltbMap[game.appid] || { main: null, mainExtra: null, completionist: null }
-          };
-        })
-      );
+      gamesList = unplayed.map((game) => {
+        const { reviews, details } = storeData[game.appid] || {};
+        return {
+          appid: game.appid,
+          name: game.name,
+          playtime_forever: game.playtime_forever || 0,
+          img_icon_url: game.img_icon_url,
+          reviewScore: reviews?.reviewScore ?? null,
+          reviewDesc: reviews?.reviewDesc ?? 'No Reviews',
+          totalReviews: reviews?.totalReviews ?? 0,
+          metacritic: details?.metacritic ?? null,
+          header_image: details?.header_image ?? `https://cdn.akamai.steamstatic.com/steam/apps/${game.appid}/header.jpg`,
+          genres: details?.genres ?? [],
+          release_date: details?.release_date ?? null,
+          short_description: details?.short_description ?? '',
+          hltb: hltbMap[game.appid] || { main: null, mainExtra: null, completionist: null }
+        };
+      });
     }
 
     return res.json({
