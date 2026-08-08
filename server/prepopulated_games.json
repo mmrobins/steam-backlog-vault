@@ -36,5 +36,1243 @@
       "mainExtra": 24.7,
       "completionist": 80.9
     }
+  },
+  "40": {
+    "reviewScore": 82,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 2450,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/40/header.jpg?t=1745368570",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jun 1, 2001",
+    "short_description": "Enjoy fast-paced multiplayer gaming with Deathmatch Classic (a.k.a. DMC). Valve's tribute to the work of id software, DMC invites players to grab their rocket launchers and put their reflexes to the test in a collection of futuristic settings.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 1.2,
+      "mainExtra": 8,
+      "completionist": 12
+    }
+  },
+  "50": {
+    "reviewScore": 95,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 25240,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/50/header.jpg?t=1745368539",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 1, 1999",
+    "short_description": "Return to the Black Mesa Research Facility as one of the military specialists assigned to eliminate Gordon Freeman. Experience an entirely new episode of single player action. Meet fierce alien opponents, and experiment with new weaponry. Named 'Game of the Year' by the Academy of Interactive Arts and Sciences.",
+    "developer": "Gearbox Software",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 5.2,
+      "mainExtra": 6.3,
+      "completionist": 7.2
+    }
+  },
+  "70": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 116600,
+    "metacritic": 96,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/header.jpg?t=1745368462",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 19, 1998",
+    "short_description": "Named Game of the Year by over 50 publications, Valve's debut title blends action and adventure with award-winning technology to create a frighteningly realistic world where players must think to survive. Also includes an exciting multiplayer mode that allows you to play against friends and enemies around the world.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 11.9,
+      "mainExtra": 14.1,
+      "completionist": 15.4
+    }
+  },
+  "80": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 21326,
+    "metacritic": 65,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/80/header.jpg?t=1745368574",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 1, 2004",
+    "short_description": "With its extensive Tour of Duty campaign, a near-limitless number of skirmish modes, updates and new content for Counter-Strike's award-winning multiplayer game play, plus over 12 bonus single player missions, Counter-Strike: Condition Zero is a tremendous offering of single and multiplayer content.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 3.8,
+      "mainExtra": 12.9,
+      "completionist": 101.8
+    }
+  },
+  "100": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 4754,
+    "metacritic": 65,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/80/header.jpg?t=1745368574",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 1, 2004",
+    "short_description": "With its extensive Tour of Duty campaign, a near-limitless number of skirmish modes, updates and new content for Counter-Strike's award-winning multiplayer game play, plus over 12 bonus single player missions, Counter-Strike: Condition Zero is a tremendous offering of single and multiplayer content.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 3.8,
+      "mainExtra": 12.9,
+      "completionist": 101.8
+    }
+  },
+  "130": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 18512,
+    "metacritic": 71,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/130/header.jpg?t=1745368541",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jun 1, 2001",
+    "short_description": "Made by Gearbox Software and originally released in 2001 as an add-on to Half-Life, Blue Shift is a return to the Black Mesa Research Facility in which you play as Barney Calhoun, the security guard sidekick who helped Gordon out of so many sticky situations.",
+    "developer": "Gearbox Software",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 3.1,
+      "mainExtra": 3.4,
+      "completionist": 3.7
+    }
+  },
+  "220": {
+    "reviewScore": 98,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 201323,
+    "metacritic": 96,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/header.jpg?t=1745368545",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 16, 2004",
+    "short_description": "Reawakened from stasis in the occupied metropolis of City 17, Gordon Freeman is joined by Alyx Vance as he leads a desperate human resistance. Experience the landmark first-person shooter packed with immersive world-building, boundary-pushing physics, and exhilarating combat.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 12.9,
+      "mainExtra": 15.6,
+      "completionist": 19.9
+    }
+  },
+  "240": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 134949,
+    "metacritic": 88,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/240/header.jpg?t=1745368575",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 1, 2004",
+    "short_description": "Counter-Strike: Source blends Counter-Strike's award-winning teamplay action with the advanced technology of Source™ technology.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 67,
+      "mainExtra": 113.6,
+      "completionist": 383.3
+    }
+  },
+  "280": {
+    "reviewScore": 68,
+    "reviewDesc": "Mixed",
+    "totalReviews": 14606,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/280/header.jpg?t=1721932678",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jun 1, 2004",
+    "short_description": "Winner of over 50 Game of the Year awards, Half-Life set new standards for action games when it was released in 1998. Half-Life: Source is a digitally remastered version of the critically acclaimed and best selling PC game, enhanced via Source technology to include physics simulation, enhanced effects, and more.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 11.1,
+      "mainExtra": 13.1,
+      "completionist": 14.1
+    }
+  },
+  "300": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 15953,
+    "metacritic": 80,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/300/header.jpg?t=1763407002",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jul 12, 2010",
+    "short_description": "Valve's WWII Multiplayer Classic - Now available for Mac.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 8.3,
+      "mainExtra": 10,
+      "completionist": 15.4
+    }
+  },
+  "320": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 10205,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/320/header.jpg?t=1749481506",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 1, 2004",
+    "short_description": "Fast multiplayer action set in the Half-Life 2 universe! HL2's physics adds a new dimension to deathmatch play. Play straight deathmatch or try Combine vs. Resistance teamplay. Toss a toilet at your friend today!",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 2.5,
+      "mainExtra": 8.7,
+      "completionist": 18.5
+    }
+  },
+  "340": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 10520,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/340/header.jpg?t=1745368547",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Oct 27, 2005",
+    "short_description": "Originally planned as a section of the Highway 17 chapter of Half-Life 2, Lost Coast is a playable technology showcase that introduces High Dynamic Range lighting to the Source engine.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 0.4,
+      "mainExtra": 0.5,
+      "completionist": 0.5
+    }
+  },
+  "360": {
+    "reviewScore": 75,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 4338,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/360/header.jpg?t=1745368549",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "May 1, 2006",
+    "short_description": "Half-Life Deathmatch: Source is a recreation of the first multiplayer game set in the Half-Life universe. Features all the classic weapons and most-played maps, now running on the Source engine.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 2.3,
+      "mainExtra": 2.5,
+      "completionist": 3.3
+    }
+  },
+  "380": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 25807,
+    "metacritic": 87,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/380/header.jpg?t=1745368553",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jun 1, 2006",
+    "short_description": "Half-Life 2 has sold over 4 million copies worldwide, and earned over 35 Game of the Year Awards. Episode One is the first in a series of games that reveal the aftermath of Half-Life 2 and launch a journey beyond City 17. Also features two multiplayer games. Half-Life 2 not required.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 3.6,
+      "mainExtra": 4.2,
+      "completionist": 5.3
+    }
+  },
+  "400": {
+    "reviewScore": 99,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 172374,
+    "metacritic": 90,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400/header.jpg?t=1745368554",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Oct 10, 2007",
+    "short_description": "Portal™ is a new single player game from Valve. Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and will offer gamers hours of unique gameplay.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 3,
+      "mainExtra": 5,
+      "completionist": 10
+    }
+  },
+  "420": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 33767,
+    "metacritic": 90,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/420/header.jpg?t=1745368556",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Oct 10, 2007",
+    "short_description": "Half-Life® 2: Episode Two is the second in a trilogy of new games created by Valve that extends the award-winning and best-selling Half-Life® adventure. As Dr. Gordon Freeman, you were last seen exiting City 17 with Alyx Vance as the Citadel erupted amidst a storm of unknown proportions.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 5.1,
+      "mainExtra": 6.1,
+      "completionist": 8.8
+    }
+  },
+  "440": {
+    "reviewScore": 81,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 47625,
+    "metacritic": 92,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372",
+    "genres": [
+      "Action",
+      "Free To Play"
+    ],
+    "release_date": "Oct 10, 2007",
+    "short_description": "Nine distinct classes provide a broad range of tactical abilities and personalities. Constantly updated with new game modes, maps, equipment and, most importantly, hats!",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 297.7,
+      "mainExtra": 583.1,
+      "completionist": 2347
+    }
+  },
+  "500": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 57823,
+    "metacritic": 89,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/500/header.jpg?t=1745368560",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 17, 2008",
+    "short_description": "From Valve (the creators of Counter-Strike, Half-Life and more) comes Left 4 Dead, a co-op action horror game for the PC and Xbox 360 that casts up to four players in an epic struggle for survival against swarming zombie hordes and terrifying mutant monsters.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 7,
+      "mainExtra": 18.8,
+      "completionist": 58.7
+    }
+  },
+  "550": {
+    "reviewScore": 98,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 810110,
+    "metacritic": 89,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1772742214",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 16, 2009",
+    "short_description": "Set in the zombie apocalypse, Left 4 Dead 2 is a co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 10.2,
+      "mainExtra": 27.8,
+      "completionist": 61.2
+    }
+  },
+  "620": {
+    "reviewScore": 99,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 388623,
+    "metacritic": 95,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg?t=1745363004",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Apr 18, 2011",
+    "short_description": "The &quot;Perpetual Testing Initiative&quot; has been expanded to allow you to design co-op puzzles for you and your friends!",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 8.5,
+      "mainExtra": 11,
+      "completionist": 21
+    }
+  },
+  "630": {
+    "reviewScore": 96,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 294,
+    "metacritic": 77,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/header.jpg?t=1763407010",
+    "genres": [
+      "Action",
+      "Free To Play"
+    ],
+    "release_date": "Jul 19, 2010",
+    "short_description": "Co-operative multiplayer game and complete code base available for free.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 3.5,
+      "mainExtra": 10.7,
+      "completionist": 19.3
+    }
+  },
+  "730": {
+    "reviewScore": 85,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 5208463,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1784564069",
+    "genres": [
+      "Action",
+      "Free To Play"
+    ],
+    "release_date": "Aug 21, 2012",
+    "short_description": "For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 143.1,
+      "mainExtra": 373.1,
+      "completionist": 730
+    }
+  },
+  "1250": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 39757,
+    "metacritic": 72,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250/header.jpg?t=1726777771",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "May 14, 2009",
+    "short_description": "6-player co-op survival horror at its finest! Free updates, free special events and a ridiculous amount of fun!",
+    "developer": "Tripwire Interactive",
+    "publisher": "Tripwire Interactive",
+    "hltb": {
+      "main": 17.7,
+      "mainExtra": 55.3,
+      "completionist": 296.3
+    }
+  },
+  "1840": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 222,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840/header.jpg?t=1677267197",
+    "genres": [
+      "Animation & Modeling",
+      "Video Production"
+    ],
+    "release_date": "Jul 10, 2012",
+    "short_description": "The Source Filmmaker (SFM) is the movie-making tool built and used by us here at Valve to make movies inside the Source game engine. Because the SFM uses the same assets as the game, anything that exists in the game can be used in the movie, and vice versa.",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "2100": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 9275,
+    "metacritic": 72,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2100/header.jpg?t=1765228880",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "release_date": "Oct 25, 2006",
+    "short_description": "Discover a new breed of Action-RPG game powered by an enhanced version of the Source™ Engine by Valve. Set in the Might &amp; Magic® universe, players will experience ferocious combat in a dark and immersive fantasy environment. Swords, Stealth, Sorcery. Choose your way to kill.",
+    "developer": "Arkane Studios",
+    "publisher": "Ubisoft",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "2280": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 25139,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2280/header.jpg?t=1750785073",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Aug 3, 2007",
+    "short_description": "Developed by id Software, and originally released in 1993 and 1994, the definitive, newly enhanced versions of DOOM + DOOM II are available as a combined product.",
+    "developer": "id Software, Nightdive Studios",
+    "publisher": "Bethesda",
+    "hltb": {
+      "main": 11.9,
+      "mainExtra": 27,
+      "completionist": 42.7
+    }
+  },
+  "2310": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 13465,
+    "metacritic": 94,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2310/fedba2dc09b59eab41d6ebb981b9c436ed04c85f/header_alt_assets_0.jpg?t=1786035741",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Aug 3, 2007",
+    "short_description": "Developed by the award-winning id Software, Quake® is the ground-breaking, original dark fantasy first-person shooter that inspires today’s retro-style FPS games. With Quake (Enhanced), experience the authentic, updated, and visually enhanced version of the original.",
+    "developer": "id Software, Nightdive Studios, MachineGames",
+    "publisher": "Bethesda Softworks",
+    "hltb": {
+      "main": 5.4,
+      "mainExtra": 7.7,
+      "completionist": 18.2
+    }
+  },
+  "2630": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 9102,
+    "metacritic": 86,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2630/header.jpg?t=1780962161",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Oct 13, 2006",
+    "short_description": "Call of Duty® 2 redefines the cinematic intensity and chaos of battle as seen through the eyes of ordinary soldiers fighting together in epic WWII conflicts. The sequel to 2003's Call of Duty, winner of over 80 Game of the Year awards, Call of Duty 2 offers more immense, more intense, more realistic battles than ever before, thanks to...",
+    "developer": "Infinity Ward",
+    "publisher": "Activision",
+    "hltb": {
+      "main": 8,
+      "mainExtra": 9.5,
+      "completionist": 11.2
+    }
+  },
+  "3590": {
+    "reviewScore": 98,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 142367,
+    "metacritic": 87,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3590/header.jpg?t=1777394124",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "May 5, 2009",
+    "short_description": "Zombies are invading your home, and the only defense is your arsenal of plants! Armed with an alien nursery-worth of zombie-zapping plants like peashooters and cherry bombs, you'll need to think fast and plant faster to stop dozens of types of zombies dead in their tracks.",
+    "developer": "PopCap Games, Inc.",
+    "publisher": "PopCap Games, Inc., Electronic Arts",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "3910": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 5663,
+    "metacritic": 90,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3910/header.jpg?t=1569013660",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Oct 25, 2006",
+    "short_description": "Sid Meier's Civilization III: Complete, the latest offering in the Sid Meier's Civilization III franchise, provides gaming fans with Sid Meier's Civilization III, the highly-addictive journey of discovery.",
+    "developer": "Firaxis Games",
+    "publisher": "2K",
+    "hltb": {
+      "main": 22.2,
+      "mainExtra": 43.1,
+      "completionist": 146.1
+    }
+  },
+  "4000": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 1084893,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg?t=1776868682",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation"
+    ],
+    "release_date": "Nov 29, 2006",
+    "short_description": "Garry's Mod is a physics sandbox. There aren't any predefined aims or goals. We give you the tools and leave you to play.",
+    "developer": "Facepunch Studios",
+    "publisher": "Valve",
+    "hltb": {
+      "main": 50.8,
+      "mainExtra": 284.7,
+      "completionist": 554
+    }
+  },
+  "4500": {
+    "reviewScore": 95,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 37925,
+    "metacritic": 82,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4500/header.jpg?t=1747756056",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "release_date": "Mar 20, 2007",
+    "short_description": "S.T.A.L.K.E.R.: Shadow of Chernobyl tells a story about survival in the Zone – a very dangerous place, where you fear not only the radiation, anomalies and deadly creatures, but other S.T.A.L.K.E.R.s, who have their own goals and wishes.",
+    "developer": "GSC Game World",
+    "publisher": "GSC Game World",
+    "hltb": {
+      "main": 15,
+      "mainExtra": 24.2,
+      "completionist": 41.2
+    }
+  },
+  "4560": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 4817,
+    "metacritic": 93,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4560/header.jpg?t=1573488196",
+    "genres": [
+      "Action",
+      "Strategy"
+    ],
+    "release_date": "Jul 17, 2007",
+    "short_description": "Delivering a visceral WWII gaming experience, Company of Heroes redefines RTS by bringing the sacrifice of heroic soldiers, war-ravaged environments, and dynamic battlefields to life. This legacy version also grants access to the latest version of COH, just called &quot;Company of Heroes&quot;.",
+    "developer": "Relic Entertainment",
+    "publisher": "SEGA",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "4570": {
+    "reviewScore": 95,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 8780,
+    "metacritic": 86,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4570/29c9530f1478894a50967fa7b83b0abb2b7f5b15/header.jpg?t=1777501508",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Aug 7, 2007",
+    "short_description": "All of Warhammer 40,000: Dawn of War in one glorious package. Play the genre-defining classic real time strategy game in all its blood-soaked glory, including four complete campaigns and nine full-fledged factions.",
+    "developer": "Relic Entertainment",
+    "publisher": "Relic Entertainment",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "4700": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 27108,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4700/header.jpg?t=1763643156",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Nov 15, 2006",
+    "short_description": "Spanning the most turbulent era in Western history, your quest for territory and power takes you through Europe, Africa, the Middle East, and even onto the shores of the New World.",
+    "developer": "CREATIVE ASSEMBLY, Feral Interactive (Mac), Feral Interactive (Linux)",
+    "publisher": "SEGA, Feral Interactive (Mac), Feral Interactive (Linux)",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "4760": {
+    "reviewScore": 95,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 13033,
+    "metacritic": 92,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4760/header.jpg?t=1769188674",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Aug 28, 2007",
+    "short_description": "Control and conquer the greatest empire ever known to man.",
+    "developer": "CREATIVE ASSEMBLY",
+    "publisher": "SEGA",
+    "hltb": {
+      "main": 34.1,
+      "mainExtra": 53.1,
+      "completionist": 126.3
+    }
+  },
+  "4920": {
+    "reviewScore": 85,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 8615,
+    "metacritic": 80,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4920/header.jpg?t=1747384807",
+    "genres": [
+      "Action",
+      "Indie",
+      "Strategy"
+    ],
+    "release_date": "Oct 30, 2012",
+    "short_description": "A fast paced multiplayer shooter that pits aliens against humans in a strategic and action-packed struggle for survival!",
+    "developer": "Unknown Worlds Entertainment",
+    "publisher": "Unknown Worlds Entertainment, KRAFTON, Inc.",
+    "hltb": {
+      "main": 181.5,
+      "mainExtra": 495.2,
+      "completionist": null
+    }
+  },
+  "6000": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 14587,
+    "metacritic": 78,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6000/header.jpg?t=1741729103",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jul 8, 2009",
+    "short_description": "You are the leader of an elite squad of Republic Commandos, your mission is to infiltrate, dominate, and ultimately, annihilate the enemy. Your squad will follow your orders and your lead, working together as a team - instinctively, intelligently, instantly. You are their leader. They are your weapon.",
+    "developer": "LucasArts",
+    "publisher": "LucasArts, Lucasfilm, Disney",
+    "hltb": {
+      "main": 8.7,
+      "mainExtra": 9.9,
+      "completionist": 10.2
+    }
+  },
+  "6060": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 46322,
+    "metacritic": 78,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6060/header.jpg?t=1707697325",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jul 8, 2009",
+    "short_description": "Join the rise of Darth Vader’s elite 501st Legion of Stormtroopers as you fight through an all new story-based saga where every action you take impacts the battlefront and, ultimately, the fate of the Star Wars galaxy.",
+    "developer": "Pandemic Studios",
+    "publisher": "Lucasfilm, LucasArts, Disney",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "6850": {
+    "reviewScore": 81,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 3719,
+    "metacritic": 87,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6850/header.jpg?t=1732293077",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 15, 2007",
+    "short_description": "Enter the realm of a retired assassin, forced back into action by treason. You may be a hired killer but you still have a sense of loyalty and justice. Visit the dark recesses of a world corrupted by crime, greed, degradation and dishonor. And a past that catches up with you.",
+    "developer": "Io-Interactive A/S",
+    "publisher": "Io-Interactive A/S",
+    "hltb": {
+      "main": 13.7,
+      "mainExtra": 15.2,
+      "completionist": 19.2
+    }
+  },
+  "6860": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 13518,
+    "metacritic": 82,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6860/header.jpg?t=1732283123",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 15, 2007",
+    "short_description": "Money Talks. Silence Pays. Prepare to Make a Killing. When assassins from Agent 47's contract agency, The ICA, are eliminated in a series of hits, it seems a larger, more powerful agency has entered the fray. Sensing he may be a target, 47 travels to America, and prepares to make a killing.",
+    "developer": "Io-Interactive A/S",
+    "publisher": "Io-Interactive A/S",
+    "hltb": {
+      "main": 11.9,
+      "mainExtra": 16.1,
+      "completionist": 20.6
+    }
+  },
+  "6880": {
+    "reviewScore": 67,
+    "reviewDesc": "Mixed",
+    "totalReviews": 4526,
+    "metacritic": 75,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6880/header.jpg?t=1782912503",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 15, 2007",
+    "short_description": "Your world...Your rules!",
+    "developer": "Avalanche Studios",
+    "publisher": "Square Enix",
+    "hltb": {
+      "main": 8.3,
+      "mainExtra": 18.9,
+      "completionist": 30.7
+    }
+  },
+  "6910": {
+    "reviewScore": 95,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 13657,
+    "metacritic": 90,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6910/a59f78bdeac034d05cd6aec0d0e68b188d242990/header.jpg?t=1779722450",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 29, 2007",
+    "short_description": "The year is 2052. The world's economies are close to collapse and the gap between the insanely wealthy and the desperately poor grows ever wider. Worst of all, an ages old conspiracy bent on world domination has decided that the time is right to emerge from the shadows and take control.",
+    "developer": "Ion Storm",
+    "publisher": "Eidos Interactive Corp.",
+    "hltb": {
+      "main": 22.9,
+      "mainExtra": 28.7,
+      "completionist": 39
+    }
+  },
+  "7670": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 25066,
+    "metacritic": 96,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7670/header.jpg?t=1730172622",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "release_date": "Aug 21, 2007",
+    "short_description": "BioShock is a shooter unlike any you've ever played, loaded with weapons and tactics never seen. You'll have a complete arsenal at your disposal from simple revolvers to grenade launchers and chemical throwers, but you'll also be forced to genetically modify your DNA to create an even more deadly weapon: you.",
+    "developer": "2K Boston, 2K Australia",
+    "publisher": "2K",
+    "hltb": {
+      "main": 12.1,
+      "mainExtra": 15.6,
+      "completionist": 23.3
+    }
+  },
+  "7940": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 21956,
+    "metacritic": 92,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7940/header.jpg?t=1780962383",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 12, 2007",
+    "short_description": "The new action-thriller from the award-winning team at Infinity Ward, the creators of the Call of Duty® series, delivers the most intense and cinematic action experience ever. Call of Duty 4: Modern Warfare arms gamers with an arsenal of advanced and powerful modern day firepower and transports them to the most treacherous hotspots...",
+    "developer": "Infinity Ward",
+    "publisher": "Activision",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "8190": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 40954,
+    "metacritic": 84,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/header.jpg?t=1782912561",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Mar 23, 2010",
+    "short_description": "Dive into an adrenaline-fuelled free-roaming adventure with 400 square miles of rugged terrain and hundreds of weapons and vehicles.",
+    "developer": "Avalanche Studios",
+    "publisher": "Square Enix",
+    "hltb": {
+      "main": 17.6,
+      "mainExtra": 34.5,
+      "completionist": 85.8
+    }
+  },
+  "8500": {
+    "reviewScore": 80,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 7789,
+    "metacritic": 88,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8500/fed1ea9b01dd6564101518a5201740fb44929fb4/header.jpg?t=1782428793",
+    "genres": [
+      "Action",
+      "Massively Multiplayer",
+      "RPG",
+      "Strategy",
+      "Free To Play"
+    ],
+    "release_date": "Dec 15, 2010",
+    "short_description": "Over 20 years of legendary space battles! Explore a massive living universe of danger and opportunity in a challenging and highly rewarding space adventure. Fight, trade, build, and connect with a universe driven and shaped directly by players.",
+    "developer": "Fenris Creations",
+    "publisher": "Fenris Creations",
+    "hltb": {
+      "main": 1776.9,
+      "mainExtra": 3177.2,
+      "completionist": 5680.9
+    }
+  },
+  "8850": {
+    "reviewScore": 88,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 11420,
+    "metacritic": 88,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8850/header.jpg?t=1730174099",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Feb 9, 2010",
+    "short_description": "Set approximately 10 years after the events of the original BioShock, the halls of Rapture once again echo with sins of the past. Along the Atlantic coastline, a monster has been snatching little girls and bringing them back to the undersea city of Rapture.",
+    "developer": "2K Marin, 2K China, Digital Extremes, 2K Australia",
+    "publisher": "2K",
+    "hltb": {
+      "main": 10.6,
+      "mainExtra": 14.4,
+      "completionist": 23.8
+    }
+  },
+  "8870": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 109323,
+    "metacritic": 94,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8870/header.jpg?t=1728673518",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 25, 2013",
+    "short_description": "Indebted to the wrong people, with his life on the line, veteran of the U.S. Cavalry and now hired gun, Booker DeWitt has only one opportunity to wipe his slate clean. He must rescue Elizabeth, a mysterious girl imprisoned since childhood and locked up in the flying city of Columbia.",
+    "developer": "Irrational Games, Virtual Programming (Linux)",
+    "publisher": "2K",
+    "hltb": {
+      "main": 11.5,
+      "mainExtra": 16.1,
+      "completionist": 28.8
+    }
+  },
+  "8930": {
+    "reviewScore": 95,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 127889,
+    "metacritic": 90,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8930/header.jpg?t=1724341158",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Sep 21, 2010",
+    "short_description": "Create, discover, and download new player-created maps, scenarios, interfaces, and more!",
+    "developer": "Firaxis Games, Aspyr (Mac), Aspyr (Linux)",
+    "publisher": "2K, Aspyr (Mac), Aspyr (Linux)",
+    "hltb": {
+      "main": 39.6,
+      "mainExtra": 123.7,
+      "completionist": 430.8
+    }
+  },
+  "8980": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 20115,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8980/header.jpg?t=1692308968",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "release_date": "Aug 31, 2023",
+    "short_description": "Get ready for the mind blowing insanity! Play as one of four trigger-happy mercenaries and take out everything that stands in your way! With its addictive action, frantic first-person shooter combat, massive arsenal of weaponry, RPG elements and four-player co-op, Borderlands is a breakthrough experience that challenges all the...",
+    "developer": "Gearbox Software",
+    "publisher": "2K",
+    "hltb": {
+      "main": 20.5,
+      "mainExtra": 35.9,
+      "completionist": 74.8
+    }
+  },
+  "9010": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 7922,
+    "metacritic": 88,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9010/header.jpg?t=1786032908",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Aug 3, 2007",
+    "short_description": "World War II rages and nations fall. The Nazis are twisting science and the occult into an army capable of annihilating the Allies once and for all. As US Army Ranger William “B.J.” Blazkowicz, pierce the black heart of the Third Reich and stop them...or die trying.",
+    "developer": "Gray Matter Studios",
+    "publisher": "Bethesda Softworks",
+    "hltb": {
+      "main": 8,
+      "mainExtra": 10.2,
+      "completionist": 11.1
+    }
+  },
+  "9340": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 809,
+    "metacritic": 87,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9340/header.jpg?t=1711547477",
+    "genres": [
+      "Action",
+      "Strategy"
+    ],
+    "release_date": "Sep 24, 2007",
+    "short_description": "The next chapter in the #1 rated RTS franchise thrusts players into a hellish war torn landscape to command two battle-hardened armies in relentless campaigns for honor and country. Players lead the tenacious British 2nd Army during the heroic World War II liberation of Caen, France, and command the German Panzer Elite as they struggle...",
+    "developer": "Relic Entertainment",
+    "publisher": "SEGA",
+    "hltb": {
+      "main": 13.4,
+      "mainExtra": 16.1,
+      "completionist": 39.5
+    }
+  },
+  "9480": {
+    "reviewScore": 75,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 12726,
+    "metacritic": 72,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9480/header.jpg?t=1764670917",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jan 7, 2009",
+    "short_description": "Saints Row 2 brings true freedom to open-world gaming. Players can play as who they want, how they want, and with whomever they want in this sequel to the much acclaimed and tremendously successful Saints Row.",
+    "developer": "Volition",
+    "publisher": "Deep Silver",
+    "hltb": {
+      "main": 19.9,
+      "mainExtra": 29,
+      "completionist": 50.7
+    }
+  },
+  "9900": {
+    "reviewScore": 76,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 947,
+    "metacritic": 66,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9900/fa8e746fb3ca2075692935252ffed5d99aa9a518/header.jpg?t=1784653017",
+    "genres": [
+      "Massively Multiplayer",
+      "RPG",
+      "Free To Play"
+    ],
+    "release_date": "Jan 31, 2012",
+    "short_description": "In Star Trek Online, the Star Trek universe appears for the first time on a truly massive scale. Players take the captain's chair as they command their own starship and crew. Explore strange new worlds, seek out new life and new civilizations, and boldly go where no one has gone before.",
+    "developer": "Cryptic Studios",
+    "publisher": "Arc Games",
+    "hltb": {
+      "main": 207,
+      "mainExtra": 344.4,
+      "completionist": 1077.1
+    }
+  },
+  "10090": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 45543,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10090/header.jpg?t=1780962495",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 18, 2008",
+    "short_description": "Call of Duty is back, redefining war like you've never experienced before. Building on the Call of Duty 4®: Modern Warfare engine, Call of Duty: World at War immerses players into the most gritty and chaotic WWII combat ever experienced.",
+    "developer": "Treyarch",
+    "publisher": "Activision",
+    "hltb": {
+      "main": 7,
+      "mainExtra": 11.1,
+      "completionist": 26
+    }
+  },
+  "10180": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 35524,
+    "metacritic": 86,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10180/header.jpg?t=1780962606",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 11, 2009",
+    "short_description": "The most-anticipated game of the year and the sequel to the best-selling first-person action game of all time, Modern Warfare 2 continues the gripping and heart-racing action as players face off against a new threat dedicated to bringing the world to the brink of collapse.",
+    "developer": "Infinity Ward",
+    "publisher": "Activision",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "10190": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 6998,
+    "metacritic": 86,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10180/header.jpg?t=1780962606",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 11, 2009",
+    "short_description": "The most-anticipated game of the year and the sequel to the best-selling first-person action game of all time, Modern Warfare 2 continues the gripping and heart-racing action as players face off against a new threat dedicated to bringing the world to the brink of collapse.",
+    "developer": "Infinity Ward",
+    "publisher": "Activision",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "10500": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 21178,
+    "metacritic": 90,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10500/header.jpg?t=1763646960",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Mar 4, 2009",
+    "short_description": "Command the seas, control the land, forge a new nation, and conquer the globe.",
+    "developer": "CREATIVE ASSEMBLY, Feral Interactive (Mac), Feral Interactive (Linux)",
+    "publisher": "SEGA, Feral Interactive (Mac), Feral Interactive (Linux)",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "10680": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 16019,
+    "metacritic": 68,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10680/header.jpg?t=1763676764",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Feb 16, 2010",
+    "short_description": "Survive, hunt and prey in the deadly jungles and swamps in distinctly new and thrilling first person gameplay.",
+    "developer": "Rebellion",
+    "publisher": "SEGA",
+    "hltb": {
+      "main": 8.1,
+      "mainExtra": 11.7,
+      "completionist": 24.2
+    }
+  },
+  "11020": {
+    "reviewScore": 86,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 170,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/11020/header.jpg?t=1548090419",
+    "genres": [
+      "Racing"
+    ],
+    "release_date": "Apr 16, 2008",
+    "short_description": "A free game in the truest sense of the word, TrackMania Nations Forever lets you drive at mind-blowing speeds on fun and spectacular tracks in solo and multiplayer modes.TrackMania Nations Forever offers a new &quot;Forever&quot; version of the Stadium environment, a solid solo mode and 65 brand new, progressively challenging tracks.",
+    "developer": "Nadeo",
+    "publisher": "Ubisoft",
+    "hltb": {
+      "main": 13.7,
+      "mainExtra": 46.4,
+      "completionist": 55.1
+    }
+  },
+  "12100": {
+    "reviewScore": 86,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 11159,
+    "metacritic": 93,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12100/header.jpg?t=1634144440",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jan 4, 2008",
+    "short_description": "Welcome to Liberty City. Where it all began. With stellar voice acting, a darkly comic storyline, a stunning soundtrack and revolutionary open-world gameplay, Grand Theft Auto III is the game that defined the open world genre for a generation.",
+    "developer": "Rockstar Games",
+    "publisher": "Rockstar Games",
+    "hltb": {
+      "main": 14.1,
+      "mainExtra": 20.3,
+      "completionist": 36.4
+    }
+  },
+  "12110": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 24171,
+    "metacritic": 94,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12110/header.jpg?t=1634144465",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jan 4, 2008",
+    "short_description": "Welcome to Vice City. Welcome to the 1980s. From the decade of big hair, excess and pastel suits comes a story of one man's rise to the top of the criminal pile.",
+    "developer": "Rockstar Games",
+    "publisher": "Rockstar Games",
+    "hltb": {
+      "main": 16.9,
+      "mainExtra": 23.8,
+      "completionist": 37.9
+    }
+  },
+  "12120": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 70179,
+    "metacritic": 93,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12120/header.jpg?t=1634144450",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jan 4, 2008",
+    "short_description": "Five years ago Carl Johnson escaped from the pressures of life in Los Santos, San Andreas... a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers. Now, it's the early 90s. Carl's got to go home.",
+    "developer": "Rockstar Games",
+    "publisher": "Rockstar Games",
+    "hltb": {
+      "main": 30.1,
+      "mainExtra": 44.6,
+      "completionist": 71.1
+    }
   }
 }

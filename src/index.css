@@ -502,6 +502,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.75rem;
   padding: 0.2rem 0.45rem;
   border-radius: 4px;
+  transition: all var(--transition-fast);
+}
+
+.meta-score-link {
+  display: inline-block;
+  z-index: 10;
+}
+
+.meta-score-link:hover .meta-score {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #66cc33;
+  filter: brightness(1.1);
 }
 
 /* Card meta row: release date, developer, publisher */

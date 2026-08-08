@@ -410,6 +410,7 @@ async function getSteamAppDetails(appid) {
     return {
       header_image: `https://cdn.akamai.steamstatic.com/steam/apps/${appid}/header.jpg`,
       metacritic: null,
+      metacriticUrl: null,
       genres: [],
       release_date: null,
       short_description: '',
@@ -426,6 +427,7 @@ async function getSteamAppDetails(appid) {
       const details = {
         header_image: data.header_image || `https://cdn.akamai.steamstatic.com/steam/apps/${appid}/header.jpg`,
         metacritic: data.metacritic ? data.metacritic.score : null,
+        metacriticUrl: data.metacritic ? data.metacritic.url : null,
         genres: data.genres ? data.genres.map(g => g.description) : [],
         release_date: data.release_date ? data.release_date.date : null,
         short_description: data.short_description || '',
@@ -447,6 +449,7 @@ async function getSteamAppDetails(appid) {
   const fallback = {
     header_image: `https://cdn.akamai.steamstatic.com/steam/apps/${appid}/header.jpg`,
     metacritic: null,
+    metacriticUrl: null,
     genres: [],
     release_date: null,
     short_description: '',

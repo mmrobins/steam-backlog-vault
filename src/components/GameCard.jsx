@@ -24,6 +24,7 @@ export default function GameCard({ game }) {
     reviewDesc,
     totalReviews,
     metacritic,
+    metacriticUrl,
     hltb,
     genres,
     playtime_forever,
@@ -83,11 +84,25 @@ export default function GameCard({ game }) {
           }}
         />
 
-        {/* Metacritic Badge */}
+        {/* Metacritic Badge (Link if url is available) */}
         {isSteamCached && metacritic && (
-          <span className="meta-score" title={`Metacritic Score: ${metacritic}`}>
-            {metacritic}
-          </span>
+          metacriticUrl ? (
+            <a
+              href={metacriticUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="meta-score-link"
+              style={{ textDecoration: 'none' }}
+            >
+              <span className="meta-score" title={`View Metacritic page (Score: ${metacritic})`}>
+                {metacritic}
+              </span>
+            </a>
+          ) : (
+            <span className="meta-score" title={`Metacritic Score: ${metacritic}`}>
+              {metacritic}
+            </span>
+          )
         )}
 
         {/* Playtime badge */}
