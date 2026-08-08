@@ -154,7 +154,7 @@ app.get('/api/backlog/:steamid', async (req, res) => {
           reviewDesc: cachedReviews?.reviewDesc ?? 'No Reviews',
           totalReviews: cachedReviews?.totalReviews ?? 0,
           metacritic: cachedDetails?.metacritic ?? null,
-          metacriticUrl: cachedDetails?.metacriticUrl ?? null,
+          metacriticUrl: cachedDetails?.metacriticUrl ?? (cachedDetails?.metacritic ? `https://www.metacritic.com/search/game/${encodeURIComponent(game.name)}/results` : null),
           header_image: cachedDetails?.header_image ?? `https://cdn.akamai.steamstatic.com/steam/apps/${game.appid}/header.jpg`,
           genres: cachedDetails?.genres ?? [],
           release_date: cachedDetails?.release_date ?? null,

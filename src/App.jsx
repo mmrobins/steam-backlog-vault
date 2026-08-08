@@ -97,6 +97,10 @@ export default function App() {
               const localSteam = localStorage.getItem(`steam_details_${game.appid}`);
               if (localSteam) {
                 extraSteam = JSON.parse(localSteam);
+                // Schema migration fallback for older cache entries
+                if (extraSteam.metacritic && !extraSteam.metacriticUrl) {
+                  extraSteam.metacriticUrl = `https://www.metacritic.com/search/game/${encodeURIComponent(game.name)}/results`;
+                }
                 isSteamCached = true;
               }
               
