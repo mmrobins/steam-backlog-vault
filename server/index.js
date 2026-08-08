@@ -106,14 +106,16 @@ app.get('/api/backlog/:steamid', async (req, res) => {
         const cachedReviews = cache.get(`steam_review_${game.appid}`);
         const cachedHltb = cache.get(`hltb_${game.name.toLowerCase().trim()}`);
 
-        const isCached = cachedDetails !== undefined && cachedReviews !== undefined;
+        const isSteamCached = cachedDetails !== undefined && cachedReviews !== undefined;
+        const isHltbCached = cachedHltb !== undefined;
 
         return {
           appid: game.appid,
           name: game.name,
           playtime_forever: game.playtime_forever || 0,
           img_icon_url: game.img_icon_url,
-          isCached: isCached,
+          isSteamCached,
+          isHltbCached,
           // Hydrate details if available in cache
           reviewScore: cachedReviews?.reviewScore ?? null,
           reviewDesc: cachedReviews?.reviewDesc ?? 'No Reviews',
@@ -144,19 +146,15 @@ app.get('/api/backlog/:steamid', async (req, res) => {
   }
 });
 
-// Endpoint to enrich a single game on demand (client-side background fetch)
-app.post('/api/enrich', async (req, res) => {
+// Endpoint to enrich Steam details & reviews
+app.post('/api/enrich/steam', async (req, res) => {
   try {
-    const { appid, name } = req.body;
-    if (!appid || !name) {
-      return res.status(400).json({ error: 'AppID and Name are required' });
-    }
+    const { appid } = req.body;
+    if (!appid) return res.status(400).json({ error: 'AppID is required' });
 
-    // Fetch details, reviews and hltb
-    const [reviews, details, hltb] = await Promise.all([
+    const [reviews, details] = await Promise.all([
       getSteamAppReviewScore(appid),
-      getSteamAppDetails(appid),
-      getGameTimeToBeat(name)
+      getSteamAppDetails(appid)
     ]);
 
     return res.json({
@@ -170,11 +168,30 @@ app.post('/api/enrich', async (req, res) => {
       release_date: details.release_date,
       short_description: details.short_description,
       developer: details.developer,
-      publisher: details.publisher,
+      publisher: details.publisher
+    });
+  } catch (err) {
+    console.error(`[API /enrich/steam error] AppID ${req.body?.appid}:`, err.message);
+    return res.status(500).json({ error: err.message });
+  }
+});
+
+// Endpoint to enrich HowLongToBeat completion times
+app.post('/api/enrich/hltb', async (req, res) => {
+  try {
+    const { appid, name } = req.body;
+    if (!appid || !name) {
+      return res.status(400).json({ error: 'AppID and Name are required' });
+    }
+
+    const hltb = await getGameTimeToBeat(name);
+
+    return res.json({
+      appid,
       hltb
     });
   } catch (err) {
-    console.error(`[API /enrich error] AppID ${req.body?.appid}:`, err.message);
+    console.error(`[API /enrich/hltb error] AppID ${req.body?.appid}:`, err.message);
     return res.status(500).json({ error: err.message });
   }
 });

@@ -47,8 +47,10 @@ export default function App() {
   }, []);
 
   // Background Syncing State
-  const [syncTotal, setSyncTotal] = useState(0);
-  const [syncCurrent, setSyncCurrent] = useState(0);
+  const [steamSyncTotal, setSteamSyncTotal] = useState(0);
+  const [steamSyncCurrent, setSteamSyncCurrent] = useState(0);
+  const [hltbSyncTotal, setHltbSyncTotal] = useState(0);
+  const [hltbSyncCurrent, setHltbSyncCurrent] = useState(0);
   const [isSyncing, setIsSyncing] = useState(false);
 
   // Fetch backlog when steamid, apiKey, or playtimeThreshold changes
@@ -59,8 +61,10 @@ export default function App() {
     setLoading(true);
     setErrorInfo(null);
     setIsSyncing(false);
-    setSyncTotal(0);
-    setSyncCurrent(0);
+    setSteamSyncTotal(0);
+    setSteamSyncCurrent(0);
+    setHltbSyncTotal(0);
+    setHltbSyncCurrent(0);
 
     async function loadData() {
       try {
@@ -77,12 +81,20 @@ export default function App() {
           setGames(loadedGames);
           setLoading(false);
 
-          // Find games that need details fetched
-          const uncachedGames = loadedGames.filter(g => !g.isCached);
-          if (uncachedGames.length > 0 && !isDemo) {
-            setSyncTotal(uncachedGames.length);
-            setIsSyncing(true);
-            triggerBackgroundSync(uncachedGames);
+          if (!isDemo) {
+            // Find items that need Steam details
+            const steamQueue = loadedGames.filter(g => !g.isSteamCached);
+            // Find items that need HLTB times
+            const hltbQueue = loadedGames.filter(g => !g.isHltbCached);
+
+            if (steamQueue.length > 0 || hltbQueue.length > 0) {
+              setSteamSyncTotal(steamQueue.length);
+              setHltbSyncTotal(hltbQueue.length);
+              setIsSyncing(true);
+              
+              // Run sync loops
+              triggerSync(steamQueue, hltbQueue);
+            }
           }
         }
       } catch (err) {
@@ -97,47 +109,63 @@ export default function App() {
       }
     }
 
-    // Sequentially fetch details in background
-    async function triggerBackgroundSync(queue) {
-      let current = 0;
-      for (const game of queue) {
-        if (!isMounted) break;
-        
-        try {
-          const res = await fetch('/api/enrich', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ appid: game.appid, name: game.name })
-          });
-          
-          if (!res.ok) throw new Error('Enrich failed');
-          
-          const enrichedData = await res.json();
-          
-          if (isMounted) {
-            // Update the game in our list in real-time
-            setGames(prevGames => prevGames.map(g => {
-              if (g.appid === game.appid) {
-                return { ...g, ...enrichedData, isCached: true };
-              }
-              return g;
-            }));
+    async function triggerSync(steamQueue, hltbQueue) {
+      // Run Steam and HLTB queues in parallel, but rate limit each internally
+      const steamPromise = (async () => {
+        let current = 0;
+        for (const game of steamQueue) {
+          if (!isMounted) break;
+          try {
+            const res = await fetch('/api/enrich/steam', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ appid: game.appid })
+            });
+            if (!res.ok) throw new Error('Steam enrich failed');
+            const data = await res.json();
             
-            current++;
-            setSyncCurrent(current);
+            if (isMounted) {
+              setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isSteamCached: true } : g));
+              current++;
+              setSteamSyncCurrent(current);
+            }
+          } catch (e) {
+            console.warn(`[Steam Sync] Failed app ${game.appid}:`, e.message);
           }
-        } catch (e) {
-          console.warn(`[Sync] Failed to enrich app ${game.appid}:`, e.message);
+          await sleep(650); // Be polite to Steam WAF WAF
         }
-        
-        // Pause between requests to prevent hitting the Steam rate limit
-        await new Promise(r => setTimeout(r, 750));
-      }
-      
-      if (isMounted) {
-        setIsSyncing(false);
-      }
+      })();
+
+      const hltbPromise = (async () => {
+        let current = 0;
+        for (const game of hltbQueue) {
+          if (!isMounted) break;
+          try {
+            const res = await fetch('/api/enrich/hltb', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ appid: game.appid, name: game.name })
+            });
+            if (!res.ok) throw new Error('HLTB enrich failed');
+            const data = await res.json();
+            
+            if (isMounted) {
+              setGames(prev => prev.map(g => g.appid === game.appid ? { ...g, ...data, isHltbCached: true } : g));
+              current++;
+              setHltbSyncCurrent(current);
+            }
+          } catch (e) {
+            console.warn(`[HLTB Sync] Failed app ${game.appid}:`, e.message);
+          }
+          await sleep(500); // Be polite to HLTB WAF
+        }
+      })();
+
+      await Promise.all([steamPromise, hltbPromise]);
+      if (isMounted) setIsSyncing(false);
     }
+
+    const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
     loadData();
 
@@ -227,13 +255,27 @@ export default function App() {
 
       {/* Real-time background sync progress bar */}
       {isSyncing && (
-        <div className="sync-progress-bar-container">
-          <div className="sync-status">
-            <span>🔄 Syncing library data in background... {syncCurrent} / {syncTotal} games synced ({Math.round(syncCurrent / syncTotal * 100)}%)</span>
-          </div>
-          <div className="sync-progress-track">
-            <div className="sync-progress-fill" style={{ width: `${(syncCurrent / syncTotal * 100)}%` }}></div>
-          </div>
+        <div className="sync-progress-bar-container" style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+          {steamSyncTotal > 0 && (
+            <div>
+              <div className="sync-status">
+                <span>🎮 Syncing Steam ratings & details... {steamSyncCurrent} / {steamSyncTotal} games ({Math.round(steamSyncCurrent / steamSyncTotal * 100)}%)</span>
+              </div>
+              <div className="sync-progress-track">
+                <div className="sync-progress-fill" style={{ width: `${(steamSyncCurrent / steamSyncTotal * 100)}%` }}></div>
+              </div>
+            </div>
+          )}
+          {hltbSyncTotal > 0 && (
+            <div>
+              <div className="sync-status" style={{ color: 'var(--accent-purple)' }}>
+                <span>⏱️ Syncing HowLongToBeat playtimes... {hltbSyncCurrent} / {hltbSyncTotal} games ({Math.round(hltbSyncCurrent / hltbSyncTotal * 100)}%)</span>
+              </div>
+              <div className="sync-progress-track">
+                <div className="sync-progress-fill" style={{ width: `${(hltbSyncCurrent / hltbSyncTotal * 100)}%`, background: 'linear-gradient(90deg, var(--accent-purple) 0%, var(--accent-rose) 100%)', boxShadow: '0 0 10px rgba(139, 92, 246, 0.5)' }}></div>
+              </div>
+            </div>
+          )}
         </div>
       )}
 

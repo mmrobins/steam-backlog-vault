@@ -29,7 +29,9 @@ export default function GameCard({ game }) {
     playtime_forever,
     release_date,
     developer,
-    publisher
+    publisher,
+    isSteamCached,
+    isHltbCached
   } = game;
 
   const steamStoreUrl = `https://store.steampowered.com/app/${appid}`;
@@ -38,12 +40,12 @@ export default function GameCard({ game }) {
   const playedTime = formatPlaytime(playtime_forever);
   const reviewCountStr = formatReviewCount(totalReviews);
 
-  // If dev and publisher are the same, only show once
   const devPubLine = developer && publisher && developer !== publisher
     ? `${developer} / ${publisher}`
     : developer || publisher || null;
 
-  if (game.isCached === false) {
+  // 1. Neither is cached: Show full skeleton card
+  if (!isSteamCached && !isHltbCached) {
     return (
       <div className="game-card skeleton-card">
         <div className="card-media skeleton-media">
@@ -61,7 +63,7 @@ export default function GameCard({ game }) {
         </div>
         <div className="card-body">
           <h3 className="game-title" style={{ marginBottom: '0.5rem' }}>{name}</h3>
-          <div className="skeleton-bar" style={{ width: '60%', height: '14px', marginBottom: '0.8rem' }}></div>
+          <div className="skeleton-bar" style={{ width: '65%', height: '14px', marginBottom: '0.8rem' }}></div>
           <div className="skeleton-bar" style={{ width: '100%', height: '35px', marginBottom: '0.8rem' }}></div>
           <div className="skeleton-bar" style={{ width: '40%', height: '12px' }}></div>
         </div>
@@ -70,7 +72,7 @@ export default function GameCard({ game }) {
   }
 
   return (
-    <div className="game-card">
+    <div className={`game-card ${(!isSteamCached || !isHltbCached) ? 'partial-sync' : ''}`}>
       <div className="card-media">
         <img
           src={header_image || `https://cdn.akamai.steamstatic.com/steam/apps/${appid}/header.jpg`}
@@ -82,30 +84,33 @@ export default function GameCard({ game }) {
         />
 
         {/* Metacritic Badge */}
-        {metacritic && (
+        {isSteamCached && metacritic && (
           <span className="meta-score" title={`Metacritic Score: ${metacritic}`}>
             {metacritic}
           </span>
         )}
 
-        {/* Playtime badge (top-right, below score) */}
+        {/* Playtime badge */}
         {playedTime && (
           <div className="playtime-badge" title="Your playtime">
             <Clock size={11} /> {playedTime}
           </div>
         )}
 
-        {/* Steam Review Score Badge */}
-        {reviewScore !== null && reviewScore !== undefined && (
-          <div
-            className={`score-badge ${isHighRating ? 'high' : 'medium'}`}
-            title={reviewDesc}
-          >
-            <Star size={13} fill={isHighRating ? '#34d399' : '#fbbf24'} />
-            <span>{reviewScore}%</span>
-            {reviewCountStr && (
-              <span className="review-count">({reviewCountStr})</span>
-            )}
+        {/* Steam Review Score Badge / Progress Indicator */}
+        {isSteamCached ? (
+          reviewScore !== null && reviewScore !== undefined && (
+            <div className={`score-badge ${isHighRating ? 'high' : 'medium'}`} title={reviewDesc}>
+              <Star size={13} fill={isHighRating ? '#34d399' : '#fbbf24'} />
+              <span>{reviewScore}%</span>
+              {reviewCountStr && (
+                <span className="review-count">({reviewCountStr})</span>
+              )}
+            </div>
+          )
+        ) : (
+          <div className="score-badge syncing" title="Syncing Steam reviews...">
+            <span className="pulse-dot"></span> Steam rating...
           </div>
         )}
       </div>
@@ -119,31 +124,43 @@ export default function GameCard({ game }) {
 
         {/* Meta row: release date + dev/pub */}
         <div className="card-meta-row">
-          {release_date && (
-            <span className="card-meta-item">📅 {release_date}</span>
-          )}
-          {devPubLine && (
-            <span className="card-meta-item" title={developer !== publisher && publisher ? `Dev: ${developer} · Pub: ${publisher}` : undefined}>
-              🏢 {devPubLine}
-            </span>
+          {isSteamCached ? (
+            <>
+              {release_date && (
+                <span className="card-meta-item">📅 {release_date}</span>
+              )}
+              {devPubLine && (
+                <span className="card-meta-item" title={developer !== publisher && publisher ? `Dev: ${developer} · Pub: ${publisher}` : undefined}>
+                  🏢 {devPubLine}
+                </span>
+              )}
+            </>
+          ) : (
+            <div className="skeleton-bar" style={{ width: '80%', height: '12px', margin: '2px 0' }}></div>
           )}
         </div>
 
-        {/* HowLongToBeat Breakdown */}
-        <div className="hltb-section">
-          <div className="hltb-item">
-            <span className="hltb-label" title="Main Story">🎯 Main</span>
-            <span className="hltb-value">{hltb?.main ? `${hltb.main}h` : '—'}</span>
+        {/* HowLongToBeat Breakdown / Progress Indicator */}
+        {isHltbCached ? (
+          <div className="hltb-section">
+            <div className="hltb-item">
+              <span className="hltb-label" title="Main Story">🎯 Main</span>
+              <span className="hltb-value">{hltb?.main ? `${hltb.main}h` : '—'}</span>
+            </div>
+            <div className="hltb-item">
+              <span className="hltb-label" title="Main + Extra Content">🗡️ Extra</span>
+              <span className="hltb-value">{hltb?.mainExtra ? `${hltb.mainExtra}h` : '—'}</span>
+            </div>
+            <div className="hltb-item">
+              <span className="hltb-label" title="100% Completionist">🏆 100%</span>
+              <span className="hltb-value">{hltb?.completionist ? `${hltb.completionist}h` : '—'}</span>
+            </div>
           </div>
-          <div className="hltb-item">
-            <span className="hltb-label" title="Main + Extra Content">🗡️ Extra</span>
-            <span className="hltb-value">{hltb?.mainExtra ? `${hltb.mainExtra}h` : '—'}</span>
+        ) : (
+          <div className="hltb-section syncing" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '39px', color: 'var(--text-muted)', fontSize: '0.78rem', gap: '0.4rem' }}>
+            <span className="pulse-dot hltb-dot"></span> Syncing completion times...
           </div>
-          <div className="hltb-item">
-            <span className="hltb-label" title="100% Completionist">🏆 100%</span>
-            <span className="hltb-value">{hltb?.completionist ? `${hltb.completionist}h` : '—'}</span>
-          </div>
-        </div>
+        )}
 
         {/* Genres & Tags */}
         {genres && genres.length > 0 && (
