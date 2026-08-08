@@ -121,6 +121,8 @@ app.get('/api/backlog/:steamid', async (req, res) => {
           genres: details?.genres ?? [],
           release_date: details?.release_date ?? null,
           short_description: details?.short_description ?? '',
+          developer: details?.developer ?? null,
+          publisher: details?.publisher ?? null,
           hltb: hltbMap[game.appid] || { main: null, mainExtra: null, completionist: null }
         };
       });

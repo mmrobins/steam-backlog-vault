@@ -432,6 +432,29 @@ h1, h2, h3, h4, h5, h6 {
 .score-badge.high { border-color: var(--accent-emerald); color: #34d399; }
 .score-badge.medium { border-color: var(--accent-amber); color: #fbbf24; }
 
+.review-count {
+  font-size: 0.72rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.playtime-badge {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.75rem;
+  background: rgba(9, 13, 22, 0.82);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  color: #a78bfa;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
 .meta-score {
   position: absolute;
   top: 0.75rem;
@@ -442,6 +465,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.75rem;
   padding: 0.2rem 0.45rem;
   border-radius: 4px;
+}
+
+/* Card meta row: release date, developer, publisher */
+.card-meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.card-meta-item {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-body {

@@ -36,7 +36,9 @@ const DEMO_GAMES = [
     metacritic: 95,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg",
     genres: ["Action", "Adventure", "Puzzle"],
-    release_date: "2011-04-18",
+    release_date: "Apr 18, 2011",
+    developer: "Valve",
+    publisher: "Valve",
     hltb: { main: 8.5, mainExtra: 11, completionist: 21 }
   },
   {
@@ -50,7 +52,9 @@ const DEMO_GAMES = [
     metacritic: 90,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
     genres: ["Action", "Adventure", "Indie", "Metroidvania"],
-    release_date: "2017-02-24",
+    release_date: "Feb 24, 2017",
+    developer: "Team Cherry",
+    publisher: "Team Cherry",
     hltb: { main: 27, mainExtra: 41.5, completionist: 63.5 }
   },
   {
@@ -64,13 +68,15 @@ const DEMO_GAMES = [
     metacritic: 93,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
     genres: ["Action", "Indie", "RPG", "Roguelike"],
-    release_date: "2020-09-17",
+    release_date: "Sep 17, 2020",
+    developer: "Supergiant Games",
+    publisher: "Supergiant Games",
     hltb: { main: 22, mainExtra: 48, completionist: 97 }
   },
   {
     appid: 1245620,
     name: "Elden Ring",
-    playtime_forever: 0,
+    playtime_forever: 47,
     img_icon_url: "2cc47a50785f8184f479a957ca16bfed427d1434",
     reviewScore: 93,
     reviewDesc: "Very Positive",
@@ -78,7 +84,9 @@ const DEMO_GAMES = [
     metacritic: 96,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
     genres: ["Action", "RPG", "Open World", "Souls-like"],
-    release_date: "2022-02-24",
+    release_date: "Feb 24, 2022",
+    developer: "FromSoftware",
+    publisher: "Bandai Namco Entertainment",
     hltb: { main: 55, mainExtra: 100, completionist: 133 }
   },
   {
@@ -92,7 +100,9 @@ const DEMO_GAMES = [
     metacritic: 93,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg",
     genres: ["Action", "Adventure", "RPG", "Open World"],
-    release_date: "2015-05-18",
+    release_date: "May 18, 2015",
+    developer: "CD PROJEKT RED",
+    publisher: "CD PROJEKT RED",
     hltb: { main: 51.5, mainExtra: 104, completionist: 173 }
   },
   {
@@ -106,7 +116,9 @@ const DEMO_GAMES = [
     metacritic: 88,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg",
     genres: ["Action", "Adventure", "Indie", "Platformer"],
-    release_date: "2018-01-25",
+    release_date: "Jan 25, 2018",
+    developer: "Maddy Makes Games",
+    publisher: "Maddy Makes Games",
     hltb: { main: 8, mainExtra: 14, completionist: 39 }
   },
   {
@@ -120,13 +132,15 @@ const DEMO_GAMES = [
     metacritic: 93,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg",
     genres: ["Action", "Adventure", "Story Rich"],
-    release_date: "2022-01-14",
+    release_date: "Jan 14, 2022",
+    developer: "Santa Monica Studio",
+    publisher: "PlayStation PC LLC",
     hltb: { main: 20.5, mainExtra: 32.5, completionist: 51 }
   },
   {
     appid: 264710,
     name: "Subnautica",
-    playtime_forever: 0,
+    playtime_forever: 23,
     img_icon_url: "2cc47a50785f8184f479a957ca16bfed427d1434",
     reviewScore: 96,
     reviewDesc: "Overwhelmingly Positive",
@@ -134,7 +148,9 @@ const DEMO_GAMES = [
     metacritic: 87,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/264710/header.jpg",
     genres: ["Adventure", "Indie", "Survival", "Open World"],
-    release_date: "2018-01-23",
+    release_date: "Jan 23, 2018",
+    developer: "Unknown Worlds Entertainment",
+    publisher: "Unknown Worlds Entertainment",
     hltb: { main: 29.5, mainExtra: 44, completionist: 56 }
   },
   {
@@ -148,7 +164,9 @@ const DEMO_GAMES = [
     metacritic: 85,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/753640/header.jpg",
     genres: ["Adventure", "Indie", "Space", "Mystery"],
-    release_date: "2020-06-18",
+    release_date: "Jun 18, 2020",
+    developer: "Mobius Digital",
+    publisher: "Annapurna Interactive",
     hltb: { main: 16, mainExtra: 22, completionist: 27.5 }
   },
   {
@@ -162,12 +180,14 @@ const DEMO_GAMES = [
     metacritic: 91,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/632470/header.jpg",
     genres: ["RPG", "Indie", "Story Rich"],
-    release_date: "2019-10-15",
+    release_date: "Oct 15, 2019",
+    developer: "ZA/UM",
+    publisher: "ZA/UM",
     hltb: { main: 22, mainExtra: 33.5, completionist: 46 }
   },
   {
-    appid: 2028850,
-    name: "Bioshock Infinite",
+    appid: 8870,
+    name: "BioShock Infinite",
     playtime_forever: 0,
     img_icon_url: "c9c2794eb02379377ebef8a9d18e87498c895c25",
     reviewScore: 95,
@@ -176,7 +196,9 @@ const DEMO_GAMES = [
     metacritic: 94,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/8870/header.jpg",
     genres: ["Action", "FPS", "Story Rich"],
-    release_date: "2013-03-25",
+    release_date: "Mar 25, 2013",
+    developer: "Irrational Games",
+    publisher: "2K",
     hltb: { main: 11.5, mainExtra: 15.5, completionist: 27.5 }
   },
   {
@@ -190,7 +212,9 @@ const DEMO_GAMES = [
     metacritic: 85,
     header_image: "https://cdn.akamai.steamstatic.com/steam/apps/379720/header.jpg",
     genres: ["Action", "FPS", "Gore"],
-    release_date: "2016-05-12",
+    release_date: "May 12, 2016",
+    developer: "id Software",
+    publisher: "Bethesda Softworks",
     hltb: { main: 11.5, mainExtra: 16.5, completionist: 25 }
   }
 ];
@@ -371,7 +395,9 @@ async function getSteamAppDetails(appid) {
         metacritic: data.metacritic ? data.metacritic.score : null,
         genres: data.genres ? data.genres.map(g => g.description) : [],
         release_date: data.release_date ? data.release_date.date : null,
-        short_description: data.short_description || ''
+        short_description: data.short_description || '',
+        developer: data.developers ? data.developers.join(', ') : null,
+        publisher: data.publishers ? data.publishers.join(', ') : null
       };
       cache.set(cacheKey, details);
       return details;
@@ -390,7 +416,9 @@ async function getSteamAppDetails(appid) {
     metacritic: null,
     genres: [],
     release_date: null,
-    short_description: ''
+    short_description: '',
+    developer: null,
+    publisher: null
   };
   cache.set(cacheKey, fallback);
   return fallback;

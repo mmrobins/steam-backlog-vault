@@ -1,5 +1,19 @@
 import React from 'react';
-import { Star, ExternalLink, Play, Clock, Trophy, Target, ShieldCheck } from 'lucide-react';
+import { Star, ExternalLink, Play, Clock } from 'lucide-react';
+
+function formatPlaytime(minutes) {
+  if (!minutes || minutes === 0) return null;
+  if (minutes < 60) return `${minutes}m played`;
+  const h = Math.round(minutes / 60 * 10) / 10;
+  return `${h}h played`;
+}
+
+function formatReviewCount(n) {
+  if (!n) return null;
+  if (n >= 1000000) return `${(n / 1000000).toFixed(1)}M`;
+  if (n >= 1000) return `${(n / 1000).toFixed(0)}k`;
+  return n.toString();
+}
 
 export default function GameCard({ game }) {
   const {
@@ -12,13 +26,22 @@ export default function GameCard({ game }) {
     metacritic,
     hltb,
     genres,
-    playtime_forever
+    playtime_forever,
+    release_date,
+    developer,
+    publisher
   } = game;
 
   const steamStoreUrl = `https://store.steampowered.com/app/${appid}`;
   const steamRunUrl = `steam://run/${appid}`;
-
   const isHighRating = reviewScore && reviewScore >= 85;
+  const playedTime = formatPlaytime(playtime_forever);
+  const reviewCountStr = formatReviewCount(totalReviews);
+
+  // If dev and publisher are the same, only show once
+  const devPubLine = developer && publisher && developer !== publisher
+    ? `${developer} / ${publisher}`
+    : developer || publisher || null;
 
   return (
     <div className="game-card">
@@ -39,11 +62,24 @@ export default function GameCard({ game }) {
           </span>
         )}
 
+        {/* Playtime badge (top-right, below score) */}
+        {playedTime && (
+          <div className="playtime-badge" title="Your playtime">
+            <Clock size={11} /> {playedTime}
+          </div>
+        )}
+
         {/* Steam Review Score Badge */}
         {reviewScore !== null && reviewScore !== undefined && (
-          <div className={`score-badge ${isHighRating ? 'high' : 'medium'}`} title={`${reviewDesc} (${totalReviews ? totalReviews.toLocaleString() : 0} reviews)`}>
+          <div
+            className={`score-badge ${isHighRating ? 'high' : 'medium'}`}
+            title={reviewDesc}
+          >
             <Star size={13} fill={isHighRating ? '#34d399' : '#fbbf24'} />
             <span>{reviewScore}%</span>
+            {reviewCountStr && (
+              <span className="review-count">({reviewCountStr})</span>
+            )}
           </div>
         )}
       </div>
@@ -54,6 +90,18 @@ export default function GameCard({ game }) {
             {name}
           </a>
         </h3>
+
+        {/* Meta row: release date + dev/pub */}
+        <div className="card-meta-row">
+          {release_date && (
+            <span className="card-meta-item">📅 {release_date}</span>
+          )}
+          {devPubLine && (
+            <span className="card-meta-item" title={developer !== publisher && publisher ? `Dev: ${developer} · Pub: ${publisher}` : undefined}>
+              🏢 {devPubLine}
+            </span>
+          )}
+        </div>
 
         {/* HowLongToBeat Breakdown */}
         <div className="hltb-section">
