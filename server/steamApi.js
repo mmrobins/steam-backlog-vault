@@ -395,7 +395,6 @@ async function getSteamAppReviewScore(appid) {
   }
 
   const fallback = { reviewScore: null, reviewDesc: "No Reviews", totalReviews: 0 };
-  cache.set(cacheKey, fallback);
   return fallback;
 }
 
@@ -454,7 +453,6 @@ async function getSteamAppDetails(appid) {
     developer: null,
     publisher: null
   };
-  cache.set(cacheKey, fallback);
   return fallback;
 }
 

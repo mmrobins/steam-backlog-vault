@@ -143,9 +143,11 @@ async function getGameTimeToBeat(title) {
     if (err.response?.status !== 404 && err.response?.status !== 403) {
       console.log(`[HLTB info] HLTB lookups currently unavailable for "${title}" (${err.message})`);
     }
+    // Return direct fallback without caching so we can retry on next loading loop
+    return { main: null, mainExtra: null, completionist: null };
   }
 
-  // Default fallback if unknown
+  // Default fallback if unknown (but search successfully returned 0 matches)
   const result = { main: null, mainExtra: null, completionist: null };
   cache.set(cacheKey, result);
   return result;
