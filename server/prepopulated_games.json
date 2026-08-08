@@ -2,7 +2,8 @@
   "10": {
     "reviewScore": 97,
     "reviewDesc": "Overwhelmingly Positive",
-    "totalReviews": 169186,
+    "totalReviews": 169187,
+    "totalReviewsEnglish": 34989,
     "metacritic": 88,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10/header.jpg?t=1745368572",
     "genres": [
@@ -22,6 +23,7 @@
     "reviewScore": 88,
     "reviewDesc": "Very Positive",
     "totalReviews": 4468,
+    "totalReviewsEnglish": 2174,
     "metacritic": 79,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/30/header.jpg?t=1745368580",
     "genres": [
@@ -41,6 +43,7 @@
     "reviewScore": 82,
     "reviewDesc": "Very Positive",
     "totalReviews": 2450,
+    "totalReviewsEnglish": 1287,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/40/header.jpg?t=1745368570",
     "genres": [
@@ -60,6 +63,7 @@
     "reviewScore": 95,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 25240,
+    "totalReviewsEnglish": 13426,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/50/header.jpg?t=1745368539",
     "genres": [
@@ -79,6 +83,7 @@
     "reviewScore": 97,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 116600,
+    "totalReviewsEnglish": 58683,
     "metacritic": 96,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/header.jpg?t=1745368462",
     "genres": [
@@ -98,6 +103,7 @@
     "reviewScore": 91,
     "reviewDesc": "Very Positive",
     "totalReviews": 21326,
+    "totalReviewsEnglish": 7529,
     "metacritic": 65,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/80/header.jpg?t=1745368574",
     "genres": [
@@ -117,6 +123,7 @@
     "reviewScore": 91,
     "reviewDesc": "Very Positive",
     "totalReviews": 4754,
+    "totalReviewsEnglish": 1725,
     "metacritic": 65,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/80/header.jpg?t=1745368574",
     "genres": [
@@ -136,6 +143,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 18512,
+    "totalReviewsEnglish": 10046,
     "metacritic": 71,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/130/header.jpg?t=1745368541",
     "genres": [
@@ -155,6 +163,7 @@
     "reviewScore": 98,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 201323,
+    "totalReviewsEnglish": 90359,
     "metacritic": 96,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/header.jpg?t=1745368545",
     "genres": [
@@ -165,15 +174,16 @@
     "developer": "Valve",
     "publisher": "Valve",
     "hltb": {
-      "main": null,
-      "mainExtra": null,
-      "completionist": null
+      "main": 12.9,
+      "mainExtra": 15.6,
+      "completionist": 19.9
     }
   },
   "240": {
     "reviewScore": 96,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 134949,
+    "totalReviewsEnglish": 45029,
     "metacritic": 88,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/240/header.jpg?t=1745368575",
     "genres": [
@@ -193,6 +203,7 @@
     "reviewScore": 68,
     "reviewDesc": "Mixed",
     "totalReviews": 14606,
+    "totalReviewsEnglish": 7880,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/280/header.jpg?t=1721932678",
     "genres": [
@@ -212,6 +223,7 @@
     "reviewScore": 91,
     "reviewDesc": "Very Positive",
     "totalReviews": 15953,
+    "totalReviewsEnglish": 7482,
     "metacritic": 80,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/300/header.jpg?t=1763407002",
     "genres": [
@@ -231,6 +243,7 @@
     "reviewScore": 90,
     "reviewDesc": "Very Positive",
     "totalReviews": 10205,
+    "totalReviewsEnglish": 4669,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/320/header.jpg?t=1749481506",
     "genres": [
@@ -250,6 +263,7 @@
     "reviewScore": 90,
     "reviewDesc": "Very Positive",
     "totalReviews": 10520,
+    "totalReviewsEnglish": 5366,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/340/header.jpg?t=1745368547",
     "genres": [
@@ -269,6 +283,7 @@
     "reviewScore": 75,
     "reviewDesc": "Mostly Positive",
     "totalReviews": 4338,
+    "totalReviewsEnglish": 2004,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/360/header.jpg?t=1745368549",
     "genres": [
@@ -288,6 +303,7 @@
     "reviewScore": 96,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 25807,
+    "totalReviewsEnglish": 11771,
     "metacritic": 87,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/380/header.jpg?t=1745368553",
     "genres": [
@@ -306,7 +322,8 @@
   "400": {
     "reviewScore": 99,
     "reviewDesc": "Overwhelmingly Positive",
-    "totalReviews": 172374,
+    "totalReviews": 172377,
+    "totalReviewsEnglish": 83562,
     "metacritic": 90,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400/header.jpg?t=1745368554",
     "genres": [
@@ -327,6 +344,7 @@
     "reviewScore": 97,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 33767,
+    "totalReviewsEnglish": 16148,
     "metacritic": 90,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/420/header.jpg?t=1745368556",
     "genres": [
@@ -346,6 +364,7 @@
     "reviewScore": 81,
     "reviewDesc": "Very Positive",
     "totalReviews": 47625,
+    "totalReviewsEnglish": 27411,
     "metacritic": 92,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372",
     "genres": [
@@ -366,6 +385,7 @@
     "reviewScore": 96,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 57823,
+    "totalReviewsEnglish": 20059,
     "metacritic": 89,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/500/header.jpg?t=1745368560",
     "genres": [
@@ -384,7 +404,8 @@
   "550": {
     "reviewScore": 98,
     "reviewDesc": "Overwhelmingly Positive",
-    "totalReviews": 810110,
+    "totalReviews": 810116,
+    "totalReviewsEnglish": 231307,
     "metacritic": 89,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1772742214",
     "genres": [
@@ -404,6 +425,7 @@
     "reviewScore": 99,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 388623,
+    "totalReviewsEnglish": 172685,
     "metacritic": 95,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg?t=1745363004",
     "genres": [
@@ -425,6 +447,7 @@
     "reviewScore": 96,
     "reviewDesc": "Very Positive",
     "totalReviews": 294,
+    "totalReviewsEnglish": 114,
     "metacritic": 77,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/header.jpg?t=1763407010",
     "genres": [
@@ -445,6 +468,7 @@
     "reviewScore": 85,
     "reviewDesc": "Very Positive",
     "totalReviews": 5208535,
+    "totalReviewsEnglish": 1489198,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1784564069",
     "genres": [
@@ -465,6 +489,7 @@
     "reviewScore": 96,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 39757,
+    "totalReviewsEnglish": 21760,
     "metacritic": 72,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250/header.jpg?t=1726777771",
     "genres": [
@@ -484,6 +509,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 222,
+    "totalReviewsEnglish": 158,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840/header.jpg?t=1677267197",
     "genres": [
@@ -504,6 +530,7 @@
     "reviewScore": 90,
     "reviewDesc": "Very Positive",
     "totalReviews": 9275,
+    "totalReviewsEnglish": 4880,
     "metacritic": 72,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2100/header.jpg?t=1765228880",
     "genres": [
@@ -524,6 +551,7 @@
     "reviewScore": 97,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 25139,
+    "totalReviewsEnglish": 17342,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2280/header.jpg?t=1750785073",
     "genres": [
@@ -543,6 +571,7 @@
     "reviewScore": 97,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 13465,
+    "totalReviewsEnglish": 10056,
     "metacritic": 94,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2310/fedba2dc09b59eab41d6ebb981b9c436ed04c85f/header_alt_assets_0.jpg?t=1786035741",
     "genres": [
@@ -562,6 +591,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 9102,
+    "totalReviewsEnglish": 4083,
     "metacritic": 86,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2630/header.jpg?t=1780962161",
     "genres": [
@@ -581,6 +611,7 @@
     "reviewScore": 98,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 142367,
+    "totalReviewsEnglish": 42738,
     "metacritic": 87,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3590/header.jpg?t=1777394124",
     "genres": [
@@ -600,6 +631,7 @@
     "reviewScore": 91,
     "reviewDesc": "Very Positive",
     "totalReviews": 5663,
+    "totalReviewsEnglish": 4068,
     "metacritic": 90,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3910/header.jpg?t=1569013660",
     "genres": [
@@ -619,6 +651,7 @@
     "reviewScore": 97,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 1084893,
+    "totalReviewsEnglish": 535867,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg?t=1776868682",
     "genres": [
@@ -640,6 +673,7 @@
     "reviewScore": 95,
     "reviewDesc": "Very Positive",
     "totalReviews": 37925,
+    "totalReviewsEnglish": 15076,
     "metacritic": 82,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4500/header.jpg?t=1747756056",
     "genres": [
@@ -660,6 +694,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 4817,
+    "totalReviewsEnglish": 2721,
     "metacritic": 93,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4560/header.jpg?t=1573488196",
     "genres": [
@@ -680,6 +715,7 @@
     "reviewScore": 95,
     "reviewDesc": "Very Positive",
     "totalReviews": 8780,
+    "totalReviewsEnglish": 5567,
     "metacritic": 86,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4570/29c9530f1478894a50967fa7b83b0abb2b7f5b15/header.jpg?t=1777501508",
     "genres": [
@@ -699,6 +735,7 @@
     "reviewScore": 96,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 27108,
+    "totalReviewsEnglish": 16855,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4700/header.jpg?t=1763643156",
     "genres": [
@@ -718,6 +755,7 @@
     "reviewScore": 95,
     "reviewDesc": "Very Positive",
     "totalReviews": 13033,
+    "totalReviewsEnglish": 8774,
     "metacritic": 92,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4760/header.jpg?t=1769188674",
     "genres": [
@@ -737,6 +775,7 @@
     "reviewScore": 85,
     "reviewDesc": "Very Positive",
     "totalReviews": 8615,
+    "totalReviewsEnglish": 5404,
     "metacritic": 80,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4920/header.jpg?t=1747384807",
     "genres": [
@@ -758,6 +797,7 @@
     "reviewScore": 96,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 14587,
+    "totalReviewsEnglish": 9995,
     "metacritic": 78,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6000/header.jpg?t=1741729103",
     "genres": [
@@ -777,6 +817,7 @@
     "reviewScore": 94,
     "reviewDesc": "Very Positive",
     "totalReviews": 46322,
+    "totalReviewsEnglish": 34853,
     "metacritic": 78,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6060/header.jpg?t=1707697325",
     "genres": [
@@ -796,6 +837,7 @@
     "reviewScore": 81,
     "reviewDesc": "Very Positive",
     "totalReviews": 3719,
+    "totalReviewsEnglish": 1838,
     "metacritic": 87,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6850/header.jpg?t=1732293077",
     "genres": [
@@ -815,6 +857,7 @@
     "reviewScore": 94,
     "reviewDesc": "Very Positive",
     "totalReviews": 13518,
+    "totalReviewsEnglish": 6632,
     "metacritic": 82,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6860/header.jpg?t=1732283123",
     "genres": [
@@ -834,6 +877,7 @@
     "reviewScore": 67,
     "reviewDesc": "Mixed",
     "totalReviews": 4526,
+    "totalReviewsEnglish": 1969,
     "metacritic": 75,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6880/header.jpg?t=1782912503",
     "genres": [
@@ -853,6 +897,7 @@
     "reviewScore": 95,
     "reviewDesc": "Very Positive",
     "totalReviews": 13657,
+    "totalReviewsEnglish": 10437,
     "metacritic": 90,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6910/a59f78bdeac034d05cd6aec0d0e68b188d242990/header.jpg?t=1779722450",
     "genres": [
@@ -872,6 +917,7 @@
     "reviewScore": 94,
     "reviewDesc": "Very Positive",
     "totalReviews": 25066,
+    "totalReviewsEnglish": 12717,
     "metacritic": 96,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7670/header.jpg?t=1730172622",
     "genres": [
@@ -891,7 +937,8 @@
   "7940": {
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
-    "totalReviews": 21956,
+    "totalReviews": 21957,
+    "totalReviewsEnglish": 10983,
     "metacritic": 92,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7940/header.jpg?t=1780962383",
     "genres": [
@@ -911,6 +958,7 @@
     "reviewScore": 90,
     "reviewDesc": "Very Positive",
     "totalReviews": 40954,
+    "totalReviewsEnglish": 18986,
     "metacritic": 84,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/header.jpg?t=1782912561",
     "genres": [
@@ -931,6 +979,7 @@
     "reviewScore": 80,
     "reviewDesc": "Mostly Positive",
     "totalReviews": 7789,
+    "totalReviewsEnglish": 5332,
     "metacritic": 88,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8500/fed1ea9b01dd6564101518a5201740fb44929fb4/header.jpg?t=1782428793",
     "genres": [
@@ -954,6 +1003,7 @@
     "reviewScore": 88,
     "reviewDesc": "Very Positive",
     "totalReviews": 11420,
+    "totalReviewsEnglish": 5914,
     "metacritic": 88,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8850/header.jpg?t=1730174099",
     "genres": [
@@ -973,6 +1023,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 109323,
+    "totalReviewsEnglish": 47339,
     "metacritic": 94,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8870/header.jpg?t=1728673518",
     "genres": [
@@ -991,7 +1042,8 @@
   "8930": {
     "reviewScore": 95,
     "reviewDesc": "Overwhelmingly Positive",
-    "totalReviews": 127889,
+    "totalReviews": 127890,
+    "totalReviewsEnglish": 78559,
     "metacritic": 90,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8930/header.jpg?t=1724341158",
     "genres": [
@@ -1011,6 +1063,7 @@
     "reviewScore": 90,
     "reviewDesc": "Very Positive",
     "totalReviews": 20115,
+    "totalReviewsEnglish": 12612,
     "metacritic": 81,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8980/header.jpg?t=1692308968",
     "genres": [
@@ -1031,6 +1084,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 7922,
+    "totalReviewsEnglish": 4165,
     "metacritic": 88,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9010/header.jpg?t=1786032908",
     "genres": [
@@ -1050,6 +1104,7 @@
     "reviewScore": 91,
     "reviewDesc": "Very Positive",
     "totalReviews": 809,
+    "totalReviewsEnglish": 464,
     "metacritic": 87,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9340/header.jpg?t=1711547477",
     "genres": [
@@ -1070,6 +1125,7 @@
     "reviewScore": 75,
     "reviewDesc": "Mostly Positive",
     "totalReviews": 12726,
+    "totalReviewsEnglish": 8428,
     "metacritic": 72,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9480/header.jpg?t=1764670917",
     "genres": [
@@ -1089,6 +1145,7 @@
     "reviewScore": 76,
     "reviewDesc": "Mostly Positive",
     "totalReviews": 947,
+    "totalReviewsEnglish": 854,
     "metacritic": 66,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9900/fa8e746fb3ca2075692935252ffed5d99aa9a518/header.jpg?t=1784653017",
     "genres": [
@@ -1110,6 +1167,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 45543,
+    "totalReviewsEnglish": 33423,
     "metacritic": 83,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10090/header.jpg?t=1780962495",
     "genres": [
@@ -1129,6 +1187,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 35524,
+    "totalReviewsEnglish": 17028,
     "metacritic": 86,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10180/header.jpg?t=1780962606",
     "genres": [
@@ -1148,6 +1207,7 @@
     "reviewScore": 90,
     "reviewDesc": "Very Positive",
     "totalReviews": 6998,
+    "totalReviewsEnglish": 4342,
     "metacritic": 86,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10180/header.jpg?t=1780962606",
     "genres": [
@@ -1167,6 +1227,7 @@
     "reviewScore": 90,
     "reviewDesc": "Very Positive",
     "totalReviews": 21178,
+    "totalReviewsEnglish": 12346,
     "metacritic": 90,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10500/header.jpg?t=1763646960",
     "genres": [
@@ -1186,6 +1247,7 @@
     "reviewScore": 91,
     "reviewDesc": "Very Positive",
     "totalReviews": 16019,
+    "totalReviewsEnglish": 8056,
     "metacritic": 68,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10680/header.jpg?t=1763676764",
     "genres": [
@@ -1205,6 +1267,7 @@
     "reviewScore": 86,
     "reviewDesc": "Very Positive",
     "totalReviews": 170,
+    "totalReviewsEnglish": 49,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/11020/header.jpg?t=1548090419",
     "genres": [
@@ -1224,6 +1287,7 @@
     "reviewScore": 86,
     "reviewDesc": "Very Positive",
     "totalReviews": 11159,
+    "totalReviewsEnglish": 4576,
     "metacritic": 93,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12100/header.jpg?t=1634144440",
     "genres": [
@@ -1243,6 +1307,7 @@
     "reviewScore": 92,
     "reviewDesc": "Very Positive",
     "totalReviews": 24171,
+    "totalReviewsEnglish": 8340,
     "metacritic": 94,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12110/header.jpg?t=1634144465",
     "genres": [
@@ -1262,6 +1327,7 @@
     "reviewScore": 92,
     "reviewDesc": "Very Positive",
     "totalReviews": 70179,
+    "totalReviewsEnglish": 22422,
     "metacritic": 93,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12120/header.jpg?t=1634144450",
     "genres": [
@@ -1281,6 +1347,7 @@
     "reviewScore": 84,
     "reviewDesc": "Very Positive",
     "totalReviews": 37144,
+    "totalReviewsEnglish": 15191,
     "metacritic": 72,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12200/header.jpg?t=1741118085",
     "genres": [
@@ -1301,6 +1368,7 @@
     "reviewScore": 84,
     "reviewDesc": "Very Positive",
     "totalReviews": 178201,
+    "totalReviewsEnglish": 72545,
     "metacritic": 90,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12210/header.jpg?t=1721061564",
     "genres": [
@@ -1321,6 +1389,7 @@
     "reviewScore": 74,
     "reviewDesc": "Mostly Positive",
     "totalReviews": 7216,
+    "totalReviewsEnglish": 2922,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12220/header.jpg?t=1618853641",
     "genres": [
@@ -1340,6 +1409,7 @@
     "reviewScore": 82,
     "reviewDesc": "Very Positive",
     "totalReviews": 10936,
+    "totalReviewsEnglish": 4807,
     "metacritic": 89,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/13520/header.jpg?t=1602602361",
     "genres": [
@@ -1359,6 +1429,7 @@
     "reviewScore": 80,
     "reviewDesc": "Very Positive",
     "totalReviews": 23700,
+    "totalReviewsEnglish": 10913,
     "metacritic": 79,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/15100/header.jpg?t=1602600542",
     "genres": [
@@ -1379,6 +1450,7 @@
     "reviewScore": 86,
     "reviewDesc": "Very Positive",
     "totalReviews": 8007,
+    "totalReviewsEnglish": 4629,
     "metacritic": 85,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/15620/d8fdd0e5ceb1c7806e01f554614c1d5d5b8a47a1/header.jpg?t=1786145538",
     "genres": [
@@ -1398,6 +1470,7 @@
     "reviewScore": 62,
     "reviewDesc": "Mixed",
     "totalReviews": 60,
+    "totalReviewsEnglish": 37,
     "metacritic": 86,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17080/header.jpg?t=1763425041",
     "genres": [
@@ -1418,6 +1491,7 @@
     "reviewScore": 81,
     "reviewDesc": "Very Positive",
     "totalReviews": 11936,
+    "totalReviewsEnglish": 5345,
     "metacritic": 91,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17300/header.jpg?t=1777495390",
     "genres": [
@@ -1437,6 +1511,7 @@
     "reviewScore": 85,
     "reviewDesc": "Very Positive",
     "totalReviews": 3801,
+    "totalReviewsEnglish": 1490,
     "metacritic": 84,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17330/header.jpg?t=1734377275",
     "genres": [
@@ -1456,6 +1531,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 66487,
+    "totalReviewsEnglish": 38195,
     "metacritic": 84,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17390/header.jpg?t=1777486064",
     "genres": [
@@ -1480,6 +1556,7 @@
     "reviewScore": 88,
     "reviewDesc": "Very Positive",
     "totalReviews": 31132,
+    "totalReviewsEnglish": 15131,
     "metacritic": 81,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17410/header.jpg?t=1777394972",
     "genres": [
@@ -1500,6 +1577,7 @@
     "reviewScore": 94,
     "reviewDesc": "Very Positive",
     "totalReviews": 14865,
+    "totalReviewsEnglish": 9569,
     "metacritic": 89,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17460/header.jpg?t=1777395273",
     "genres": [
@@ -1520,6 +1598,7 @@
     "reviewScore": 92,
     "reviewDesc": "Very Positive",
     "totalReviews": 22761,
+    "totalReviewsEnglish": 12004,
     "metacritic": 87,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17470/header.jpg?t=1777495169",
     "genres": [
@@ -1540,6 +1619,7 @@
     "reviewScore": 85,
     "reviewDesc": "Very Positive",
     "totalReviews": 14518,
+    "totalReviewsEnglish": 5680,
     "metacritic": 82,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17480/header.jpg?t=1779987212",
     "genres": [
@@ -1560,6 +1640,7 @@
     "reviewScore": 76,
     "reviewDesc": "Mostly Positive",
     "totalReviews": 17237,
+    "totalReviewsEnglish": 9493,
     "metacritic": 85,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/19900/header.jpg?t=1709317476",
     "genres": [
@@ -1579,6 +1660,7 @@
     "reviewScore": 88,
     "reviewDesc": "Very Positive",
     "totalReviews": 1975,
+    "totalReviewsEnglish": 1019,
     "metacritic": 84,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/20570/header.jpg?t=1726774741",
     "genres": [
@@ -1598,6 +1680,7 @@
     "reviewScore": 89,
     "reviewDesc": "Very Positive",
     "totalReviews": 81307,
+    "totalReviewsEnglish": 26917,
     "metacritic": 86,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/20900/header.jpg?t=1749200362",
     "genres": [
@@ -1618,6 +1701,7 @@
     "reviewScore": 90,
     "reviewDesc": "Very Positive",
     "totalReviews": 80503,
+    "totalReviewsEnglish": 25986,
     "metacritic": 88,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/20920/header.jpg?t=1761657279",
     "genres": [
@@ -1637,6 +1721,7 @@
     "reviewScore": 87,
     "reviewDesc": "Very Positive",
     "totalReviews": 47697,
+    "totalReviewsEnglish": 18454,
     "metacritic": 86,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/21690/header.jpg?t=1768960574",
     "genres": [
@@ -1657,6 +1742,7 @@
     "reviewScore": 95,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 22140,
+    "totalReviewsEnglish": 17685,
     "metacritic": 89,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22320/header.jpg?t=1760029380",
     "genres": [
@@ -1676,6 +1762,7 @@
     "reviewScore": 95,
     "reviewDesc": "Very Positive",
     "totalReviews": 42773,
+    "totalReviewsEnglish": 32096,
     "metacritic": 94,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22330/header.jpg?t=1745343031",
     "genres": [
@@ -1695,6 +1782,7 @@
     "reviewScore": 81,
     "reviewDesc": "Very Positive",
     "totalReviews": 43805,
+    "totalReviewsEnglish": 31433,
     "metacritic": 91,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22370/header.jpg?t=1732208097",
     "genres": [
@@ -1714,6 +1802,7 @@
     "reviewScore": 96,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 210453,
+    "totalReviewsEnglish": 169291,
     "metacritic": 84,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/header.jpg?t=1765992876",
     "genres": [
@@ -1734,6 +1823,7 @@
     "reviewScore": 81,
     "reviewDesc": "Very Positive",
     "totalReviews": 2789,
+    "totalReviewsEnglish": 1782,
     "metacritic": 66,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/23310/header.jpg?t=1536078342",
     "genres": [
@@ -1753,6 +1843,7 @@
     "reviewScore": 73,
     "reviewDesc": "Mostly Positive",
     "totalReviews": 19390,
+    "totalReviewsEnglish": 10696,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/24010/1323454fa36647dd6ee09f1f05c1e6e0d1d09d92/header.jpg?t=1784898329",
     "genres": [
@@ -1772,6 +1863,7 @@
     "reviewScore": 73,
     "reviewDesc": "Mostly Positive",
     "totalReviews": 215,
+    "totalReviewsEnglish": 117,
     "metacritic": 72,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/24200/4341fdcb5f72c77c6fb4e0b169e9f52f47cdff9e/header.jpg?t=1780512580",
     "genres": [
@@ -1795,6 +1887,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 21824,
+    "totalReviewsEnglish": 8700,
     "metacritic": 76,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/24240/header.jpg?t=1782408687",
     "genres": [
@@ -1814,6 +1907,7 @@
     "reviewScore": 85,
     "reviewDesc": "Very Positive",
     "totalReviews": 31863,
+    "totalReviewsEnglish": 13122,
     "metacritic": 87,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/24960/header.jpg?t=1682701509",
     "genres": [
@@ -1833,6 +1927,7 @@
     "reviewScore": 94,
     "reviewDesc": "Very Positive",
     "totalReviews": 13316,
+    "totalReviewsEnglish": 8581,
     "metacritic": 94,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/24980/header.jpg?t=1684169109",
     "genres": [
@@ -1852,6 +1947,7 @@
     "reviewScore": 93,
     "reviewDesc": "Very Positive",
     "totalReviews": 6936,
+    "totalReviewsEnglish": 3476,
     "metacritic": 90,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/26800/header.jpg?t=1734027955",
     "genres": [
@@ -1873,6 +1969,7 @@
     "reviewScore": 91,
     "reviewDesc": "Very Positive",
     "totalReviews": 28408,
+    "totalReviewsEnglish": 22375,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/32370/header.jpg?t=1681144833",
     "genres": [
@@ -1893,6 +1990,7 @@
     "reviewScore": 77,
     "reviewDesc": "Mostly Positive",
     "totalReviews": 8691,
+    "totalReviewsEnglish": 5352,
     "metacritic": 65,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/32430/header.jpg?t=1741729267",
     "genres": [
@@ -1912,6 +2010,7 @@
     "reviewScore": 98,
     "reviewDesc": "Overwhelmingly Positive",
     "totalReviews": 35929,
+    "totalReviewsEnglish": 26620,
     "metacritic": null,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/32470/header.jpg?t=1741729002",
     "genres": [
@@ -1931,6 +2030,7 @@
     "reviewScore": 81,
     "reviewDesc": "Very Positive",
     "totalReviews": 3518,
+    "totalReviewsEnglish": 1538,
     "metacritic": 66,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/32800/header.jpg?t=1550025329",
     "genres": [
@@ -1945,6 +2045,649 @@
       "main": 12.1,
       "mainExtra": 15.7,
       "completionist": 29.3
+    }
+  },
+  "33230": {
+    "reviewScore": 89,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 57284,
+    "totalReviewsEnglish": 18181,
+    "metacritic": 86,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/33230/header.jpg?t=1682004272",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Mar 9, 2010",
+    "short_description": "An epic story of family, vengeance and conspiracy set in the pristine, yet brutal, backdrop of a Renaissance Italy. New low price!",
+    "developer": "Ubisoft Montreal",
+    "publisher": "Ubisoft",
+    "hltb": {
+      "main": 19.2,
+      "mainExtra": 26.1,
+      "completionist": 35.5
+    }
+  },
+  "33900": {
+    "reviewScore": 84,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 1812,
+    "totalReviewsEnglish": 1612,
+    "metacritic": 77,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/33900/header.jpg?t=1754679005",
+    "genres": [
+      "Action",
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "",
+    "short_description": "Building on 10 years of constant engine development, ARMA II boasts the most realistic combat environment in the world. It models real world ballistics &amp; round deflection, materials penetration, features a realtime day/night cycle and dynamic wind, weather and environmental effects.",
+    "developer": "Bohemia Interactive",
+    "publisher": "Bohemia Interactive",
+    "hltb": {
+      "main": 16.4,
+      "mainExtra": 31.6,
+      "completionist": 88
+    }
+  },
+  "33930": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 16194,
+    "totalReviewsEnglish": 8751,
+    "metacritic": 73,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/33930/header.jpg?t=1748435154",
+    "genres": [
+      "Action",
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Jun 29, 2010",
+    "short_description": "Three years after the conflict in Chernarus, portrayed in the original Arma 2, a new flashpoint explodes in the Green Sea Region. Coalition forces led by the US Army are deployed to Takistan to quickly restore peace and prevent further civilian casualties.",
+    "developer": "Bohemia Interactive",
+    "publisher": "Bohemia Interactive",
+    "hltb": {
+      "main": 8.1,
+      "mainExtra": 8.4,
+      "completionist": 23.2
+    }
+  },
+  "34030": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 17851,
+    "totalReviewsEnglish": 10366,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/34030/header.jpg?t=1765308018",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Feb 25, 2010",
+    "short_description": "Complete your Total War collection with this Definitive Edition of Total War: NAPOLEON, which includes all DLC and feature updates since the game’s release",
+    "developer": "CREATIVE ASSEMBLY, Feral Interactive (Mac)",
+    "publisher": "SEGA, Feral Interactive (Mac)",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "34270": {
+    "reviewScore": 82,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 7968,
+    "totalReviewsEnglish": 5262,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/34270/header.jpg?t=1762753305",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "RPG"
+    ],
+    "release_date": "Jun 1, 2010",
+    "short_description": "SEGA’s collection of Mega Drive &amp; Genesis Classics comes to a new generation, now updated with even more features: online multiplayer, achievements, mirror mode, rewind, save states, VR and more! Over 50 classic games in one great package. Get into the classics!",
+    "developer": "D3T Limited",
+    "publisher": "SEGA",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "34330": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 37444,
+    "totalReviewsEnglish": 21676,
+    "metacritic": 90,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/34330/header.jpg?t=1783637249",
+    "genres": [],
+    "release_date": "",
+    "short_description": "",
+    "developer": "The Creative Assembly",
+    "publisher": "SEGA",
+    "hltb": {
+      "main": 27.5,
+      "mainExtra": 71,
+      "completionist": 216.1
+    }
+  },
+  "34440": {
+    "reviewScore": 96,
+    "reviewDesc": "Positive",
+    "totalReviews": 49,
+    "totalReviewsEnglish": 41,
+    "metacritic": 94,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3900/header.jpg?t=1724341287",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Oct 25, 2006",
+    "short_description": "With over 6 million units sold and unprecedented critical acclaim from fans and press around the world, Sid Meier's Civilization is recognized as one of the greatest PC game franchises of all-time. Now, Sid Meier and Firaxis Games will take this incredibly fun and addictive game to new heights by adding new ways to play and win, new...",
+    "developer": "Firaxis Games",
+    "publisher": "2K",
+    "hltb": {
+      "main": 13.2,
+      "mainExtra": 45.6,
+      "completionist": 133.5
+    }
+  },
+  "34460": {
+    "reviewScore": 98,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 52,
+    "totalReviewsEnglish": 47,
+    "metacritic": 86,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8800/header.jpg?t=1573063843",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Jul 24, 2007",
+    "short_description": "Sid Meier's Civilization IV®: Beyond the Sword is the second expansion pack for Civilization IV - the 2005 PC Game of the Year that has become a worldwide hit.",
+    "developer": "Firaxis Games",
+    "publisher": "2K",
+    "hltb": {
+      "main": 30.9,
+      "mainExtra": 63.7,
+      "completionist": 86.4
+    }
+  },
+  "34870": {
+    "reviewScore": 76,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 13672,
+    "totalReviewsEnglish": 3962,
+    "metacritic": 52,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/34870/header.jpg?t=1728377753",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 11, 2013",
+    "short_description": "Sniper: Ghost Warrior 2 takes the bulls-eye precision of its predecessor to new and exciting heights!",
+    "developer": "City Interactive",
+    "publisher": "CI Games",
+    "hltb": {
+      "main": 5.1,
+      "mainExtra": 7.2,
+      "completionist": 11.9
+    }
+  },
+  "35140": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 61379,
+    "totalReviewsEnglish": 30517,
+    "metacritic": 91,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35140/header.jpg?t=1745966724",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Mar 26, 2010",
+    "short_description": "Experience what it’s like to be Batman and face off against Gotham's greatest villians. Explore every inch of Arkham Asylum and roam freely on the infamous island.",
+    "developer": "Rocksteady Studios",
+    "publisher": "WB Games",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "35450": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 24842,
+    "totalReviewsEnglish": 11360,
+    "metacritic": 76,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35450/header.jpg?t=1552425243",
+    "genres": [
+      "Action",
+      "Massively Multiplayer",
+      "Simulation"
+    ],
+    "release_date": "Sep 13, 2011",
+    "short_description": "Contains full Rising Storm content as well!",
+    "developer": "Tripwire Interactive",
+    "publisher": "Tripwire Interactive",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "35700": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 12813,
+    "totalReviewsEnglish": 4643,
+    "metacritic": 80,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35700/header.jpg?t=1758741541",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "release_date": "Jul 2, 2009",
+    "short_description": "Three Heroes make their way through dangers untold in a fairytale world of great castles and strange machinery, featuring physics-based puzzles, beautiful sights and online co-op.",
+    "developer": "Frozenbyte",
+    "publisher": "Frozenbyte",
+    "hltb": {
+      "main": 5.2,
+      "mainExtra": 6.5,
+      "completionist": 10.9
+    }
+  },
+  "35720": {
+    "reviewScore": 95,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 15259,
+    "totalReviewsEnglish": 5718,
+    "metacritic": 84,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35720/header.jpg?t=1725007729",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "release_date": "Jun 6, 2013",
+    "short_description": "Three Heroes make their way through dangers untold in a fairytale world, featuring physics-based puzzles, beautiful sights and online co-op.",
+    "developer": "Frozenbyte",
+    "publisher": "Frozenbyte",
+    "hltb": {
+      "main": 9,
+      "mainExtra": 13.7,
+      "completionist": 34.5
+    }
+  },
+  "38400": {
+    "reviewScore": 95,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 16559,
+    "totalReviewsEnglish": 11639,
+    "metacritic": 89,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/38400/header.jpg?t=1572025441",
+    "genres": [
+      "RPG"
+    ],
+    "release_date": "Nov 1, 2015",
+    "short_description": "You've just unearthed the classic post-apocalyptic role-playing game that revitalized the entire CRPG genre. The Fallout® SPECIAL system allows drastically different types of characters, meaningful decisions and development that puts you in complete control. Explore the devastated ruins of a golden age civilization.",
+    "developer": "Interplay Inc.",
+    "publisher": "Bethesda Softworks",
+    "hltb": {
+      "main": 16.2,
+      "mainExtra": 22.9,
+      "completionist": 32.1
+    }
+  },
+  "39120": {
+    "reviewScore": 75,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 999,
+    "totalReviewsEnglish": 841,
+    "metacritic": 84,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/39120/header.jpg?t=1700242293",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG",
+      "Free To Play"
+    ],
+    "release_date": "Mar 1, 2011",
+    "short_description": "Dive into a world of epic adventure! Create your perfect hero thanks to a uniquely customizable class system. Collect, craft, and customize your gear. Go it alone or group up to challenge dungeons, raids, dynamic open-world content, and your fellow players.",
+    "developer": "gamigo US Inc.",
+    "publisher": "gamigo US Inc.",
+    "hltb": {
+      "main": 105.6,
+      "mainExtra": 201.4,
+      "completionist": 620.5
+    }
+  },
+  "39140": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 26207,
+    "totalReviewsEnglish": 16520,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/39140/header.jpg?t=1771952602",
+    "genres": [
+      "RPG"
+    ],
+    "release_date": "",
+    "short_description": "The RPG classic FINAL FANTASY VII returns to PC, now with brand new online features!",
+    "developer": "Square Enix",
+    "publisher": "Square Enix",
+    "hltb": {
+      "main": 36,
+      "mainExtra": 49,
+      "completionist": 79.5
+    }
+  },
+  "39210": {
+    "reviewScore": 86,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 78248,
+    "totalReviewsEnglish": 60792,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/39210/header.jpg?t=1782870674",
+    "genres": [
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "release_date": "Feb 18, 2014",
+    "short_description": "Join over 30 million adventurers worldwide and take part in an epic and ever-changing FINAL FANTASY. Experience an unforgettable story, exhilarating battles, and a myriad of captivating environments to explore.",
+    "developer": "Square Enix",
+    "publisher": "Square Enix",
+    "hltb": {
+      "main": 4,
+      "mainExtra": 1067,
+      "completionist": null
+    }
+  },
+  "39500": {
+    "reviewScore": 80,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 9020,
+    "totalReviewsEnglish": 2034,
+    "metacritic": 63,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/39500/header.jpg?t=1776958818",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "release_date": "Dec 2, 2009",
+    "short_description": "A nameless hero becomes a legend! Myrtana, a world in upheaval: overrun by orcs from the dark lands in the north, King Rhobar is defending Vengard, the former stronghold of the humans, with his last troop of followers.",
+    "developer": "Piranha Bytes",
+    "publisher": "THQ Nordic",
+    "hltb": {
+      "main": 45.1,
+      "mainExtra": 67.5,
+      "completionist": 110.8
+    }
+  },
+  "40800": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 29819,
+    "totalReviewsEnglish": 13784,
+    "metacritic": 87,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/40800/header.jpg?t=1700669950",
+    "genres": [
+      "Indie"
+    ],
+    "release_date": "Nov 30, 2010",
+    "short_description": "The infamous, tough-as-nails platformer comes to Steam with a playable Head Crab character (Steam-exclusive)!",
+    "developer": "Team Meat",
+    "publisher": null,
+    "hltb": {
+      "main": 9.2,
+      "mainExtra": 18.2,
+      "completionist": 45.7
+    }
+  },
+  "40990": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 8831,
+    "totalReviewsEnglish": 2247,
+    "metacritic": 88,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/40990/header.jpg?t=1746716619",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Aug 28, 2002",
+    "short_description": "It’s 1930. After an inadvertent brush with the mafia, cabdriver Tommy Angelo is reluctantly thrust into the world of organized crime. Initially, he is uneasy about falling in with the Salieri family, but soon the rewards become too big to ignore.",
+    "developer": "Illusion Softworks",
+    "publisher": "2K",
+    "hltb": {
+      "main": 16.1,
+      "mainExtra": 18.2,
+      "completionist": 21.2
+    }
+  },
+  "41000": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 7263,
+    "totalReviewsEnglish": 2431,
+    "metacritic": 68,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/41000/header.jpg?t=1728687623",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "release_date": "Nov 24, 2009",
+    "short_description": "Serious Sam HD: The First Encounter is a visually upgraded and fully Steam supported remake version of the original high-adrenaline single-play and 16-player co-operative arcade-action FPS which was Gamespot's Game of the Year 2001 and which scored overall of 87% on Metacritic!",
+    "developer": "Croteam",
+    "publisher": "Devolver Digital",
+    "hltb": {
+      "main": 6.2,
+      "mainExtra": 8.5,
+      "completionist": 19.4
+    }
+  },
+  "41070": {
+    "reviewScore": 88,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 21744,
+    "totalReviewsEnglish": 5883,
+    "metacritic": 72,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/41070/header.jpg?t=1728688460",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "release_date": "Nov 22, 2011",
+    "short_description": "Serious Sam 3: BFE is a prequel to the original indie fast action FPS and Game of the Year sensation - Serious Sam: The First Encounter!",
+    "developer": "Croteam",
+    "publisher": "Devolver Digital",
+    "hltb": {
+      "main": 10.1,
+      "mainExtra": 14.6,
+      "completionist": 28.8
+    }
+  },
+  "41500": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 5439,
+    "totalReviewsEnglish": 3466,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/41500/header.jpg?t=1782381248",
+    "genres": [
+      "RPG"
+    ],
+    "release_date": "Oct 27, 2009",
+    "short_description": "Adventure awaits in the award-winning Action RPG debut from Runic Games! Explore the randomized depths of this boom town, collect loot, and level up to save Torchlight - and possibly the world.",
+    "developer": "Runic Games",
+    "publisher": "XD",
+    "hltb": {
+      "main": 14.2,
+      "mainExtra": 21.4,
+      "completionist": 48.5
+    }
+  },
+  "42680": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 15419,
+    "totalReviewsEnglish": 7137,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/42680/header.jpg?t=1782415611",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 8, 2011",
+    "short_description": "The best-selling first-person action series of all-time returns with an epic sequel to the multiple GOTY award winner Call of Duty®: Modern Warfare® 2",
+    "developer": "Infinity Ward, Sledgehammer Games",
+    "publisher": "Activision",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "42700": {
+    "reviewScore": 91,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 22046,
+    "totalReviewsEnglish": 14771,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/42700/header.jpg?t=1780962720",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 9, 2010",
+    "short_description": "The biggest first-person action series of all time and the follow-up to critically acclaimed Call of Duty®: Modern Warfare 2 returns with Call of Duty®: Black Ops.",
+    "developer": "Treyarch",
+    "publisher": "Activision",
+    "hltb": {
+      "main": 7.1,
+      "mainExtra": 12.7,
+      "completionist": 18.2
+    }
+  },
+  "42710": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 2139,
+    "totalReviewsEnglish": 1523,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/42700/header.jpg?t=1780962720",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 9, 2010",
+    "short_description": "The biggest first-person action series of all time and the follow-up to critically acclaimed Call of Duty®: Modern Warfare 2 returns with Call of Duty®: Black Ops.",
+    "developer": "Treyarch",
+    "publisher": "Activision",
+    "hltb": {
+      "main": 7.1,
+      "mainExtra": 12.7,
+      "completionist": 18.2
+    }
+  },
+  "42910": {
+    "reviewScore": 85,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 19124,
+    "totalReviewsEnglish": 8683,
+    "metacritic": 74,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/42910/header.jpg?t=1726497076",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "release_date": "Jan 25, 2011",
+    "short_description": "Magicka is a satirical action-adventure game set in a rich fantasy world based on Norse mythology. The player assumes the role of a wizard from a sacred order tasked with stopping an evil sorcerer who has thrown the world into turmoil, his foul creations besieging the forces of good.",
+    "developer": "Arrowhead Game Studios",
+    "publisher": "Paradox Interactive",
+    "hltb": {
+      "main": 10.4,
+      "mainExtra": 16.3,
+      "completionist": 45.3
+    }
+  },
+  "47790": {
+    "reviewScore": 82,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 6962,
+    "totalReviewsEnglish": 2602,
+    "metacritic": 72,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47790/header.jpg?t=1777494872",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Oct 12, 2010",
+    "short_description": "Fight Today's War: Elite Special Forces in a gritty combat campaign using the surgical tactics of Tier 1 Operators combined with the sledgehammer force of Army Rangers.",
+    "developer": "Electronic Arts",
+    "publisher": "Electronic Arts",
+    "hltb": {
+      "main": 5,
+      "mainExtra": 6.2,
+      "completionist": 9.5
+    }
+  },
+  "47810": {
+    "reviewScore": 85,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 28483,
+    "totalReviewsEnglish": 20730,
+    "metacritic": 91,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47810/header.jpg?t=1782471846",
+    "genres": [
+      "RPG"
+    ],
+    "release_date": "Oct 26, 2010",
+    "short_description": "Explore a stunning world, make complex moral choices, and engage in bone-crushing combat against massive and terrifying creatures. The Ultimate Edition includes Dragon Age: Origins, Dragon Age: Origins - Awakening and all nine content packs.",
+    "developer": "BioWare",
+    "publisher": "Electronic Arts",
+    "hltb": {
+      "main": 49.4,
+      "mainExtra": 71,
+      "completionist": 104.3
+    }
+  },
+  "47830": {
+    "reviewScore": 73,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 95,
+    "totalReviewsEnglish": 32,
+    "metacritic": 72,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47790/header.jpg?t=1777494872",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Oct 12, 2010",
+    "short_description": "Fight Today's War: Elite Special Forces in a gritty combat campaign using the surgical tactics of Tier 1 Operators combined with the sledgehammer force of Army Rangers.",
+    "developer": "Electronic Arts",
+    "publisher": "Electronic Arts",
+    "hltb": {
+      "main": 5,
+      "mainExtra": 6.2,
+      "completionist": 9.5
+    }
+  },
+  "47870": {
+    "reviewScore": 82,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 17450,
+    "totalReviewsEnglish": 5283,
+    "metacritic": 85,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47870/header.jpg?t=1743805492",
+    "genres": [
+      "Racing"
+    ],
+    "release_date": "Dec 14, 2010",
+    "short_description": "Need for Speed Hot Pursuit launches you into a new open-world landscape behind the wheel of the world's fastest and most beautiful cars. From Criterion, the award-winning studio behind the Burnout series, Hot Pursuit will redefine racing games for a whole new generation.",
+    "developer": "Criterion Games",
+    "publisher": "Electronic Arts",
+    "hltb": {
+      "main": 14.1,
+      "mainExtra": 20.6,
+      "completionist": 31.1
     }
   }
 }

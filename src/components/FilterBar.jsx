@@ -10,6 +10,8 @@ export default function FilterBar({
   setTimeFilter,
   playtimeThreshold,
   setPlaytimeThreshold,
+  minReviews,
+  setMinReviews,
   onOpenPicker
 }) {
   return (
@@ -47,6 +49,24 @@ export default function FilterBar({
             <option value={0}>Completely Unplayed (0h)</option>
             <option value={60}>Minimal Playtime (&lt; 1h)</option>
             <option value={120}>Under 2 Hours (&lt; 2h)</option>
+          </select>
+        </div>
+
+        {/* Minimum Reviews Filter */}
+        <div className="select-box">
+          <select 
+            value={minReviews} 
+            onChange={(e) => setMinReviews(Number(e.target.value))}
+            title="Filter out low review counts (e.g. demos, niche games)"
+          >
+            <option value={0}>Any review count (0+)</option>
+            <option value={10}>Min reviews: 10+</option>
+            <option value={50}>Min reviews: 50+</option>
+            <option value={100}>Min reviews: 100+ (Default)</option>
+            <option value={500}>Min reviews: 500+</option>
+            <option value={1000}>Min reviews: 1,000+</option>
+            <option value={5000}>Min reviews: 5,000+</option>
+            <option value={10000}>Min reviews: 10,000+</option>
           </select>
         </div>
 

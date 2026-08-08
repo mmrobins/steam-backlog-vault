@@ -21,6 +21,7 @@ export default function App() {
   const [sortBy, setSortBy] = useState('reviewScore'); // default sort by review score!
   const [timeFilter, setTimeFilter] = useState('all');
   const [playtimeThreshold, setPlaytimeThreshold] = useState(0);
+  const [minReviews, setMinReviews] = useState(100);
 
   // Modals State
   const [isPickerOpen, setIsPickerOpen] = useState(false);
@@ -293,6 +294,11 @@ export default function App() {
         if (timeFilter === 'long' && (!mainTime || mainTime <= 25 || mainTime > 50)) return false;
         if (timeFilter === 'epic' && (!mainTime || mainTime <= 50)) return false;
 
+        // Min reviews filter
+        if (game.isSteamCached && game.totalReviews !== null && game.totalReviews < minReviews) {
+          return false;
+        }
+
         return true;
       })
       .sort((a, b) => {
@@ -321,7 +327,7 @@ export default function App() {
         }
         return 0;
       });
-  }, [games, searchQuery, sortBy, timeFilter]);
+  }, [games, searchQuery, sortBy, timeFilter, minReviews]);
 
   return (
     <div className="app-container">
@@ -382,6 +388,8 @@ export default function App() {
           setTimeFilter={setTimeFilter}
           playtimeThreshold={playtimeThreshold}
           setPlaytimeThreshold={setPlaytimeThreshold}
+          minReviews={minReviews}
+          setMinReviews={setMinReviews}
           onOpenPicker={() => setIsPickerOpen(true)}
         />
       )}
