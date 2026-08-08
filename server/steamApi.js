@@ -340,8 +340,10 @@ async function getSteamAppReviewScore(appid) {
       return reviewData;
     }
   } catch (err) {
-    // Only log if it's NOT a rate-limit (those are handled by fetchWithRetry)
-    if (err?.response?.status !== 403 && err?.response?.status !== 429) {
+    const status = err?.response?.status;
+    if (status === 429 || status === 403) {
+      console.warn(`[Steam Store API] Rate limited on app ${appid} (${status}) — all retries exhausted, using fallback.`);
+    } else {
       console.warn(`[Steam Store API] Failed review fetch for app ${appid}:`, err.message);
     }
   }
@@ -375,7 +377,10 @@ async function getSteamAppDetails(appid) {
       return details;
     }
   } catch (err) {
-    if (err?.response?.status !== 403 && err?.response?.status !== 429) {
+    const status = err?.response?.status;
+    if (status === 429 || status === 403) {
+      console.warn(`[Steam AppDetails API] Rate limited on app ${appid} (${status}) — all retries exhausted, using fallback.`);
+    } else {
       console.warn(`[Steam AppDetails API] Failed details fetch for app ${appid}:`, err.message);
     }
   }
