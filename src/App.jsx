@@ -46,6 +46,11 @@ export default function App() {
     }
   }, []);
 
+  // Background Syncing State
+  const [syncTotal, setSyncTotal] = useState(0);
+  const [syncCurrent, setSyncCurrent] = useState(0);
+  const [isSyncing, setIsSyncing] = useState(false);
+
   // Fetch backlog when steamid, apiKey, or playtimeThreshold changes
   useEffect(() => {
     if (!steamid) return;
@@ -53,6 +58,9 @@ export default function App() {
     let isMounted = true;
     setLoading(true);
     setErrorInfo(null);
+    setIsSyncing(false);
+    setSyncTotal(0);
+    setSyncCurrent(0);
 
     async function loadData() {
       try {
@@ -62,11 +70,20 @@ export default function App() {
         const userSummary = await fetchUserSummary(steamid, apiKey);
         if (isMounted) setUser(userSummary);
 
-        // Fetch backlog games list
+        // Fetch backlog games list (returns cached items and basic uncached items instantly)
         const data = await fetchBacklogGames(steamid, apiKey, isDemo, playtimeThreshold);
         if (isMounted) {
-          setGames(data.games || []);
+          const loadedGames = data.games || [];
+          setGames(loadedGames);
           setLoading(false);
+
+          // Find games that need details fetched
+          const uncachedGames = loadedGames.filter(g => !g.isCached);
+          if (uncachedGames.length > 0 && !isDemo) {
+            setSyncTotal(uncachedGames.length);
+            setIsSyncing(true);
+            triggerBackgroundSync(uncachedGames);
+          }
         }
       } catch (err) {
         if (isMounted) {
@@ -77,6 +94,48 @@ export default function App() {
           });
           setLoading(false);
         }
+      }
+    }
+
+    // Sequentially fetch details in background
+    async function triggerBackgroundSync(queue) {
+      let current = 0;
+      for (const game of queue) {
+        if (!isMounted) break;
+        
+        try {
+          const res = await fetch('/api/enrich', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ appid: game.appid, name: game.name })
+          });
+          
+          if (!res.ok) throw new Error('Enrich failed');
+          
+          const enrichedData = await res.json();
+          
+          if (isMounted) {
+            // Update the game in our list in real-time
+            setGames(prevGames => prevGames.map(g => {
+              if (g.appid === game.appid) {
+                return { ...g, ...enrichedData, isCached: true };
+              }
+              return g;
+            }));
+            
+            current++;
+            setSyncCurrent(current);
+          }
+        } catch (e) {
+          console.warn(`[Sync] Failed to enrich app ${game.appid}:`, e.message);
+        }
+        
+        // Pause between requests to prevent hitting the Steam rate limit
+        await new Promise(r => setTimeout(r, 750));
+      }
+      
+      if (isMounted) {
+        setIsSyncing(false);
       }
     }
 
@@ -165,6 +224,18 @@ export default function App() {
         onLogout={handleLogout}
         isDemo={steamid === 'demo'}
       />
+
+      {/* Real-time background sync progress bar */}
+      {isSyncing && (
+        <div className="sync-progress-bar-container">
+          <div className="sync-status">
+            <span>🔄 Syncing library data in background... {syncCurrent} / {syncTotal} games synced ({Math.round(syncCurrent / syncTotal * 100)}%)</span>
+          </div>
+          <div className="sync-progress-track">
+            <div className="sync-progress-fill" style={{ width: `${(syncCurrent / syncTotal * 100)}%` }}></div>
+          </div>
+        </div>
+      )}
 
       {/* Aggregate Stats Dashboard */}
       {!loading && !errorInfo && <BacklogStats games={games} />}

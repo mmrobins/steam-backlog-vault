@@ -84,7 +84,7 @@ app.get('/api/backlog/:steamid', async (req, res) => {
 
     if (isDemo) {
       // Use built-in rich demo backlog dataset
-      gamesList = DEMO_GAMES;
+      gamesList = DEMO_GAMES.map(g => ({ ...g, isCached: true }));
     } else {
       if (!apiKey) {
         return res.status(400).json({
@@ -98,32 +98,34 @@ app.get('/api/backlog/:steamid', async (req, res) => {
       // Filter by playtime (default: unplayed = 0 minutes)
       const unplayed = ownedGames.filter(g => (g.playtime_forever || 0) <= maxPlaytime);
 
-      console.log(`[Backlog] Fetching enrichment for ${unplayed.length} unplayed games...`);
-
-      // Fetch HLTB and Steam Store data with concurrency limits to avoid 403 rate limits
-      const [hltbMap, storeData] = await Promise.all([
-        batchGetTimeToBeat(unplayed, 6),
-        batchFetchStoreData(unplayed, 4)   // max 4 concurrent Steam Store requests
-      ]);
-
+      // Check cache for each game to build the list instantly
+      const cache = require('./cache');
+      
       gamesList = unplayed.map((game) => {
-        const { reviews, details } = storeData[game.appid] || {};
+        const cachedDetails = cache.get(`steam_details_${game.appid}`);
+        const cachedReviews = cache.get(`steam_review_${game.appid}`);
+        const cachedHltb = cache.get(`hltb_${game.name.toLowerCase().trim()}`);
+
+        const isCached = cachedDetails !== undefined && cachedReviews !== undefined;
+
         return {
           appid: game.appid,
           name: game.name,
           playtime_forever: game.playtime_forever || 0,
           img_icon_url: game.img_icon_url,
-          reviewScore: reviews?.reviewScore ?? null,
-          reviewDesc: reviews?.reviewDesc ?? 'No Reviews',
-          totalReviews: reviews?.totalReviews ?? 0,
-          metacritic: details?.metacritic ?? null,
-          header_image: details?.header_image ?? `https://cdn.akamai.steamstatic.com/steam/apps/${game.appid}/header.jpg`,
-          genres: details?.genres ?? [],
-          release_date: details?.release_date ?? null,
-          short_description: details?.short_description ?? '',
-          developer: details?.developer ?? null,
-          publisher: details?.publisher ?? null,
-          hltb: hltbMap[game.appid] || { main: null, mainExtra: null, completionist: null }
+          isCached: isCached,
+          // Hydrate details if available in cache
+          reviewScore: cachedReviews?.reviewScore ?? null,
+          reviewDesc: cachedReviews?.reviewDesc ?? 'No Reviews',
+          totalReviews: cachedReviews?.totalReviews ?? 0,
+          metacritic: cachedDetails?.metacritic ?? null,
+          header_image: cachedDetails?.header_image ?? `https://cdn.akamai.steamstatic.com/steam/apps/${game.appid}/header.jpg`,
+          genres: cachedDetails?.genres ?? [],
+          release_date: cachedDetails?.release_date ?? null,
+          short_description: cachedDetails?.short_description ?? '',
+          developer: cachedDetails?.developer ?? null,
+          publisher: cachedDetails?.publisher ?? null,
+          hltb: cachedHltb || { main: null, mainExtra: null, completionist: null }
         };
       });
     }
@@ -139,6 +141,41 @@ app.get('/api/backlog/:steamid', async (req, res) => {
       error: 'FETCH_ERROR',
       message: err.message || 'Failed to fetch backlog games.'
     });
+  }
+});
+
+// Endpoint to enrich a single game on demand (client-side background fetch)
+app.post('/api/enrich', async (req, res) => {
+  try {
+    const { appid, name } = req.body;
+    if (!appid || !name) {
+      return res.status(400).json({ error: 'AppID and Name are required' });
+    }
+
+    // Fetch details, reviews and hltb
+    const [reviews, details, hltb] = await Promise.all([
+      getSteamAppReviewScore(appid),
+      getSteamAppDetails(appid),
+      getGameTimeToBeat(name)
+    ]);
+
+    return res.json({
+      appid,
+      reviewScore: reviews.reviewScore,
+      reviewDesc: reviews.reviewDesc,
+      totalReviews: reviews.totalReviews,
+      metacritic: details.metacritic,
+      header_image: details.header_image,
+      genres: details.genres,
+      release_date: details.release_date,
+      short_description: details.short_description,
+      developer: details.developer,
+      publisher: details.publisher,
+      hltb
+    });
+  } catch (err) {
+    console.error(`[API /enrich error] AppID ${req.body?.appid}:`, err.message);
+    return res.status(500).json({ error: err.message });
   }
 });
 

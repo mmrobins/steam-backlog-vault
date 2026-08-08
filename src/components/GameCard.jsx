@@ -43,6 +43,32 @@ export default function GameCard({ game }) {
     ? `${developer} / ${publisher}`
     : developer || publisher || null;
 
+  if (game.isCached === false) {
+    return (
+      <div className="game-card skeleton-card">
+        <div className="card-media skeleton-media">
+          <img
+            src={`https://cdn.akamai.steamstatic.com/steam/apps/${appid}/header.jpg`}
+            alt={name}
+            loading="lazy"
+            onError={(e) => {
+              e.target.src = 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80';
+            }}
+          />
+          <div className="skeleton-media-overlay">
+            <span className="skeleton-pulse-text">Syncing details...</span>
+          </div>
+        </div>
+        <div className="card-body">
+          <h3 className="game-title" style={{ marginBottom: '0.5rem' }}>{name}</h3>
+          <div className="skeleton-bar" style={{ width: '60%', height: '14px', marginBottom: '0.8rem' }}></div>
+          <div className="skeleton-bar" style={{ width: '100%', height: '35px', marginBottom: '0.8rem' }}></div>
+          <div className="skeleton-bar" style={{ width: '40%', height: '12px' }}></div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="game-card">
       <div className="card-media">
