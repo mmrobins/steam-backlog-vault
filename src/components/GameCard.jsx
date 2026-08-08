@@ -69,6 +69,8 @@ export default function GameCard({ game }) {
     ? `https://howlongtobeat.com/game/${resolvedHltbId}`
     : `https://howlongtobeat.com/?q=${encodeURIComponent(name)}`;
 
+  const resolvedMetacriticUrl = metacriticUrl || (metacritic ? `https://www.metacritic.com/search/game/${encodeURIComponent(name)}/results` : null);
+
   const devPubLine = developer && publisher && developer !== publisher
     ? `${developer} / ${publisher}`
     : developer || publisher || null;
@@ -112,11 +114,11 @@ export default function GameCard({ game }) {
           }}
         />
 
-        {/* Metacritic Badge (Link if url is available) */}
+        {/* Metacritic Badge (Link if url is available or generated) */}
         {isSteamCached && metacritic && (
-          metacriticUrl ? (
+          resolvedMetacriticUrl ? (
             <a
-              href={metacriticUrl}
+              href={resolvedMetacriticUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="meta-score-link"
