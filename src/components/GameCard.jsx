@@ -15,6 +15,17 @@ function formatReviewCount(n) {
   return n.toString();
 }
 
+function slugify(text) {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/[™®]/g, '')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
+
 const POPULAR_HLTB_IDS = {
   "portal 2": 7231,
   "portal": 7230,
@@ -69,7 +80,7 @@ export default function GameCard({ game }) {
     ? `https://howlongtobeat.com/game/${resolvedHltbId}`
     : `https://howlongtobeat.com/?q=${encodeURIComponent(name)}`;
 
-  const resolvedMetacriticUrl = metacriticUrl || (metacritic ? `https://www.metacritic.com/search/game/${encodeURIComponent(name)}/results` : null);
+  const resolvedMetacriticUrl = metacriticUrl || (metacritic ? `https://www.metacritic.com/game/pc/${slugify(name)}` : null);
 
   const devPubLine = developer && publisher && developer !== publisher
     ? `${developer} / ${publisher}`
