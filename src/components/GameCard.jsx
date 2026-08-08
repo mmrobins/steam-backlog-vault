@@ -16,8 +16,8 @@ function formatReviewCount(n) {
 }
 
 const POPULAR_HLTB_IDS = {
-  "portal 2": 7208,
-  "portal": 7207,
+  "portal 2": 7231,
+  "portal": 7230,
   "the witcher 3: wild hunt": 10270,
   "hollow knight": 26286,
   "hades": 59746,

@@ -8,8 +8,8 @@ const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 // Fallback HLTB times in memory for instant seeding
 const POPULAR_HLTB_CACHE = {
-  "Portal 2": { main: 8.5, mainExtra: 11, completionist: 21, hltbId: 7208 },
-  "Portal": { main: 3, mainExtra: 5, completionist: 10, hltbId: 7207 },
+  "Portal 2": { main: 8.5, mainExtra: 11, completionist: 21, hltbId: 7231 },
+  "Portal": { main: 3, mainExtra: 5, completionist: 10, hltbId: 7230 },
   "The Witcher 3: Wild Hunt": { main: 51.5, mainExtra: 104, completionist: 173, hltbId: 10270 },
   "Hollow Knight": { main: 27, mainExtra: 41.5, completionist: 63.5, hltbId: 26286 },
   "Hades": { main: 22, mainExtra: 48, completionist: 97, hltbId: 59746 },
