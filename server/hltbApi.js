@@ -41,6 +41,32 @@ function cleanGameTitle(title) {
     .trim();
 }
 
+// Global cached credentials for HLTB session
+let hltbAuth = null;
+
+async function getHltbAuth() {
+  if (hltbAuth) return hltbAuth;
+  
+  const browserUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+  const initRes = await axios.get('https://howlongtobeat.com/api/bleed/init?t=' + Date.now(), {
+    headers: {
+      'User-Agent': browserUserAgent,
+      'Referer': 'https://howlongtobeat.com/'
+    },
+    timeout: 4500
+  });
+  
+  if (initRes.data && initRes.data.token) {
+    hltbAuth = {
+      token: initRes.data.token,
+      hpKey: initRes.data.hpKey,
+      hpVal: initRes.data.hpVal
+    };
+    return hltbAuth;
+  }
+  throw new Error('Failed to retrieve HLTB credentials');
+}
+
 /**
  * Fetch Time to Beat data for a single game from HowLongToBeat
  */
@@ -63,87 +89,85 @@ async function getGameTimeToBeat(title) {
     return POPULAR_HLTB_CACHE[cleaned];
   }
 
+  const browserUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+
   try {
     const searchTerms = cleaned.split(/\s+/).filter(Boolean);
     
-    // Step 1: Get dynamic token and honeypot keys
-    const initRes = await axios.get('https://howlongtobeat.com/api/bleed/init?t=' + Date.now(), {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-        'Referer': 'https://howlongtobeat.com/'
-      },
-      timeout: 4000
-    });
+    // Get dynamic token (reads from memory cache if already populated)
+    const { token, hpKey, hpVal } = await getHltbAuth();
     
-    if (initRes.data && initRes.data.token) {
-      const { token, hpKey, hpVal } = initRes.data;
-      
-      // Step 2: Construct payload with honeypot key
-      const payload = {
-        searchType: 'games',
-        searchTerms: searchTerms,
-        searchPage: 1,
-        size: 5,
-        searchOptions: {
-          games: {
-            userId: 0,
-            platform: '',
-            sortCategory: 'popular',
-            rangeCategory: 'main',
-            rangeTime: { min: 0, max: 0 },
-            gameplay: { perspective: '', flow: '', genre: '', difficulty: '' },
-            rangeYear: { min: 0, max: 0 },
-            modifier: ''
-          },
-          users: { sortCategory: 'postcount' },
-          lists: { sortCategory: 'follows' },
-          filter: '',
-          sort: 0,
-          randomizer: 0
+    // Construct payload with honeypot key
+    const payload = {
+      searchType: 'games',
+      searchTerms: searchTerms,
+      searchPage: 1,
+      size: 5,
+      searchOptions: {
+        games: {
+          userId: 0,
+          platform: '',
+          sortCategory: 'popular',
+          rangeCategory: 'main',
+          rangeTime: { min: 0, max: 0 },
+          gameplay: { perspective: '', flow: '', genre: '', difficulty: '' },
+          rangeYear: { min: 0, max: 0 },
+          modifier: ''
         },
-        useCache: true
-      };
-      
-      // Inject honeypot key
-      payload[hpKey] = hpVal;
-      
-      // Step 3: Search using /api/bleed endpoint
-      const response = await axios.post(
-        'https://howlongtobeat.com/api/bleed',
-        payload,
-        {
-          headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-            'Referer': 'https://howlongtobeat.com/',
-            'Origin': 'https://howlongtobeat.com',
-            'Content-Type': 'application/json',
-            'x-auth-token': token,
-            'x-hp-key': hpKey,
-            'x-hp-val': hpVal
-          },
-          timeout: 4000
-        }
-      );
-      
-      if (response.data && response.data.data && response.data.data.length > 0) {
-        const game = response.data.data.find(
-          g => g.game_name.toLowerCase() === title.toLowerCase() || g.game_name.toLowerCase() === cleaned.toLowerCase()
-        ) || response.data.data[0];
-
-        const hltbData = {
-          main: game.comp_main ? Math.round((game.comp_main / 3600) * 10) / 10 : null,
-          mainExtra: game.comp_plus ? Math.round((game.comp_plus / 3600) * 10) / 10 : null,
-          completionist: game.comp_100 ? Math.round((game.comp_100 / 3600) * 10) / 10 : null,
-          hltbId: game.game_id
-        };
-
-        cache.set(cacheKey, hltbData);
-        return hltbData;
+        users: { sortCategory: 'postcount' },
+        lists: { sortCategory: 'follows' },
+        filter: '',
+        sort: 0,
+        randomizer: 0
+      },
+      useCache: true
+    };
+    
+    // Inject honeypot key
+    payload[hpKey] = hpVal;
+    
+    // Search using /api/bleed endpoint
+    const response = await axios.post(
+      'https://howlongtobeat.com/api/bleed',
+      payload,
+      {
+        headers: {
+          'User-Agent': browserUserAgent,
+          'Referer': 'https://howlongtobeat.com/',
+          'Origin': 'https://howlongtobeat.com',
+          'Content-Type': 'application/json',
+          'x-auth-token': token,
+          'x-hp-key': hpKey,
+          'x-hp-val': hpVal
+        },
+        timeout: 4000
       }
+    );
+    
+    if (response.data && response.data.data && response.data.data.length > 0) {
+      const game = response.data.data.find(
+        g => g.game_name.toLowerCase() === title.toLowerCase() || g.game_name.toLowerCase() === cleaned.toLowerCase()
+      ) || response.data.data[0];
+
+      const hltbData = {
+        main: game.comp_main ? Math.round((game.comp_main / 3600) * 10) / 10 : null,
+        mainExtra: game.comp_plus ? Math.round((game.comp_plus / 3600) * 10) / 10 : null,
+        completionist: game.comp_100 ? Math.round((game.comp_100 / 3600) * 10) / 10 : null,
+        hltbId: game.game_id
+      };
+
+      cache.set(cacheKey, hltbData);
+      return hltbData;
     }
   } catch (err) {
+    const status = err.response?.status;
+    if (status === 403 || status === 401) {
+      // Invalidate credentials on auth failures to trigger fresh lookup next time
+      hltbAuth = null;
+    }
+    
     // Suppress console warnings for WAF blocks (like 404/403) and log quietly
-    if (err.response?.status !== 404 && err.response?.status !== 403) {
+    if (status !== 404 && status !== 403) {
       console.log(`[HLTB info] HLTB lookups currently unavailable for "${title}" (${err.message})`);
     }
     // Return direct fallback without caching so we can retry on next loading loop

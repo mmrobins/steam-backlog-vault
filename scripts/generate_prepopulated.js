@@ -27,69 +27,98 @@ const POPULAR_HLTB_CACHE = {
   "Disco Elysium": { main: 22, mainExtra: 33.5, completionist: 46 }
 };
 
+// Global cached credentials for HLTB session during crawl
+let hltbAuth = null;
+
+async function getHltbAuth() {
+  if (hltbAuth) return hltbAuth;
+  
+  const browserUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+  const initRes = await axios.get('https://howlongtobeat.com/api/bleed/init?t=' + Date.now(), {
+    headers: {
+      'User-Agent': browserUserAgent,
+      'Referer': 'https://howlongtobeat.com/'
+    },
+    timeout: 4500
+  });
+  
+  if (initRes.data && initRes.data.token) {
+    hltbAuth = {
+      token: initRes.data.token,
+      hpKey: initRes.data.hpKey,
+      hpVal: initRes.data.hpVal
+    };
+    return hltbAuth;
+  }
+  throw new Error('Failed to retrieve HLTB credentials');
+}
+
 // Simple clean HLTB query method to bypass WAF blockers locally in dev mode
 async function fetchHltbTime(title) {
   const cleaned = title.replace(/[™®]/g, '').trim();
   if (POPULAR_HLTB_CACHE[cleaned]) return POPULAR_HLTB_CACHE[cleaned];
   
+  const browserUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+
   try {
-    const initRes = await axios.get('https://howlongtobeat.com/api/bleed/init?t=' + Date.now(), {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
+    const { token, hpKey, hpVal } = await getHltbAuth();
+    
+    const payload = {
+      searchType: 'games',
+      searchTerms: cleaned.split(' '),
+      searchPage: 1,
+      size: 3,
+      searchOptions: {
+        games: {
+          userId: 0,
+          platform: '',
+          sortCategory: 'popular',
+          rangeCategory: 'main',
+          rangeTime: { min: 0, max: 0 },
+          gameplay: { perspective: '', flow: '', genre: '', difficulty: '' },
+          rangeYear: { min: 0, max: 0 },
+          modifier: ''
+        },
+        users: { sortCategory: 'postcount' },
+        lists: { sortCategory: 'follows' },
+        filter: '',
+        sort: 0,
+        randomizer: 0
+      },
+      useCache: true
+    };
+    payload[hpKey] = hpVal;
+    
+    const searchRes = await axios.post('https://howlongtobeat.com/api/bleed', payload, {
+      headers: {
+        'User-Agent': browserUserAgent,
+        'Referer': 'https://howlongtobeat.com/',
+        'Origin': 'https://howlongtobeat.com',
+        'Content-Type': 'application/json',
+        'x-auth-token': token,
+        'x-hp-key': hpKey,
+        'x-hp-val': hpVal
+      },
       timeout: 3000
     });
     
-    if (initRes.data && initRes.data.token) {
-      const { token, hpKey, hpVal } = initRes.data;
-      const payload = {
-        searchType: 'games',
-        searchTerms: cleaned.split(' '),
-        searchPage: 1,
-        size: 3,
-        searchOptions: {
-          games: {
-            userId: 0,
-            platform: '',
-            sortCategory: 'popular',
-            rangeCategory: 'main',
-            rangeTime: { min: 0, max: 0 },
-            gameplay: { perspective: '', flow: '', genre: '', difficulty: '' },
-            rangeYear: { min: 0, max: 0 },
-            modifier: ''
-          },
-          users: { sortCategory: 'postcount' },
-          lists: { sortCategory: 'follows' },
-          filter: '',
-          sort: 0,
-          randomizer: 0
-        },
-        useCache: true
+    if (searchRes.data?.data?.length > 0) {
+      const game = searchRes.data.data[0];
+      return {
+        main: game.comp_main ? Math.round(game.comp_main / 3600 * 10) / 10 : null,
+        mainExtra: game.comp_plus ? Math.round(game.comp_plus / 3600 * 10) / 10 : null,
+        completionist: game.comp_100 ? Math.round(game.comp_100 / 3600 * 10) / 10 : null
       };
-      payload[hpKey] = hpVal;
-      
-      const searchRes = await axios.post('https://howlongtobeat.com/api/bleed', payload, {
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-          'Referer': 'https://howlongtobeat.com/',
-          'Origin': 'https://howlongtobeat.com',
-          'Content-Type': 'application/json',
-          'x-auth-token': token,
-          'x-hp-key': hpKey,
-          'x-hp-val': hpVal
-        },
-        timeout: 3000
-      });
-      
-      if (searchRes.data?.data?.length > 0) {
-        const game = searchRes.data.data[0];
-        return {
-          main: game.comp_main ? Math.round(game.comp_main / 3600 * 10) / 10 : null,
-          mainExtra: game.comp_plus ? Math.round(game.comp_plus / 3600 * 10) / 10 : null,
-          completionist: game.comp_100 ? Math.round(game.comp_100 / 3600 * 10) / 10 : null
-        };
-      }
     }
   } catch (e) {
-    // Ignore error
+    const status = e.response?.status;
+    if (status === 403 || status === 401) {
+      hltbAuth = null; // Reset token on auth failure
+    }
+    
+    if (status !== 404 && status !== 403) {
+      console.warn(` [HLTB Crawl Warning] Failed time lookup for "${title}":`, e.message, status || '');
+    }
   }
   return { main: null, mainExtra: null, completionist: null };
 }

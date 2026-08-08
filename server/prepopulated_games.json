@@ -13,9 +13,9 @@
     "developer": "Valve",
     "publisher": "Valve",
     "hltb": {
-      "main": null,
-      "mainExtra": null,
-      "completionist": null
+      "main": 25.4,
+      "mainExtra": 91.3,
+      "completionist": 774.8
     }
   },
   "30": {
@@ -32,9 +32,9 @@
     "developer": "Valve",
     "publisher": "Valve",
     "hltb": {
-      "main": null,
-      "mainExtra": null,
-      "completionist": null
+      "main": 5.9,
+      "mainExtra": 24.7,
+      "completionist": 80.9
     }
   }
 }
