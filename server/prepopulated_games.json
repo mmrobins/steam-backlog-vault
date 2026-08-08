@@ -4579,5 +4579,1199 @@
       "mainExtra": 48.5,
       "completionist": 242.8
     }
+  },
+  "220200": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 119325,
+    "metacritic": 88,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220200/header.jpg?t=1738037585",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "release_date": "Apr 27, 2015",
+    "short_description": "In Kerbal Space Program, take charge of the space program for the alien race known as the Kerbals. You have access to an array of parts to assemble fully-functional spacecraft that flies (or doesn’t) based on realistic aerodynamic and orbital physics.",
+    "developer": "Squad",
+    "publisher": "Private Division",
+    "hltb": {
+      "main": 115.9,
+      "mainExtra": 242.7,
+      "completionist": 594.8
+    }
+  },
+  "220240": {
+    "reviewScore": 88,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 121554,
+    "metacritic": 88,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220240/3848aafeb6e5cff40cbf6210c34413f3034150da/header.jpg?t=1785282057",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Dec 4, 2012",
+    "short_description": "Stranded on the Rook Islands as Jason Brody, fight your way through a lawless tropical open world using a powerful arsenal to save your friends and escape the madness of this acclaimed visceral FPS.",
+    "developer": "Ubisoft Montreal, Massive Entertainment, and Ubisoft Shanghai",
+    "publisher": "Ubisoft",
+    "hltb": {
+      "main": 15.9,
+      "mainExtra": 25.5,
+      "completionist": 36.1
+    }
+  },
+  "220440": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 20741,
+    "metacritic": 85,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220440/header.jpg?t=1768870001",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Jan 24, 2013",
+    "short_description": "In this retelling of Dante's origin story which is set against a contemporary backdrop, DmC Devil May Cry™ retains the stylish action.",
+    "developer": "Ninja Theory",
+    "publisher": "Capcom",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "221040": {
+    "reviewScore": 78,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 50682,
+    "metacritic": 69,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221040/header.jpg?t=1768960676",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Mar 21, 2013",
+    "short_description": "Blending action and survival horror, Resident Evil 6 promises to be the dramatic horror experience of 2013.",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "hltb": {
+      "main": 20.8,
+      "mainExtra": 27.2,
+      "completionist": 52.3
+    }
+  },
+  "221100": {
+    "reviewScore": 78,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 385853,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221100/header.jpg?t=1769695513",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer"
+    ],
+    "release_date": "Dec 13, 2018",
+    "short_description": "How long can you survive a post-apocalyptic world? A land overrun with an infected &quot;zombie&quot; population, where you compete with other survivors for limited resources. Will you team up with strangers and stay strong together? Or play as a lone wolf to avoid betrayal? This is DayZ – this is your story.",
+    "developer": "Bohemia Interactive",
+    "publisher": "Bohemia Interactive",
+    "hltb": {
+      "main": 50.5,
+      "mainExtra": 91.5,
+      "completionist": 134.4
+    }
+  },
+  "221380": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 84691,
+    "metacritic": 68,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221380/header.jpg?t=1705596928",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Apr 9, 2013",
+    "short_description": "Age of Empires II has been re-imagined in high definition. With the release of Age of Empires II: Definitive Edition, this product will not be updated further.",
+    "developer": "Skybox Labs, Hidden Path Entertainment, Ensemble Studios, Forgotten Empires",
+    "publisher": "Xbox Game Studios",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "221910": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 40199,
+    "metacritic": 88,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221910/header.jpg?t=1781207122",
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "release_date": "Oct 17, 2013",
+    "short_description": "The Stanley Parable is a first person exploration game. You will play as Stanley, and you will not play as Stanley. You will follow a story, you will not follow a story. You will have a choice, you will have no choice. The game will end, the game will never end.",
+    "developer": "Galactic Cafe",
+    "publisher": "Galactic Cafe, Klei Publishing",
+    "hltb": {
+      "main": 1.5,
+      "mainExtra": 2.9,
+      "completionist": 9.1
+    }
+  },
+  "222880": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 86366,
+    "metacritic": 74,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/222880/header.jpg?t=1758742858",
+    "genres": [
+      "Action",
+      "Indie",
+      "Strategy"
+    ],
+    "release_date": "Jan 22, 2014",
+    "short_description": "Take to the streets for intense close quarters combat, where a team's survival depends upon securing crucial strongholds and destroying enemy supply in this multiplayer and cooperative Source Engine based experience.",
+    "developer": "New World Interactive",
+    "publisher": "New World Interactive",
+    "hltb": {
+      "main": 12.8,
+      "mainExtra": 34.1,
+      "completionist": 59.3
+    }
+  },
+  "223470": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 116477,
+    "metacritic": 59,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223470/header.jpg?t=1782946265",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "release_date": "Nov 2, 2012",
+    "short_description": "Live a week in the life of &quot;The POSTAL Dude&quot;; a hapless everyman just trying to check off some chores. Buying milk, returning an overdue library book, getting Gary Coleman's autograph, what could possibly go wrong?",
+    "developer": "Running With Scissors",
+    "publisher": "Running With Scissors",
+    "hltb": {
+      "main": 7,
+      "mainExtra": 12.5,
+      "completionist": 33.2
+    }
+  },
+  "223710": {
+    "reviewScore": 78,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 296,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223710/header.jpg?t=1643567513",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "release_date": "Apr 25, 2013",
+    "short_description": "Cry of Fear is a psychological single-player and co-op horror game set in a deserted town filled with horrific creatures and nightmarish delusions. You play as a young man desperately searching for answers in the cold Scandinavian night, finding his way through the city as he slowly descends into madness.",
+    "developer": "Team Psykskallar",
+    "publisher": "Team Psykskallar",
+    "hltb": {
+      "main": 8.5,
+      "mainExtra": 12,
+      "completionist": 21.9
+    }
+  },
+  "223750": {
+    "reviewScore": 86,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 707,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223750/header.jpg?t=1784736456",
+    "genres": [
+      "Simulation",
+      "Free To Play"
+    ],
+    "release_date": "Aug 2, 2013",
+    "short_description": "Feel the excitement of flying the Su-25T &quot;Frogfoot&quot; attack jet and the TF-51D &quot;Mustang&quot; in the free-to-play Digital Combat Simulator World!",
+    "developer": "Eagle Dynamics SA",
+    "publisher": "Eagle Dynamics SA",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "224260": {
+    "reviewScore": 84,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 699,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/224260/header.jpg?t=1696263772",
+    "genres": [
+      "Action",
+      "Indie",
+      "Free To Play"
+    ],
+    "release_date": "Oct 31, 2013",
+    "short_description": "The chances of you surviving this all out war of society and the undead are slim to none. Already, there are millions of the walking dead shambling about, searching for food to eat. There's no known cure. One bite can possibly end it all for you. However, you aren't alone in this nightmare.",
+    "developer": "No More Room in Hell Team",
+    "publisher": "Lever Games",
+    "hltb": {
+      "main": 19.8,
+      "mainExtra": 27.1,
+      "completionist": 70.4
+    }
+  },
+  "224540": {
+    "reviewScore": 65,
+    "reviewDesc": "Mixed",
+    "totalReviews": 12550,
+    "metacritic": 49,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/224540/header.jpg?t=1636677126",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "release_date": "",
+    "short_description": "Say hello to the creative shooter. Ace of Spades: Battle Builder is the first-person shooter that lets you create your battleground, destroy it, then create it again. Up to 32 players choose from seven unique classes and jump into team-based, multiplayer mayhem across an endlessly evolving battlefield, to construct, destruct and take out...",
+    "developer": "Jagex Limited",
+    "publisher": "Jagex Limited",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "224600": {
+    "reviewScore": 74,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 2481,
+    "metacritic": 64,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/224600/header.jpg?t=1619719240",
+    "genres": [
+      "Action",
+      "Free To Play",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "release_date": "Jun 4, 2014",
+    "short_description": "Join the futuristic online open-world shooter where thousands of players scour a transformed Earth competing for alien technology.",
+    "developer": "Trion Worlds",
+    "publisher": "Trion Worlds",
+    "hltb": {
+      "main": 33.2,
+      "mainExtra": 42,
+      "completionist": 4500
+    }
+  },
+  "224760": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 11621,
+    "metacritic": 91,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/224760/header.jpg?t=1572375251",
+    "genres": [
+      "Indie"
+    ],
+    "release_date": "May 1, 2013",
+    "short_description": "Gomez is a 2D creature living in a 2D world. Or is he? When the existence of a mysterious 3rd dimension is revealed to him, Gomez is sent out on a journey that will take him to the very end of time and space. Use your ability to navigate 3D structures from 4 distinct classic 2D perspectives.",
+    "developer": "Polytron Corporation",
+    "publisher": "Trapdoor",
+    "hltb": {
+      "main": 6,
+      "mainExtra": 8.3,
+      "completionist": 11.7
+    }
+  },
+  "225080": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 33751,
+    "metacritic": 90,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225080/dbfc904916a519d4c0cbea79f898cf33fc231ee1/header.jpg?t=1776415514",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "release_date": "Sep 3, 2013",
+    "short_description": "Guide two brothers on an epic fairy tale journey from visionary Swedish film director, Josef Fares and top-tier developer Starbreeze Studios. Control both brothers at once as you experience co-op play in single player mode, like never before.",
+    "developer": "Starbreeze Studios AB",
+    "publisher": "505 Games",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "225260": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 11253,
+    "metacritic": 80,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225260/header.jpg?t=1776379359",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Strategy"
+    ],
+    "release_date": "Feb 26, 2013",
+    "short_description": "Brütal Legend is an action-adventure that marries visceral action combat with open-world freedom. Set in a universe somewhere between Lord of the Rings and Spinal Tap, it’s a fresh take on the action/driving genre, which in this case is full of imitation cover bands, demons intent on enslaving humanity and Heavy metal tunes.",
+    "developer": "Double Fine Productions",
+    "publisher": "Double Fine Productions, Xbox Game Studios",
+    "hltb": {
+      "main": 9.2,
+      "mainExtra": 14,
+      "completionist": 25
+    }
+  },
+  "225540": {
+    "reviewScore": 85,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 103776,
+    "metacritic": 74,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/header.jpg?t=1782912719",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Nov 30, 2015",
+    "short_description": "With over 1000 km² of complete freedom from sky to seabed, Rico Rodriguez returns to unleash chaos in the most creative and explosive ways imaginable.",
+    "developer": "Avalanche Studios",
+    "publisher": "Square Enix",
+    "hltb": {
+      "main": 18.3,
+      "mainExtra": 37.9,
+      "completionist": 63.8
+    }
+  },
+  "226840": {
+    "reviewScore": 82,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 7011,
+    "metacritic": 80,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/226840/header.jpg?t=1726491137",
+    "genres": [
+      "RPG",
+      "Strategy"
+    ],
+    "release_date": "Mar 31, 2014",
+    "short_description": "Age of Wonders III is the long anticipated sequel to the award-winning strategy series. Delivering a unique mix of Empire Building, Role Playing and Warfare, Age of Wonders III offers the ultimate in turn-based fantasy strategy for veterans of the series and new players alike!",
+    "developer": "Triumph Studios",
+    "publisher": "Paradox Interactive",
+    "hltb": {
+      "main": 26.4,
+      "mainExtra": 75,
+      "completionist": 145.3
+    }
+  },
+  "227300": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 749891,
+    "metacritic": 79,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1785394779",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "release_date": "Oct 12, 2012",
+    "short_description": "Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore, your endurance, skill and speed will all be pushed to their limits.",
+    "developer": "SCS Software",
+    "publisher": "SCS Software",
+    "hltb": {
+      "main": 45.9,
+      "mainExtra": 115.4,
+      "completionist": 458
+    }
+  },
+  "227940": {
+    "reviewScore": 61,
+    "reviewDesc": "Mixed",
+    "totalReviews": 2345,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227940/header.jpg?t=1685049235",
+    "genres": [
+      "Action",
+      "Free To Play",
+      "Indie",
+      "Massively Multiplayer",
+      "Strategy"
+    ],
+    "release_date": "Oct 18, 2016",
+    "short_description": "Shoot, blow sh!t up, fly or bark orders in the ultimate Free-to-Play, large scale, multiplayer, shooter experience. Thousands of players in multiple battles fighting one massive war of nations. The first to capture 15 cities takes the glory.",
+    "developer": "TLM Partners",
+    "publisher": "TLM Partners",
+    "hltb": {
+      "main": 84.4,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "228200": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 12513,
+    "metacritic": 93,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228200/header.jpg?t=1777996337",
+    "genres": [
+      "Action",
+      "Strategy"
+    ],
+    "release_date": "Sep 11, 2006",
+    "short_description": "Delivering a visceral WWII gaming experience, Company of Heroes redefines RTS by bringing the sacrifice of heroic soldiers, war-ravaged environments, and dynamic battlefields to life. Please visit the &quot;Company of Heroes - Legacy Edition&quot; page for additional user reviews.",
+    "developer": "Relic Entertainment",
+    "publisher": "Relic Entertainment",
+    "hltb": {
+      "main": 19.3,
+      "mainExtra": 28.2,
+      "completionist": 77.6
+    }
+  },
+  "228280": {
+    "reviewScore": 93,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 15261,
+    "metacritic": 78,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228280/9761e1ed90324b2102ffc3dac295eeabf03bea55/header.jpg?t=1782244509",
+    "genres": [
+      "Adventure",
+      "RPG"
+    ],
+    "release_date": "Jan 16, 2013",
+    "short_description": "The classic returns! Baldur’s Gate: Enhanced Edition restores the full original adventure and Tales of the Sword Coast, now polished with quality‑of‑life upgrades for a smoother timeless Dungeons &amp; Dragons journey.",
+    "developer": "Beamdog",
+    "publisher": "Beamdog",
+    "hltb": {
+      "main": 31.1,
+      "mainExtra": 54.3,
+      "completionist": 95.9
+    }
+  },
+  "228380": {
+    "reviewScore": 87,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 31152,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228380/header.jpg?t=1742490584",
+    "genres": [
+      "Action",
+      "Indie",
+      "Racing",
+      "Simulation",
+      "Sports"
+    ],
+    "release_date": "Jun 14, 2018",
+    "short_description": "Wreckfest is a demolition derby themed racing game with soft-body damage modeling, sophisticated driving dynamics and in-depth vehicle upgrading, featuring both demolition derbies and more traditional track races. It’s all about fun, breakneck racing and over-the-top crashes.",
+    "developer": "Bugbear",
+    "publisher": "THQ Nordic",
+    "hltb": {
+      "main": 17.7,
+      "mainExtra": 25.7,
+      "completionist": 32.7
+    }
+  },
+  "230410": {
+    "reviewScore": 88,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 2873,
+    "metacritic": 69,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/a000b4bf98dde5d51cd44206f1ac21d04841017e/header.jpg?t=1785169127",
+    "genres": [
+      "Action",
+      "RPG",
+      "Free To Play"
+    ],
+    "release_date": "Mar 25, 2013",
+    "short_description": "Awaken as an unstoppable warrior and battle alongside your friends in this story-driven free-to-play online action game",
+    "developer": "Digital Extremes",
+    "publisher": "Digital Extremes",
+    "hltb": {
+      "main": 113.8,
+      "mainExtra": 649.7,
+      "completionist": 1605
+    }
+  },
+  "231060": {
+    "reviewScore": 48,
+    "reviewDesc": "Mixed",
+    "totalReviews": 23,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/231060/header.jpg?t=1667345187",
+    "genres": [
+      "Free To Play",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "release_date": "May 1, 2013",
+    "short_description": "Return to the beautiful and dangerous world of Midgard! Inspired by Norse mythology, the much-anticipated sequel to the groundbreaking Ragnarok Online has arrived! Immerse yourself in the new, but recognizable world of Ragnarok 2.",
+    "developer": "Gravity, Inc.",
+    "publisher": "Gravity Interactive",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "231430": {
+    "reviewScore": 81,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 68737,
+    "metacritic": 80,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/231430/header.jpg?t=1750947634",
+    "genres": [
+      "Strategy"
+    ],
+    "release_date": "Jun 25, 2013",
+    "short_description": "Experience the ultimate WWII RTS platform with COH2 and its standalone expansions. This package includes the base game, which you can then upgrade by purchasing The Western Front Armies, Ardennes Assault and/or The British Forces. More info in the &quot;About This Game&quot; section below.",
+    "developer": "Relic Entertainment, Feral Interactive (Mac), Feral Interactive (Linux)",
+    "publisher": "Relic Entertainment, Feral Interactive (Mac), Feral Interactive (Linux)",
+    "hltb": {
+      "main": 15.8,
+      "mainExtra": 26,
+      "completionist": 64
+    }
+  },
+  "232050": {
+    "reviewScore": 67,
+    "reviewDesc": "Mixed",
+    "totalReviews": 1656,
+    "metacritic": 74,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232050/header.jpg?t=1571149287",
+    "genres": [
+      "Indie",
+      "RPG",
+      "Strategy"
+    ],
+    "release_date": "Apr 19, 2013",
+    "short_description": "Eador is a universe made of countless shards of land drifting in the Great Nothing. Each of the shards is a little world unto itself, with geography and denizens of its own. The power over the shards is bitterly contested by Masters, the immortal beings mortals believe to be gods.",
+    "developer": "Snowbird Games",
+    "publisher": "Snowbird Games",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "232090": {
+    "reviewScore": 89,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 86964,
+    "metacritic": 75,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232090/header.jpg?t=1774538987",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Nov 18, 2016",
+    "short_description": "In KILLING FLOOR 2, players descend into continental Europe after it has been overrun by horrific, murderous clones called Zeds that were created by rogue elements of the Horzine Corporation. 6-player Co-Op &amp; 12-player VS Zed-slaughtering mayhem.",
+    "developer": "Tripwire Interactive",
+    "publisher": "Tripwire Interactive",
+    "hltb": {
+      "main": 16.4,
+      "mainExtra": 92.2,
+      "completionist": 129.7
+    }
+  },
+  "232770": {
+    "reviewScore": 86,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 2518,
+    "metacritic": 56,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232770/header.jpg?t=1726332202",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "release_date": "Nov 14, 1997",
+    "short_description": "Take control of The POSTAL Dude in his infamous first outing as he battles to survive in a world gone mad! POSTAL is a classic isometric shooter filled to the brim with fast-paced explosive action.",
+    "developer": "Running With Scissors",
+    "publisher": "Running With Scissors",
+    "hltb": {
+      "main": 2.4,
+      "mainExtra": 3.7,
+      "completionist": 13.8
+    }
+  },
+  "232890": {
+    "reviewScore": 74,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 12557,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232890/header.jpg?t=1758725885",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Sep 22, 2014",
+    "short_description": "Stronghold Crusader 2 is the long awaited sequel to the original castle sim. After 12 years Stronghold returns to the desert with a new 3D engine and powerful Havok Physics. Crusader 2 recaptures the original game’s addictive, fast-paced gameplay and authentic castle simulation.",
+    "developer": "Firefly Studios",
+    "publisher": "Firefly Studios",
+    "hltb": {
+      "main": 9.3,
+      "mainExtra": 40,
+      "completionist": 132.9
+    }
+  },
+  "233130": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 15928,
+    "metacritic": 74,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233130/header.jpg?t=1710246206",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Sep 26, 2013",
+    "short_description": "Shadow Warrior is a bold reimagining of the classic 3D Realms’ shooter from independent developer Flying Wild Hog (Hard Reset) starring the legendary and quick-witted warrior Lo Wang.",
+    "developer": "Flying Wild Hog",
+    "publisher": "Devolver Digital",
+    "hltb": {
+      "main": 12.3,
+      "mainExtra": 15.5,
+      "completionist": 35.6
+    }
+  },
+  "233450": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 59632,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233450/header.jpg?t=1759221867",
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Oct 6, 2015",
+    "short_description": "Only the world’s most ruthless Warden can contain the world’s most ruthless inmates. Design and develop your personalized penitentiary in Prison Architect.",
+    "developer": "Introversion Software, Double Eleven",
+    "publisher": "Paradox Interactive",
+    "hltb": {
+      "main": 17,
+      "mainExtra": 43.4,
+      "completionist": 70.2
+    }
+  },
+  "233720": {
+    "reviewScore": 83,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 13779,
+    "metacritic": 71,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233720/header.jpg?t=1773072184",
+    "genres": [
+      "Action",
+      "Indie",
+      "Simulation"
+    ],
+    "release_date": "Apr 19, 2013",
+    "short_description": "Surgeon Simulator is an over-the-top operation sim, stitching together pitch-black humour with life-saving surgery. Become Dr. Burke, a would-be surgeon with a less than conventional toolkit, as he performs procedures on patients including the Heavy from TF2! ...is that a hammer?",
+    "developer": "Bossa Studios",
+    "publisher": "Infogrames, Atari",
+    "hltb": {
+      "main": 3.3,
+      "mainExtra": 6.4,
+      "completionist": 15.2
+    }
+  },
+  "233860": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 97333,
+    "metacritic": 75,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233860/fa72ac8a032fd876780cd5b554e4c03b4976ef74/header.jpg?t=1779293333",
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Dec 6, 2018",
+    "short_description": "A free-roaming squad based RPG. Focusing on open-ended sandbox gameplay features rather than a linear story. Be a trader, a thief, a rebel, a warlord, an adventurer, a farmer, a slave, or just food for the cannibals. Train your men up from puny victims to master warriors.",
+    "developer": "Lo-Fi Games",
+    "publisher": "Lo-Fi Games",
+    "hltb": {
+      "main": 81.4,
+      "mainExtra": 134.3,
+      "completionist": 273.7
+    }
+  },
+  "234140": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 57333,
+    "metacritic": 73,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/234140/header.jpg?t=1780595138",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Sep 1, 2015",
+    "short_description": "Play as Mad Max, a reluctant hero and survivor who wants nothing more than to leave the madness behind and find solace.",
+    "developer": "Avalanche Studios",
+    "publisher": "Warner Bros. Games, Warner Bros. Interactive Entertainment",
+    "hltb": {
+      "main": 20.1,
+      "mainExtra": 38.9,
+      "completionist": 61.6
+    }
+  },
+  "234650": {
+    "reviewScore": 89,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 9500,
+    "metacritic": 76,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/234650/header.jpg?t=1709809316",
+    "genres": [
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Strategy"
+    ],
+    "release_date": "Jul 25, 2013",
+    "short_description": "The unique cyberpunk-meets-fantasy world of Shadowrun has gained a huge cult following since its creation nearly 25 years ago. Now, creator Jordan Weisman returns to the world of Shadowrun, modernizing this classic game setting as a single player, turn-based tactical RPG.",
+    "developer": "Harebrained Schemes",
+    "publisher": "Paradox Interactive",
+    "hltb": {
+      "main": 11.6,
+      "mainExtra": 14.4,
+      "completionist": 17.8
+    }
+  },
+  "235460": {
+    "reviewScore": 96,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 68849,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/235460/header.jpg?t=1740076034",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Jan 9, 2014",
+    "short_description": "Developed by Kojima Productions and PlatinumGames, METAL GEAR RISING: REVENGEANCE takes the renowned METAL GEAR franchise into exciting new territory with an all-new action experience. The game seamlessly melds pure action and epic story-telling that surrounds Raiden – a child soldier transformed into a half-human, half-cyborg ninja who...",
+    "developer": "PlatinumGames",
+    "publisher": "KONAMI",
+    "hltb": {
+      "main": 7.2,
+      "mainExtra": 11.6,
+      "completionist": 41.3
+    }
+  },
+  "235600": {
+    "reviewScore": 78,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 19208,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/235600/header.jpg?t=1764775433",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Aug 20, 2013",
+    "short_description": "In this stealth-action thriller, a terrorist group known as the Engineers launches the Blacklist, a series of escalating attacks on US interests. Only one man can stop them: legendary covert agent Sam Fisher.",
+    "developer": "Ubisoft Toronto",
+    "publisher": "Ubisoft",
+    "hltb": {
+      "main": null,
+      "mainExtra": null,
+      "completionist": null
+    }
+  },
+  "236110": {
+    "reviewScore": 68,
+    "reviewDesc": "Mixed",
+    "totalReviews": 2984,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236110/header.jpg?t=1749075763",
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG",
+      "Strategy",
+      "Free To Play"
+    ],
+    "release_date": "Jun 20, 2017",
+    "short_description": "Dungeon Defenders II is a cooperative Action Tower Defense game packed with roleplaying elements like loot, leveling, and pets.",
+    "developer": "Chromatic Games",
+    "publisher": "Chromatic Games",
+    "hltb": {
+      "main": 22.5,
+      "mainExtra": 57.6,
+      "completionist": 142.8
+    }
+  },
+  "236390": {
+    "reviewScore": 70,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 1851,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/65885881b96806d55fea45e130233fdafd78b129/header.jpg?t=1784211516",
+    "genres": [
+      "Action",
+      "Massively Multiplayer",
+      "Simulation",
+      "Free To Play"
+    ],
+    "release_date": "Aug 15, 2013",
+    "short_description": "War Thunder is the most comprehensive free-to-play, cross-platform, MMO military game dedicated to aviation, armoured vehicles, and naval craft, from the early 20th century to the most advanced modern combat units. Join now and take part in major battles on land, in the air, and at sea.",
+    "developer": "Gaijin Entertainment",
+    "publisher": "Gaijin Network Ltd",
+    "hltb": {
+      "main": 774.7,
+      "mainExtra": 1630.4,
+      "completionist": 4627.7
+    }
+  },
+  "236850": {
+    "reviewScore": 87,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 93857,
+    "metacritic": 87,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236850/header.jpg?t=1778249292",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Aug 13, 2013",
+    "short_description": "Rule your land and dominate the world with unparalleled freedom, depth and historical accuracy. Write a new history of the world and build an empire for the ages.",
+    "developer": "Paradox Development Studio, Paradox Tinto",
+    "publisher": "Paradox Interactive",
+    "hltb": {
+      "main": 96.2,
+      "mainExtra": 357,
+      "completionist": 1626
+    }
+  },
+  "236870": {
+    "reviewScore": 82,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 23747,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236870/header.jpg?t=1768906497",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Mar 11, 2016",
+    "short_description": "There is a world beyond ours. Beyond nations, justice, ethics. It never sleeps. It exists everywhere. And once you enter....there is no going back. Welcome to the World of Assassination. You are Agent 47, the world's ultimate assassin.",
+    "developer": "IO Interactive A/S, Feral Interactive (Linux), Feral Interactive (Mac)",
+    "publisher": "IO Interactive A/S, Feral Interactive (Linux), Feral Interactive (Mac)",
+    "hltb": {
+      "main": 10.7,
+      "mainExtra": 23.8,
+      "completionist": 92.8
+    }
+  },
+  "237110": {
+    "reviewScore": 90,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 12132,
+    "metacritic": 81,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/237110/header.jpg?t=1584723816",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "",
+    "short_description": "The newest chapter of the iconic fighting franchise is now available! Experience the deadliest tournament with all the kombatants and their unique fatalities. Players enter the realm to face the Kombatants in Mortal Kombat Komplete Edition, delivering all of the downloadable content (DLC), including intrepid warriors Skarlet, Kenshi and...",
+    "developer": "NetherRealm Studios, High Voltage Software",
+    "publisher": "Warner Bros. Interactive Entertainment",
+    "hltb": {
+      "main": 8.8,
+      "mainExtra": 18.2,
+      "completionist": 72.8
+    }
+  },
+  "237930": {
+    "reviewScore": 94,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 27949,
+    "metacritic": 83,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/237930/header.jpg?t=1729113992",
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "release_date": "May 20, 2014",
+    "short_description": "Discover the world of Transistor, a sci-fi-themed action RPG from the creators of Bastion.",
+    "developer": "Supergiant Games",
+    "publisher": "Supergiant Games",
+    "hltb": {
+      "main": 6,
+      "mainExtra": 8.4,
+      "completionist": 15.8
+    }
+  },
+  "238010": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 25252,
+    "metacritic": 91,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238010/header.jpg?t=1779722099",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "release_date": "Oct 25, 2013",
+    "short_description": "You play Adam Jensen, an ex-SWAT specialist who's been handpicked to oversee the defensive needs of one of America's most experimental biotechnology firms. When a black ops team breaks in and kills the very scientists you were hired to protect, everything you thought you knew about your job changes.",
+    "developer": "Eidos Montreal",
+    "publisher": "Eidos Interactive Corp.",
+    "hltb": {
+      "main": 23,
+      "mainExtra": 31.1,
+      "completionist": 46.7
+    }
+  },
+  "238090": {
+    "reviewScore": 82,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 21320,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238090/header.jpg?t=1601483606",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Jun 27, 2014",
+    "short_description": "Sniper Elite 3 is a tactical third-person shooter that combines stealth, gameplay choice and genre-defining ballistics with huge, open levels and the exotic terrain of World War 2 North Africa.",
+    "developer": "Rebellion",
+    "publisher": "Rebellion",
+    "hltb": {
+      "main": 9.1,
+      "mainExtra": 14.4,
+      "completionist": 30.8
+    }
+  },
+  "238320": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 103578,
+    "metacritic": 80,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238320/header.jpg?t=1666817106",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "release_date": "Sep 4, 2013",
+    "short_description": "Hell is an experiment you can't survive in Outlast, a first-person survival horror game developed by veterans of some of the biggest game franchises in history. As investigative journalist Miles Upshur, explore Mount Massive Asylum and try to survive long enough to discover its terrible secret... if you dare.",
+    "developer": "Red Barrels",
+    "publisher": "Red Barrels",
+    "hltb": {
+      "main": 5.1,
+      "mainExtra": 7.3,
+      "completionist": 11.4
+    }
+  },
+  "238370": {
+    "reviewScore": 83,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 9451,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238370/header.jpg?t=1709831158",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "May 26, 2015",
+    "short_description": "The world’s most irreverent co-op action adventure returns! In the next chapter of Magicka, players ascend from the ruins of Aldrheim to experience a Midgård almost wiped free of Wizards after the Wizard Wars, with the few that do remain having either gone mad or extremely hostile toward all others",
+    "developer": "Pieces Interactive",
+    "publisher": "Paradox Interactive",
+    "hltb": {
+      "main": 6.2,
+      "mainExtra": 10,
+      "completionist": 31.6
+    }
+  },
+  "238460": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 55706,
+    "metacritic": 85,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238460/header.jpg?t=1779296698",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Indie"
+    ],
+    "release_date": "May 15, 2014",
+    "short_description": "Welcome to BattleBlock Theater! You’ve got no where to go but up...on stage. Play single player or co-op to free your friends and save Hatty Hattington! Jump, solve and battle your way through a mysterious theater inhabited by highly technological felines.",
+    "developer": "The Behemoth",
+    "publisher": "The Behemoth",
+    "hltb": {
+      "main": 10.2,
+      "mainExtra": 17.4,
+      "completionist": 42.8
+    }
+  },
+  "238960": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 1027,
+    "metacritic": 86,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238960/177c953b362c5a6221f9c15d340a0b1e2b8bfab8/header.jpg?t=1784681738",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Massively Multiplayer",
+      "RPG",
+      "Free To Play"
+    ],
+    "release_date": "Oct 23, 2013",
+    "short_description": "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power that will allow you to exact your revenge against those who wronged you. Path of Exile is an online Action RPG set in a dark fantasy world. The game is completely free and will never be pay-to-win.",
+    "developer": "Grinding Gear Games",
+    "publisher": "Grinding Gear Games",
+    "hltb": {
+      "main": 30.4,
+      "mainExtra": 111.6,
+      "completionist": 790.9
+    }
+  },
+  "239030": {
+    "reviewScore": 97,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 72854,
+    "metacritic": 85,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239030/header.jpg?t=1678266428",
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "release_date": "Aug 8, 2013",
+    "short_description": "Congratulations. The October labor lottery is complete. Your name was pulled. For immediate placement, report to the Ministry of Admission at Grestin Border Checkpoint. An apartment will be provided for you and your family in East Grestin. Expect a Class-8 dwelling.",
+    "developer": "Lucas Pope",
+    "publisher": "3909",
+    "hltb": {
+      "main": 5,
+      "mainExtra": 8.1,
+      "completionist": 16.2
+    }
+  },
+  "239140": {
+    "reviewScore": 95,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 371596,
+    "metacritic": 87,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/9d1b810b85ae46a0acbdfddf583ccbb81271183e/header.jpg?t=1782913513",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "release_date": "Jan 26, 2015",
+    "short_description": "First-person action survival game set in a post-apocalyptic open world overrun by flesh-hungry zombies. Roam a city devastated by a mysterious virus epidemic. Scavenge for supplies, craft weapons, and face hordes of the infected.",
+    "developer": "Techland",
+    "publisher": "Techland",
+    "hltb": {
+      "main": 18.3,
+      "mainExtra": 36.7,
+      "completionist": 64.4
+    }
+  },
+  "239160": {
+    "reviewScore": 75,
+    "reviewDesc": "Mostly Positive",
+    "totalReviews": 17314,
+    "metacritic": 70,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239160/header.jpg?t=1780670514",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "release_date": "Feb 27, 2014",
+    "short_description": "Garrett, the Master Thief, steps out of the shadows into the City. In this treacherous place, where the Baron’s Watch spreads a rising tide of fear and oppression, his skills are the only things he can trust. Even the most cautious citizens and their best-guarded possessions are not safe from his reach.",
+    "developer": "Eidos-Montréal, Feral Interactive (Mac)",
+    "publisher": "Eidos Interactive Corp., Feral Interactive (Mac)",
+    "hltb": {
+      "main": 11,
+      "mainExtra": 22.1,
+      "completionist": 44.6
+    }
+  },
+  "239350": {
+    "reviewScore": 92,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 14630,
+    "metacritic": 90,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239350/header.jpg?t=1632912566",
+    "genres": [
+      "Indie"
+    ],
+    "release_date": "Aug 8, 2013",
+    "short_description": "Spelunky is a unique platformer with randomized levels that offer a challenging new experience each time you play. Journey deep underground and explore fantastic places filled with all manner of monsters, traps, and treasure.",
+    "developer": "Mossmouth",
+    "publisher": "Mossmouth",
+    "hltb": {
+      "main": 20.3,
+      "mainExtra": 44.4,
+      "completionist": 95.5
+    }
+  },
+  "239820": {
+    "reviewScore": 95,
+    "reviewDesc": "Overwhelmingly Positive",
+    "totalReviews": 40226,
+    "metacritic": 68,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239820/header.jpg?t=1762193894",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "release_date": "Aug 29, 2013",
+    "short_description": "In Game Dev Tycoon you replay the history of the gaming industry by starting your own video game development company in the 80s. Create best selling games. Research new technologies and invent new game types. Become the leader of the market and gain worldwide fans.",
+    "developer": "Greenheart Games 💚",
+    "publisher": "Greenheart Games 💚",
+    "hltb": {
+      "main": 8.6,
+      "mainExtra": 15.1,
+      "completionist": 26
+    }
+  },
+  "240320": {
+    "reviewScore": 57,
+    "reviewDesc": "Mixed",
+    "totalReviews": 51,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/240320/header.jpg?t=1718974980",
+    "genres": [
+      "Action",
+      "Massively Multiplayer",
+      "RPG",
+      "Free To Play"
+    ],
+    "release_date": "Nov 25, 2013",
+    "short_description": "PANZAR is a fantasy multiplayer third-person shooter. You get to choose from eight unique character classes, team-based PvP battles, exciting PvE adventures and regular tournaments with real prizes. Advanced RPG elements, the non-target combat system and the most modern graphics by CryEngine 3 will make your combat experience...",
+    "developer": "Panzar Studio",
+    "publisher": "OVALIS INVESTMENTS LIMITED",
+    "hltb": {
+      "main": 2.3,
+      "mainExtra": 28.5,
+      "completionist": null
+    }
+  },
+  "240720": {
+    "reviewScore": 83,
+    "reviewDesc": "Very Positive",
+    "totalReviews": 74858,
+    "metacritic": null,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/240720/header.jpg?t=1666987027",
+    "genres": [
+      "Action"
+    ],
+    "release_date": "Dec 6, 2017",
+    "short_description": "A game I made for a certain kind of person. To hurt them.",
+    "developer": "Bennett Foddy",
+    "publisher": "Bennett Foddy",
+    "hltb": {
+      "main": 6.3,
+      "mainExtra": 7.6,
+      "completionist": 29.6
+    }
   }
 }

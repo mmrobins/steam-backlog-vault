@@ -3,26 +3,26 @@ const cache = require('./cache');
 
 // Known fallback/preset times for top games in case HLTB is unreachable or returns 0
 const POPULAR_HLTB_CACHE = {
-  "Portal 2": { main: 8.5, mainExtra: 11, completionist: 21 },
-  "Portal": { main: 3, mainExtra: 5, completionist: 10 },
-  "The Witcher 3: Wild Hunt": { main: 51.5, mainExtra: 104, completionist: 173 },
-  "Hollow Knight": { main: 27, mainExtra: 41.5, completionist: 63.5 },
-  "Hades": { main: 22, mainExtra: 48, completionist: 97 },
-  "Elden Ring": { main: 55, mainExtra: 100, completionist: 133 },
-  "God of War": { main: 20.5, mainExtra: 32.5, completionist: 51 },
-  "Celeste": { main: 8, mainExtra: 14, completionist: 39 },
-  "Stardew Valley": { main: 52.5, mainExtra: 108, completionist: 191 },
-  "Terraria": { main: 47, mainExtra: 95.5, completionist: 188 },
-  "Subnautica": { main: 29.5, mainExtra: 44, completionist: 56 },
-  "Cyberpunk 2077": { main: 25, mainExtra: 60, completionist: 104 },
-  "Red Dead Redemption 2": { main: 50, mainExtra: 81, completionist: 180 },
-  "Mass Effect Legendary Edition": { main: 59.5, mainExtra: 106, completionist: 140 },
-  "Bioshock Infinite": { main: 11.5, mainExtra: 15.5, completionist: 27.5 },
-  "DOOM": { main: 11.5, mainExtra: 16.5, completionist: 25 },
-  "Outer Wilds": { main: 16, mainExtra: 22, completionist: 27.5 },
-  "Disco Elysium": { main: 22, mainExtra: 33.5, completionist: 46 },
-  "Half-Life 2": { main: 13, mainExtra: 16, completionist: 20 },
-  "Sekiro: Shadows Die Twice": { main: 30, mainExtra: 42, completionist: 70.5 }
+  "Portal 2": { main: 8.5, mainExtra: 11, completionist: 21, hltbId: 7208 },
+  "Portal": { main: 3, mainExtra: 5, completionist: 10, hltbId: 7207 },
+  "The Witcher 3: Wild Hunt": { main: 51.5, mainExtra: 104, completionist: 173, hltbId: 10270 },
+  "Hollow Knight": { main: 27, mainExtra: 41.5, completionist: 63.5, hltbId: 26286 },
+  "Hades": { main: 22, mainExtra: 48, completionist: 97, hltbId: 59746 },
+  "Elden Ring": { main: 55, mainExtra: 100, completionist: 133, hltbId: 68151 },
+  "God of War": { main: 20.5, mainExtra: 32.5, completionist: 51, hltbId: 38050 },
+  "Celeste": { main: 8, mainExtra: 14, completionist: 39, hltbId: 42818 },
+  "Stardew Valley": { main: 52.5, mainExtra: 108, completionist: 191, hltbId: 24009 },
+  "Terraria": { main: 47, mainExtra: 95.5, completionist: 188, hltbId: 9853 },
+  "Subnautica": { main: 29.5, mainExtra: 44, completionist: 56, hltbId: 23023 },
+  "Cyberpunk 2077": { main: 25, mainExtra: 60, completionist: 104, hltbId: 46397 },
+  "Red Dead Redemption 2": { main: 50, mainExtra: 81, completionist: 180, hltbId: 27100 },
+  "Mass Effect Legendary Edition": { main: 59.5, mainExtra: 106, completionist: 140, hltbId: 90647 },
+  "Bioshock Infinite": { main: 11.5, mainExtra: 15.5, completionist: 27.5, hltbId: 1068 },
+  "DOOM": { main: 11.5, mainExtra: 16.5, completionist: 25, hltbId: 2708 },
+  "Outer Wilds": { main: 16, mainExtra: 22, completionist: 27.5, hltbId: 57523 },
+  "Disco Elysium": { main: 22, mainExtra: 33.5, completionist: 46, hltbId: 57335 },
+  "Half-Life 2": { main: 13, mainExtra: 16, completionist: 20, hltbId: 4078 },
+  "Sekiro: Shadows Die Twice": { main: 30, mainExtra: 42, completionist: 70.5, hltbId: 57425 }
 };
 
 /**
